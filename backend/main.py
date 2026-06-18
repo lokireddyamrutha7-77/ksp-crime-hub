@@ -125,3 +125,21 @@ async def transcribe_voice(audio: UploadFile = File(...)):
             "success": False,
             "error": str(e)
         }
+        # ─────────────────────────────────────
+# Feature 6 — FIR Generate Route
+# ─────────────────────────────────────
+@app.post("/fir/generate")
+def fir_generate(data: TextInput):
+    try:
+        fir = generate_fir(data.text)
+        return {
+            "success": True,
+            "transcribed_text": data.text,
+            "fir": fir
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
