@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import pandas as pd
 from ml.hotspot import detect_hotspots
 
+
 load_dotenv()
 
 app = FastAPI(title="KSP Crime Intelligence Hub")
@@ -19,6 +20,7 @@ app.add_middleware(
 
 SUPABASE_URL = "https://jumeyifobbsbeenrwhxu.supabase.co"
 SUPABASE_KEY = "sb_publishable_BgPgAD6uL3xpTt-eQaM0Ww_gcgw6DY_"
+
 
 HEADERS = {
     "apikey": SUPABASE_KEY,
@@ -77,6 +79,47 @@ def get_stats():
         "severity": df["severity"].value_counts().to_dict(),
         "status": df["status"].value_counts().to_dict()
     }
+
+@app.get("/stats/summary")
+def get_stats_summary():
+
+    df = pd.read_csv("data/crimes.csv")
+
+    top_districts = (
+        df["district"]
+        .value_counts()
+        .head(5)
+        .to_dict()
+    )
+
+    top_crime_types = (
+        df["crime_type"]
+        .value_counts()
+        .head(5)
+        .to_dict()
+    )
+
+    return {
+        "total_crimes": len(df),
+        "top_districts": top_districts,
+        "top_crime_types": top_crime_types
+    }
+
+@app.get("/stats/trend")
+def get_crime_trend():
+
+    df = pd.read_csv("data/crimes.csv")
+
+    df["date"] = pd.to_datetime(df["date"])
+
+    trend = (
+        df.groupby(df["date"].dt.month)
+        .size()
+        .to_dict()
+    )
+
+    return trend
+
 @app.get("/risk")
 def get_risk_scores():
 

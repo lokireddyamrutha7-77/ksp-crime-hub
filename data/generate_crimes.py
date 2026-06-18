@@ -2,6 +2,7 @@ import pandas as pd
 import random
 from datetime import datetime, timedelta
 import json
+from karnataka_locations import KARNATAKA_LOCATIONS
 
 districts = [
     "Bengaluru Urban", "Bengaluru Rural", "Mysuru", "Mangaluru",
@@ -58,28 +59,72 @@ severities = ["low", "medium", "high"]
 severity_weights = [0.5, 0.35, 0.15]
 statuses = ["open", "closed", "investigating"]
 
+
 records = []
 start_date = datetime(2023, 1, 1)
 
-for i in range(5000):
+for i in range(10000):
+
     district = random.choice(districts)
+
+    city = random.choice(
+        list(KARNATAKA_LOCATIONS[district].keys())
+    )
+
+    police_station = random.choice(
+        KARNATAKA_LOCATIONS[district][city]
+    )
+    
+
+    if police_station == "Rural PS":
+        police_station = f"{city} Rural PS"
+
+    elif police_station == "Town PS":
+        police_station = f"{city} Town PS"
+
+    elif police_station == "Traffic PS":
+        police_station = f"{city} Traffic PS"
+
+
+
     base_lat, base_lng = district_coords[district]
+
     lat = base_lat + random.uniform(-0.3, 0.3)
     lng = base_lng + random.uniform(-0.3, 0.3)
-    date = start_date + timedelta(days=random.randint(0, 730))
+
+    date = start_date + timedelta(
+        days=random.randint(0, 730)
+    )
 
     records.append({
         "district": district,
+        "city": city,
+        "police_station": police_station,
         "crime_type": random.choice(crime_types),
         "latitude": round(lat, 6),
         "longitude": round(lng, 6),
         "date": date.strftime("%Y-%m-%d"),
-        "severity": random.choices(severities, severity_weights)[0],
+        "severity": random.choices(
+            severities,
+            severity_weights
+        )[0],
         "status": random.choice(statuses)
     })
 
 df = pd.DataFrame(records)
-df.to_csv("crimes.csv", index=False)
+
+
+df.to_csv("data/crimes.csv", index=False)
+
 print(f"Generated {len(records)} crime records successfully!")
+print("\nTop Districts:")
 print(df["district"].value_counts().head(5))
+
+print("\nTop Cities:")
+print(df["city"].value_counts().head(5))
+
+print("\nTop Police Stations:")
+print(df["police_station"].value_counts().head(5))
+
+print("\nTop Crime Types:")
 print(df["crime_type"].value_counts().head(5))
