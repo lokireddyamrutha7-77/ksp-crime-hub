@@ -1,12 +1,17 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-import httpx
+from pydantic import BaseModel
+import sys
 import os
-from dotenv import load_dotenv
-import pandas as pd
-from ml.hotspot import detect_hotspots
+import tempfile
 
-load_dotenv()
+sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from ai.fir_generator import generate_fir
+from ai.dialect_ai import process_dialect
+from ai.investigator import investigate
+from ai.sketch_ai import generate_sketch
 
 app = FastAPI(title="KSP Crime Intelligence Hub")
 
@@ -14,47 +19,109 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["*"],
-    allow_headers=["*"],
+    allow_headers=["*"]
 )
 
-SUPABASE_URL = "https://jumeyifobbsbeenrwhxu.supabase.co"
-SUPABASE_KEY = "sb_publishable_BgPgAD6uL3xpTt-eQaM0Ww_gcgw6DY_"
+class TextInput(BaseModel):
+    text: str
 
-HEADERS = {
-    "apikey": SUPABASE_KEY,
-    "Authorization": f"Bearer {SUPABASE_KEY}",
-    "Content-Type": "application/json"
-}
-
+# ─────────────────────────────────────
+# Root Route
+# ─────────────────────────────────────
 @app.get("/")
 def root():
-    return {"message": "KSP Crime Intelligence Hub API is running"}
+    return {"message": "KSP Crime Intelligence Hub API is running!"}
 
-@app.get("/crimes")
-async def get_crimes():
-    async with httpx.AsyncClient() as client:
-        response = await client.get(
-            f"{SUPABASE_URL}/rest/v1/crimes?select=*",
-            headers=HEADERS
-        )
-        return response.json()
+# ─────────────────────────────────────
+# Feature 1 — Voice FIR Generator
+# ─────────────────────────────────────
+@app.post("/generate-fir-text")
+def create_fir_from_text(data: TextInput):
+    try:
+        fir = generate_fir(data.text)
+        return {
+            "success": True,
+            "transcribed_text": data.text,
+            "fir": fir
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
-@app.get("/crimes/district/{district}")
-async def get_crimes_by_district(district: str):
-    async with httpx.AsyncClient() as client:
-        response = await client.get(
-            f"{SUPABASE_URL}/rest/v1/crimes?district=eq.{district}&select=*",
-            headers=HEADERS
-        )
-        return response.json()
+# ─────────────────────────────────────
+# Feature 2 — Dialect AI Officer
+# ─────────────────────────────────────
+@app.post("/detect-dialect")
+def detect_dialect(data: TextInput):
+    try:
+        result = process_dialect(data.text)
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
-@app.get("/districts")
-async def get_districts():
-    async with httpx.AsyncClient() as client:
-        response = await client.get(
-            f"{SUPABASE_URL}/rest/v1/crimes?select=district",
-            headers=HEADERS
-        )
-        data = response.json()
-        districts = list(set([r["district"] for r in data]))
-        return {"districts": sorted(districts)}
+# ─────────────────────────────────────
+# Feature 3 — AI Investigator
+# ─────────────────────────────────────
+@app.post("/investigate")
+def ai_investigator(data: TextInput):
+    try:
+        result = investigate(data.text)
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+# ─────────────────────────────────────
+# Feature 4 — Sketch AI Witness
+# ─────────────────────────────────────
+@app.post("/generate-sketch")
+def sketch_ai(data: TextInput):
+    try:
+        result = generate_sketch(data.text)
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+# ─────────────────────────────────────
+# Feature 5 — Voice Transcription
+# ─────────────────────────────────────
+@app.post("/transcribe-voice")
+async def transcribe_voice(audio: UploadFile = File(...)):
+    try:
+        from ai.whisper_test import transcribe_audio
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
+            tmp.write(await audio.read())
+            tmp_path = tmp.name
+        text = transcribe_audio(tmp_path)
+        os.unlink(tmp_path)
+        return {
+            "success": True,
+            "transcribed_text": text
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
