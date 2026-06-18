@@ -1,5 +1,4 @@
 from sklearn.cluster import DBSCAN
-import pandas as pd
 
 def detect_hotspots(df):
 
@@ -28,3 +27,4 @@ def detect_hotspots(df):
         })
 
     return hotspots
+  
