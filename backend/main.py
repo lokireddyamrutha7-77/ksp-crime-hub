@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import httpx
 import os
 from dotenv import load_dotenv
+import pandas as pd
+from ml.hotspot import detect_hotspots
 
 load_dotenv()
 
