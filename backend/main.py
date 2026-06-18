@@ -58,3 +58,44 @@ async def get_districts():
         data = response.json()
         districts = list(set([r["district"] for r in data]))
         return {"districts": sorted(districts)}
+@app.get("/hotspots")
+def get_hotspots():
+
+    df = pd.read_csv("data/crimes.csv")
+
+    return detect_hotspots(df)
+
+@app.get("/stats")
+def get_stats():
+
+    df = pd.read_csv("data/crimes.csv")
+
+    return {
+        "total_crimes": len(df),
+        "crime_types": df["crime_type"].value_counts().to_dict(),
+        "districts": df["district"].value_counts().to_dict(),
+        "severity": df["severity"].value_counts().to_dict(),
+        "status": df["status"].value_counts().to_dict()
+    }
+@app.get("/risk")
+def get_risk_scores():
+
+    df = pd.read_csv("data/crimes.csv")
+
+    district_counts = df.groupby("district").size()
+
+    max_count = district_counts.max()
+
+    result = []
+
+    for district, count in district_counts.items():
+
+        score = round((count / max_count) * 100)
+
+        result.append({
+            "district": district,
+            "crime_count": int(count),
+            "risk_score": score
+        })
+
+    return result
