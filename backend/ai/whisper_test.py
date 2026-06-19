@@ -13,6 +13,3 @@ def transcribe_audio(audio_file_path: str) -> str:
             language="kn"  # Kannada
         )
     return transcript.text
-
-print("Whisper AI ready!")
-print("Supported languages: Kannada, Hindi, English, Tulu")
