@@ -1,0 +1,96 @@
+.hotspot-high {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 0, 0, 0.15);
+  border-radius: 50%;
+  position: relative;
+}
+
+.hotspot-high::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.hotspot-high::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50%;
+  top: 19px;
+  left: 19px;
+}
+.hotspot-medium {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 165, 0, 0.15);
+  border-radius: 50%;
+  position: relative;
+}
+
+.hotspot-medium::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.hotspot-medium::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+  top: 19px;
+  left: 19px;
+}
+.hotspot-low {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 0, 0.15);
+  border-radius: 50%;
+  position: relative;
+}
+
+.hotspot-low::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid gold;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.hotspot-low::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: gold;
+  border-radius: 50%;
+  top: 19px;
+  left: 19px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
