@@ -5,9 +5,16 @@ import os
 from dotenv import load_dotenv
 import pandas as pd
 from ml.hotspot import detect_hotspots
+from pydantic import BaseModel
+
+load_dotenv("backend/.env")
+
+from backend.ai.fir_generator import generate_fir
+from backend.ai.dialect_ai import process_dialect
+from backend.ai.investigator import investigate
+from backend.ai.sketch_ai import generate_sketch
 
 
-load_dotenv()
 
 app = FastAPI(title="KSP Crime Intelligence Hub")
 
@@ -28,9 +35,80 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
+class TextInput(BaseModel):
+    text: str
+
+
 @app.get("/")
 def root():
     return {"message": "KSP Crime Intelligence Hub API is running"}
+
+@app.post("/generate-fir-text")
+def create_fir_from_text(data: TextInput):
+
+    try:
+        fir = generate_fir(data.text)
+
+        return {
+            "success": True,
+            "transcribed_text": data.text,
+            "fir": fir
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+@app.post("/detect-dialect")
+def detect_dialect(data: TextInput):
+    try:
+        result = process_dialect(data.text)
+
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+@app.post("/investigate")
+def ai_investigator(data: TextInput):
+    try:
+        result = investigate(data.text)
+
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/generate-sketch")
+def sketch_ai(data: TextInput):
+    try:
+        result = generate_sketch(data.text)
+
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 @app.get("/crimes")
 async def get_crimes():
