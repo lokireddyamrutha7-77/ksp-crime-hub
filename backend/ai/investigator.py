@@ -1,5 +1,9 @@
 import json
 import os
+<<<<<<< HEAD
+=======
+import pandas as pd
+>>>>>>> d7f32805e349d3c6ff17dd05884fe9ba338dbd42
 from groq import Groq
 from datetime import datetime
 from dotenv import load_dotenv
@@ -7,6 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
+<<<<<<< HEAD
 SAMPLE_CRIME_DATA = [
     {"district": "Mysuru", "crime_type": "Vehicle Theft", "date": "2026-06-15", "severity": "Medium", "location": "Mysuru Bus Stand"},
     {"district": "Mysuru", "crime_type": "Vehicle Theft", "date": "2026-06-14", "severity": "Medium", "location": "Mysuru City"},
@@ -19,6 +24,11 @@ SAMPLE_CRIME_DATA = [
     {"district": "Bengaluru", "crime_type": "Vehicle Theft", "date": "2026-06-08", "severity": "Low", "location": "Indiranagar"},
     {"district": "Belagavi", "crime_type": "Assault", "date": "2026-06-07", "severity": "Medium", "location": "Market Area"},
 ]
+=======
+df = pd.read_csv("data/crimes.csv")
+
+REAL_CRIME_DATA = df.head(100).to_dict(orient="records")
+>>>>>>> d7f32805e349d3c6ff17dd05884fe9ba338dbd42
 
 def investigate(query: str) -> dict:
     now = datetime.now().strftime("%d-%m-%Y %H:%M")
@@ -26,7 +36,11 @@ def investigate(query: str) -> dict:
 You are an AI Crime Intelligence Officer for Karnataka Police.
 
 You have access to this crime database:
+<<<<<<< HEAD
 {json.dumps(SAMPLE_CRIME_DATA, indent=2)}
+=======
+{json.dumps(REAL_CRIME_DATA, indent=2)}
+>>>>>>> d7f32805e349d3c6ff17dd05884fe9ba338dbd42
 
 An officer has asked this question:
 "{query}"

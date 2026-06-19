@@ -2,6 +2,10 @@ import pandas as pd
 import random
 from datetime import datetime, timedelta
 import json
+<<<<<<< HEAD
+=======
+from karnataka_locations import KARNATAKA_LOCATIONS
+>>>>>>> d7f32805e349d3c6ff17dd05884fe9ba338dbd42
 
 districts = [
     "Bengaluru Urban", "Bengaluru Rural", "Mysuru", "Mangaluru",
@@ -58,6 +62,7 @@ severities = ["low", "medium", "high"]
 severity_weights = [0.5, 0.35, 0.15]
 statuses = ["open", "closed", "investigating"]
 
+<<<<<<< HEAD
 records = []
 start_date = datetime(2023, 1, 1)
 
@@ -70,16 +75,84 @@ for i in range(5000):
 
     records.append({
         "district": district,
+=======
+
+records = []
+start_date = datetime(2023, 1, 1)
+
+for i in range(10000):
+
+    district = random.choice(districts)
+
+    city = random.choice(
+        list(KARNATAKA_LOCATIONS[district].keys())
+    )
+
+    police_station = random.choice(
+        KARNATAKA_LOCATIONS[district][city]
+    )
+    
+
+    if police_station == "Rural PS":
+        police_station = f"{city} Rural PS"
+
+    elif police_station == "Town PS":
+        police_station = f"{city} Town PS"
+
+    elif police_station == "Traffic PS":
+        police_station = f"{city} Traffic PS"
+
+
+
+    base_lat, base_lng = district_coords[district]
+
+    lat = base_lat + random.uniform(-0.3, 0.3)
+    lng = base_lng + random.uniform(-0.3, 0.3)
+
+    date = start_date + timedelta(
+        days=random.randint(0, 730)
+    )
+
+    records.append({
+        "district": district,
+        "city": city,
+        "police_station": police_station,
+>>>>>>> d7f32805e349d3c6ff17dd05884fe9ba338dbd42
         "crime_type": random.choice(crime_types),
         "latitude": round(lat, 6),
         "longitude": round(lng, 6),
         "date": date.strftime("%Y-%m-%d"),
+<<<<<<< HEAD
         "severity": random.choices(severities, severity_weights)[0],
+=======
+        "severity": random.choices(
+            severities,
+            severity_weights
+        )[0],
+>>>>>>> d7f32805e349d3c6ff17dd05884fe9ba338dbd42
         "status": random.choice(statuses)
     })
 
 df = pd.DataFrame(records)
+<<<<<<< HEAD
 df.to_csv("crimes.csv", index=False)
 print(f"Generated {len(records)} crime records successfully!")
 print(df["district"].value_counts().head(5))
+=======
+
+
+df.to_csv("data/crimes.csv", index=False)
+
+print(f"Generated {len(records)} crime records successfully!")
+print("\nTop Districts:")
+print(df["district"].value_counts().head(5))
+
+print("\nTop Cities:")
+print(df["city"].value_counts().head(5))
+
+print("\nTop Police Stations:")
+print(df["police_station"].value_counts().head(5))
+
+print("\nTop Crime Types:")
+>>>>>>> d7f32805e349d3c6ff17dd05884fe9ba338dbd42
 print(df["crime_type"].value_counts().head(5))
