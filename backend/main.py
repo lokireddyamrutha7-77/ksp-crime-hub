@@ -201,3 +201,19 @@ def get_risk_scores():
         score = round((count / max_count) * 100)
         result.append({"district": district, "crime_count": int(count), "risk_score": score})
     return result
+from ml.dialect_detector import detect_dialect as ml_detect_dialect
+
+@app.post("/dialect/detect")
+def dialect_detect(data: TextInput):
+    try:
+        result = ml_detect_dialect(data.text)
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
