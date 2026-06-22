@@ -5,15 +5,16 @@ import {
   Marker,
   Popup,
   useMapEvents,
-  useMap
+  
 } from "react-leaflet";
 
 import { useState } from "react";
 import "leaflet/dist/leaflet.css";
-
 import { districts } from "../data/districtSummary";
+
 import L from "leaflet";
 import "./Hotspot.css";
+
 const highRiskHotspot = new L.DivIcon({
   html: '<div class="hotspot-high"></div>',
   className: "",
@@ -47,23 +48,6 @@ const getRiskIcon = (risk) => {
       return lowRiskHotspot;
   }
 };
-function DoubleClickZoom({ position }) {
-  const map = useMap();
-
-  return (
-    <Marker
-      position={position}
-      eventHandlers={{
-        dblclick: () => {
-          map.setView(position, 11, {
-            animate: true,
-          });
-        },
-      }}
-      opacity={0}
-    />
-  );
-}
 
 function ZoomWatcher({ setZoom }) {
   useMapEvents({
@@ -77,6 +61,11 @@ function ZoomWatcher({ setZoom }) {
 
 function CrimeMapV2() {
     const [zoom, setZoom] = useState(7);
+const [districtData] = useState({});
+
+
+
+
   return (
     <MapContainer
     
@@ -90,7 +79,12 @@ function CrimeMapV2() {
   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 />
 
-      {districts.map((district) => (
+    {districts.map((district) => {
+  const realData =
+    districtData[district.district];
+
+  return (
+    
   <Marker
   key={district.district}
   position={[district.lat, district.lng]}
@@ -146,41 +140,41 @@ function CrimeMapV2() {
 
         <b>Total Cases</b>
         <br />
-        {district.cases}
+        {realData?.cases || district.cases}
 
         <br />
         <br />
 
         <b>Risk Level</b>
         <br />
-        {district.risk}
+        {realData?.risk || district.risk}
 
         <br />
         <br />
 
         <b>Top Crime</b>
         <br />
-        {district.topCrime} ({district.topCrimeCases} cases)
+        {realData?.topCrime || district.topCrime} ({realData?.topCrimeCases || district.topCrimeCases} cases)
       </>
     ) : (
       <>
         <b>Total Cases</b>
         <br />
-        {district.cases}
+        {realData?.cases || district.cases}
 
         <br />
         <br />
 
         <b>Risk Level</b>
         <br />
-        {district.risk}
+        {realData?.risk || district.risk}
 
         <br />
         <br />
 
         <b>Most Active Police Station</b>
         <br />
-        {district.topPoliceStation}
+        {realData?.topPoliceStation || district.topPoliceStation}
 
         <br />
         <br />
@@ -188,7 +182,7 @@ function CrimeMapV2() {
         <b>Stations Involved</b>
 
         <ul>
-          {district.stations.map((station, index) => (
+          {(realData?.stations || district.stations).map((station, index) => (
             <li key={index}>
               {station.name} ({station.cases})
             </li>
@@ -198,7 +192,7 @@ function CrimeMapV2() {
         <b>Crime Breakdown</b>
 
         <ul>
-          {district.crimeBreakdown.map((crime, index) => (
+          {(realData?.crimeBreakdown || district.crimeBreakdown).map((crime, index) => (
             <li key={index}>
               {crime.crime} ({crime.cases})
             </li>
@@ -208,7 +202,7 @@ function CrimeMapV2() {
         <b>Case Status</b>
 
         <ul>
-          {district.statusBreakdown.map((status, index) => (
+          {(realData?.statusBreakdown || district.statusBreakdown).map((status, index) => (
             <li key={index}>
               {status.status} ({status.count})
             </li>
@@ -220,7 +214,9 @@ function CrimeMapV2() {
   </div>
 </Popup>
   </Marker>
-))}
+    
+  );
+})}
     </MapContainer>
   );
 }

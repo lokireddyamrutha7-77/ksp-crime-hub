@@ -1,4 +1,15 @@
+import { useEffect, useState } from "react";
+import { getDistricts } from "../services/api";
+
 function DistrictPanel() {
+  const [districts, setDistricts] = useState([]);
+
+  useEffect(() => {
+    getDistricts().then((data) => {
+      setDistricts(data.districts);
+    });
+  }, []);
+
   return (
     <div
       style={{
@@ -10,15 +21,11 @@ function DistrictPanel() {
         marginTop: "20px",
       }}
     >
-      <h2>Mysuru</h2>
+      <h2>Karnataka Districts</h2>
 
-      <p>Total Cases: 265</p>
-
-      <p>Top Crime: Fraud</p>
-
-      <p>Risk Level: Medium</p>
-
-      <p>Police Stations: 4</p>
+      {districts.map((district) => (
+        <p key={district}>{district}</p>
+      ))}
     </div>
   );
 }
