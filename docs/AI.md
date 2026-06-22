@@ -82,3 +82,20 @@ motorcycle theft near Mysuru Bus Stand.
 - **STT:** Groq Whisper (whisper-large-v3)
 - **Framework:** FastAPI
 - **Language:** Python 3.13
+- ---
+
+## 10 Sample Questions for Judges
+
+### Crime Analysis Questions:
+1. "Which district has the most murders?"
+2. "Which crime type is most common in Bengaluru?"
+3. "Show theft trend in Mysuru"
+4. "Which districts are high risk for robbery?"
+5. "How many vehicle thefts happened in June?"
+
+### Pattern Detection Questions:
+6. "Which areas have most chain snatching cases?"
+7. "What time of day do most crimes happen?"
+8. "Which district has lowest crime rate?"
+9. "How many cases are still open?"
+10. "Which crime type increased most this month?"

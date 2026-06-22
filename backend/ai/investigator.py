@@ -15,36 +15,57 @@ REAL_CRIME_DATA = df.head(100).to_dict(orient="records")
 def investigate(query: str) -> dict:
     now = datetime.now().strftime("%d-%m-%Y %H:%M")
     prompt = f"""
-You are an AI Crime Intelligence Officer for Karnataka Police.
+You are an expert AI Crime Intelligence Analyst for Karnataka State Police (KSP).
+You have been given access to real crime data from Karnataka districts.
 
-You have access to this crime database:
+Your role:
+- Analyze crime patterns accurately
+- Give specific district names and numbers
+- Provide actionable intelligence to police officers
+- Always base answers on the provided data
+
+Crime Database (100 real records):
 {json.dumps(REAL_CRIME_DATA, indent=2)}
 
-An officer has asked this question:
+Officer's Question:
 "{query}"
 
-Analyze the data and answer the question completely.
+Instructions:
+1. Read the question carefully
+2. Search through ALL records in the database
+3. Count accurately - don't guess
+4. Give specific district names with numbers
+5. Make recommendations based on data
 
 Respond ONLY in this exact JSON format, no extra text, no markdown:
 
 {{
   "query": "<the original question>",
-  "answer": "<direct answer to the question>",
+  "answer": "<specific direct answer with numbers and district names>",
   "findings": [
-    "<finding 1>",
-    "<finding 2>",
-    "<finding 3>"
+    "<specific finding 1 with numbers>",
+    "<specific finding 2 with numbers>",
+    "<specific finding 3 with numbers>"
   ],
-  "total_cases": "<number of relevant cases found>",
+  "total_cases": "<exact number of relevant cases found>",
   "high_risk_districts": ["<district 1>", "<district 2>"],
-  "recommendation": "<one actionable recommendation for police>",
+  "recommendation": "<specific actionable recommendation for Karnataka Police>",
   "severity_level": "<Low / Medium / High>"
 }}
 """
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.3
+        messages=[
+            {
+                "role": "system",
+                "content": "You are an expert AI Crime Intelligence Analyst for Karnataka State Police. Always analyze data carefully and give accurate answers with specific numbers and district names."
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        temperature=0.2
     )
     response_text = response.choices[0].message.content.strip()
     if response_text.startswith("```"):
