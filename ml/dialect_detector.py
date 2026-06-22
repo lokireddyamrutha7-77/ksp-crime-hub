@@ -1,6 +1,5 @@
 import json
 import os
-import pandas as pd
 from groq import Groq
 from datetime import datetime
 from dotenv import load_dotenv
@@ -8,81 +7,91 @@ from dotenv import load_dotenv
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-df = pd.read_csv(os.path.join(BASE_DIR, "data", "crimes.csv"))
-REAL_CRIME_DATA = df.head(100).to_dict(orient="records")
-
-def investigate(query: str) -> dict:
+def detect_dialect(text: str) -> dict:
     now = datetime.now().strftime("%d-%m-%Y %H:%M")
+
     prompt = f"""
-You are an AI Crime Intelligence Officer for Karnataka Police.
+You are an AI language detection assistant for Karnataka Police.
 
-You have access to this crime database:
-{json.dumps(REAL_CRIME_DATA, indent=2)}
+Analyze this text and detect the language:
+"{text}"
 
-An officer has asked this question:
-"{query}"
+Karnataka languages you must detect:
+- Kannada
+- Tulu
+- Kodava
+- Urdu
+- Hindi-Kannada mix
+- English
 
-Analyze the data and answer the question completely.
+Then translate to English and extract crime information.
 
 Respond ONLY in this exact JSON format, no extra text, no markdown:
 
 {{
-  "query": "<the original question>",
-  "answer": "<direct answer to the question>",
-  "findings": [
-    "<finding 1>",
-    "<finding 2>",
-    "<finding 3>"
-  ],
-  "total_cases": "<number of relevant cases found>",
-  "high_risk_districts": ["<district 1>", "<district 2>"],
-  "recommendation": "<one actionable recommendation for police>",
-  "severity_level": "<Low / Medium / High>"
+  "original_text": "<original text>",
+  "detected_language": "<Kannada/Tulu/Kodava/Urdu/Hindi-Kannada/English>",
+  "confidence": "<High/Medium/Low>",
+  "translated_text": "<English translation>",
+  "crime_info": {{
+    "crime_type": "<type of crime if mentioned>",
+    "location": "<location if mentioned>",
+    "district": "<Karnataka district if mentioned>",
+    "time": "<time if mentioned>",
+    "suspect_description": "<any suspect details>",
+    "summary": "<one line summary in English>"
+  }}
 }}
 """
+
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3
     )
+
     response_text = response.choices[0].message.content.strip()
+
     if response_text.startswith("```"):
         response_text = response_text.split("```")[1]
         if response_text.startswith("json"):
             response_text = response_text[4:]
+
     data = json.loads(response_text)
-    findings_text = "\n".join([f"  • {f}" for f in data['findings']])
-    high_risk = ", ".join(data['high_risk_districts'])
+
     formatted_report = f"""
 ╔══════════════════════════════════════════════════╗
         KARNATAKA STATE POLICE DEPARTMENT
-          AI CRIME INVESTIGATOR REPORT
+          DIALECT DETECTION REPORT
 ╚══════════════════════════════════════════════════╝
 
 DATE & TIME        : {now}
-QUERY              : {data['query']}
+DETECTED LANGUAGE  : {data['detected_language']}
+CONFIDENCE         : {data['confidence']}
 
 ──────────────────────────────────────────────────
-                    ANSWER
-──────────────────────────────────────────────────
-{data['answer']}
+ORIGINAL TEXT ({data['detected_language']}):
+"{data['original_text']}"
+
+ENGLISH TRANSLATION:
+"{data['translated_text']}"
 
 ──────────────────────────────────────────────────
-                KEY FINDINGS
+              EXTRACTED CRIME INFO
 ──────────────────────────────────────────────────
-{findings_text}
+Crime Type         : {data['crime_info']['crime_type']}
+Location           : {data['crime_info']['location']}
+District           : {data['crime_info']['district']}
+Time               : {data['crime_info']['time']}
+Suspect            : {data['crime_info']['suspect_description']}
 
+SUMMARY: {data['crime_info']['summary']}
 ──────────────────────────────────────────────────
-TOTAL CASES FOUND  : {data['total_cases']}
-HIGH RISK DISTRICTS: {high_risk}
-SEVERITY LEVEL     : {data['severity_level']}
-
-──────────────────────────────────────────────────
-RECOMMENDATION:
-{data['recommendation']}
-──────────────────────────────────────────────────
-PROCESSED BY       : KSP AI Investigator System
+PROCESSED BY       : KSP Dialect AI System
 ══════════════════════════════════════════════════
 """
-    return {"structured_data": data, "formatted_report": formatted_report}
+
+    return {
+        "structured_data": data,
+        "formatted_report": formatted_report
+    }

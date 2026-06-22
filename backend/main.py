@@ -18,6 +18,17 @@ from ai.dialect_ai import process_dialect
 from ai.investigator import investigate
 from ai.sketch_ai import generate_sketch
 from ml.hotspot import detect_hotspots
+from pydantic import BaseModel
+from backend.ai.whisper_ai import transcribe_audio
+
+load_dotenv("backend/.env")
+
+from backend.ai.fir_generator import generate_fir
+from backend.ai.dialect_ai import process_dialect
+from backend.ai.investigator import investigate
+from backend.ai.sketch_ai import generate_sketch
+
+
 
 app = FastAPI(title="KSP Crime Intelligence Hub")
 
@@ -111,6 +122,21 @@ async def voice_to_fir(audio: UploadFile = File(...)):
     except Exception as e:
         return {"success": False, "error": str(e)}
 
+@app.post("/transcribe-audio")
+async def transcribe_audio_route(file: UploadFile = File(...)):
+    import tempfile
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as temp_file:
+        temp_file.write(await file.read())
+        temp_path = temp_file.name
+
+    text = transcribe_audio(temp_path)
+
+    return {
+        "success": True,
+        "transcribed_text": text
+    }
+
 @app.get("/crimes")
 async def get_crimes():
     async with httpx.AsyncClient() as client:
@@ -175,3 +201,19 @@ def get_risk_scores():
         score = round((count / max_count) * 100)
         result.append({"district": district, "crime_count": int(count), "risk_score": score})
     return result
+from ml.dialect_detector import detect_dialect as ml_detect_dialect
+
+@app.post("/dialect/detect")
+def dialect_detect(data: TextInput):
+    try:
+        result = ml_detect_dialect(data.text)
+        return {
+            "success": True,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
