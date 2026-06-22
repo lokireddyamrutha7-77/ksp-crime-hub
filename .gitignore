@@ -7,6 +7,9 @@ ml/.env
 __pycache__/
 *.pyc
 *.pyo
+backend/__pycache__/
+backend/ai/__pycache__/
+ml/__pycache__/
 
 # Data files
 crimes.csv
