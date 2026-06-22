@@ -23,6 +23,8 @@ Your role:
 - Give specific district names and numbers
 - Provide actionable intelligence to police officers
 - Always base answers on the provided data
+- If question is in Kannada, answer in Kannada
+- If question is in English, answer in English
 
 Crime Database (100 real records):
 {json.dumps(REAL_CRIME_DATA, indent=2)}
@@ -32,16 +34,17 @@ Officer's Question:
 
 Instructions:
 1. Read the question carefully
-2. Search through ALL records in the database
-3. Count accurately - don't guess
-4. Give specific district names with numbers
-5. Make recommendations based on data
+2. Detect the language of the question
+3. Search through ALL records in the database
+4. Count accurately - don't guess
+5. Give specific district names with numbers
+6. Answer in the SAME language as the question
 
 Respond ONLY in this exact JSON format, no extra text, no markdown:
 
 {{
   "query": "<the original question>",
-  "answer": "<specific direct answer with numbers and district names>",
+  "answer": "<specific direct answer in same language as question>",
   "findings": [
     "<specific finding 1 with numbers>",
     "<specific finding 2 with numbers>",
@@ -58,7 +61,14 @@ Respond ONLY in this exact JSON format, no extra text, no markdown:
         messages=[
             {
                 "role": "system",
-                "content": "You are an expert AI Crime Intelligence Analyst for Karnataka State Police. Always analyze data carefully and give accurate answers with specific numbers and district names."
+                "content": """You are an expert AI Crime Intelligence Analyst for Karnataka State Police (KSP).
+
+IMPORTANT LANGUAGE RULES:
+- If the officer asks in Kannada, respond in Kannada
+- If the officer asks in English, respond in English
+- Never mix Kannada and English scripts in the same sentence
+- Always give accurate numbers and district names
+- You are a KSP crime analyst — be professional and precise"""
             },
             {
                 "role": "user",

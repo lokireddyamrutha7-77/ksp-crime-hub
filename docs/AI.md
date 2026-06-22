@@ -99,3 +99,18 @@ motorcycle theft near Mysuru Bus Stand.
 8. "Which district has lowest crime rate?"
 9. "How many cases are still open?"
 10. "Which crime type increased most this month?"
+ ---
+
+## Kannada Demo Script (3 questions for judges)
+
+### Demo Question 1:
+ಯಾವ ಜಿಲ್ಲೆಯಲ್ಲಿ ಅತಿ ಹೆಚ್ಚು ಕಳ್ಳತನ ಆಗಿದೆ?
+(Which district has most theft?)
+
+### Demo Question 2:
+ಬೆಂಗಳೂರಿನಲ್ಲಿ ಯಾವ ಅಪರಾಧ ಹೆಚ್ಚಾಗಿ ನಡೆಯುತ್ತದೆ?
+(Which crime is most common in Bengaluru?)
+
+### Demo Question 3:
+ವಾಹನ ಕಳ್ಳತನ ಎಲ್ಲಿ ಹೆಚ್ಚು ನಡೆಯುತ್�ದೆ?
+(Where do most vehicle thefts happen?)
