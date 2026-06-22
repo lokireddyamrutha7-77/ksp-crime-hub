@@ -69,8 +69,8 @@ const [districtData] = useState({});
   return (
     <MapContainer
     
-      center={[15.3173, 75.7139]}
-      zoom={7}
+      center={[13.2, 76.3]}
+zoom={8}
       style={{ height: "600px", width: "100%" }}
     >
         <ZoomWatcher setZoom={setZoom} />

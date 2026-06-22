@@ -1,4 +1,3 @@
-
 const API_BASE = "http://127.0.0.1:8000";
 
 export const getStats = async () => {
@@ -20,5 +19,17 @@ export const getDistrictCrime = async (district) => {
 
 export const getDistricts = async () => {
   const res = await fetch(`${API_BASE}/districts`);
+  return res.json();
+};
+
+// ADD THESE
+
+export const getSummary = async () => {
+  const res = await fetch(`${API_BASE}/stats/summary`);
+  return res.json();
+};
+
+export const getTrend = async () => {
+  const res = await fetch(`${API_BASE}/stats/trend`);
   return res.json();
 };

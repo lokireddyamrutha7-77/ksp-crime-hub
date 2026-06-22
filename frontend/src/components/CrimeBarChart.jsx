@@ -6,13 +6,25 @@ import {
   Tooltip
 } from "recharts";
 
-const data = [
-  { crime: "Fraud", cases: 120 },
-  { crime: "Theft", cases: 90 },
-  { crime: "Cybercrime", cases: 60 }
-];
+import { useEffect, useState } from "react";
+import { getSummary } from "../services/api";
 
 function CrimeBarChart() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    getSummary().then((res) => {
+      const chartData = Object.entries(
+        res.top_crime_types
+      ).map(([crime, cases]) => ({
+        crime,
+        cases
+      }));
+
+      setData(chartData);
+    });
+  }, []);
+
   return (
     <BarChart width={400} height={250} data={data}>
       <XAxis dataKey="crime" />
