@@ -9,6 +9,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from backend.network import get_criminals, get_network_graph
 
+
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
@@ -19,15 +20,12 @@ from ai.dialect_ai import process_dialect
 from ai.investigator import investigate
 from ai.sketch_ai import generate_sketch
 from ml.hotspot import detect_hotspots
-from pydantic import BaseModel
+
 from backend.ai.whisper_ai import transcribe_audio
+from ml.dialect_detector import detect_dialect as ml_detect_dialect
 
 load_dotenv("backend/.env")
 
-from backend.ai.fir_generator import generate_fir
-from backend.ai.dialect_ai import process_dialect
-from backend.ai.investigator import investigate
-from backend.ai.sketch_ai import generate_sketch
 
 
 
@@ -194,19 +192,42 @@ async def get_crimes_by_district(district: str):
 @app.get("/crimes/filter")
 async def filter_crimes(
     crime_type: str = None,
-    district: str = None
+    district: str = None,
+    severity: str = None,
+    start_date: str = None,
+    end_date: str = None
 ):
-    query = f"{SUPABASE_URL}/rest/v1/crimes?select=*"
+    try:
+        query = f"{SUPABASE_URL}/rest/v1/crimes?select=*"
 
-    if crime_type:
-        query += f"&crime_type=eq.{crime_type}"
+        if crime_type:
+            query += f"&crime_type=eq.{crime_type}"
 
-    if district:
-        query += f"&district=eq.{district}"
+        if district:
+            query += f"&district=eq.{district}"
 
-    async with httpx.AsyncClient() as client:
-        response = await client.get(query, headers=HEADERS)
-        return response.json()
+        if severity:
+            query += f"&severity=eq.{severity}"
+
+        if start_date:
+            query += f"&date=gte.{start_date}"
+
+        if end_date:
+            query += f"&date=lte.{end_date}"
+
+        async with httpx.AsyncClient() as client:
+            response = await client.get(query, headers=HEADERS)
+
+            return {
+                "success": True,
+                "data": response.json()
+            }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 @app.get("/districts")
 async def get_districts():
@@ -249,14 +270,23 @@ def get_hotspots():
     
 @app.get("/stats")
 def get_stats():
-    df = pd.read_csv("data/crimes.csv")
-    return {
-        "total_crimes": len(df),
-        "crime_types": df["crime_type"].value_counts().to_dict(),
-        "districts": df["district"].value_counts().to_dict(),
-        "severity": df["severity"].value_counts().to_dict(),
-        "status": df["status"].value_counts().to_dict()
-    }
+    try:
+        df = pd.read_csv("data/crimes.csv")
+
+        return {
+            "success": True,
+            "total_crimes": len(df),
+            "crime_types": df["crime_type"].value_counts().to_dict(),
+            "districts": df["district"].value_counts().to_dict(),
+            "severity": df["severity"].value_counts().to_dict(),
+            "status": df["status"].value_counts().to_dict()
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 @app.get("/stats/summary")
 def get_stats_summary():
@@ -265,12 +295,14 @@ def get_stats_summary():
 
         top_districts = df["district"].value_counts().head(5).to_dict()
         top_crime_types = df["crime_type"].value_counts().head(5).to_dict()
+        severity_breakdown = df["severity"].value_counts().to_dict()
 
         return {
             "success": True,
             "total_crimes": len(df),
             "top_districts": top_districts,
-            "top_crime_types": top_crime_types
+            "top_crime_types": top_crime_types,
+            "severity_breakdown": severity_breakdown
         }
 
     except Exception as e:
@@ -299,28 +331,37 @@ def get_crime_trend():
             "error": str(e)
         }
     
-@app.get("/risk")
+@app.get("/risk/all")
 def get_risk_scores():
     try:
         df = pd.read_csv("data/crimes.csv")
 
-        district_counts = df.groupby("district").size()
-        max_count = district_counts.max()
+        severity_weights = {
+            "low": 1,
+            "medium": 2,
+            "high": 3
+        }
+
+        df["weight"] = df["severity"].str.lower().map(severity_weights)
+
+        district_scores = df.groupby("district")["weight"].sum()
+
+        max_score = district_scores.max()
 
         result = []
 
-        for district, count in district_counts.items():
-            score = round((count / max_count) * 100)
+        for district, score in district_scores.items():
+            risk_score = round((score / max_score) * 100)
 
             result.append({
                 "district": district,
-                "crime_count": int(count),
-                "risk_score": score
+                "weighted_score": int(score),
+                "risk_score": risk_score
             })
 
         return {
             "success": True,
-            "data": result
+            "data": sorted(result, key=lambda x: x["risk_score"], reverse=True)
         }
 
     except Exception as e:
@@ -348,5 +389,5 @@ def get_network_criminals():
     return get_criminals()
 
 @app.get("/network/graph")
-def network_graph():
+def get_network_graph_api():
     return get_network_graph()

@@ -2,20 +2,32 @@ import pandas as pd
 
 def calculate_risk_scores(df):
 
-    district_counts = df.groupby("district").size()
+    severity_weights = {
+        "low": 1,
+        "medium": 2,
+        "high": 3
+    }
 
-    max_count = district_counts.max()
+    df["weight"] = df["severity"].str.lower().map(severity_weights)
+
+    district_scores = df.groupby("district")["weight"].sum()
+
+    max_score = district_scores.max()
 
     result = []
 
-    for district, count in district_counts.items():
+    for district, score in district_scores.items():
 
-        score = int((count / max_count) * 100)
+        risk_score = int((score / max_score) * 100)
 
         result.append({
             "district": district,
-            "crime_count": int(count),
-            "risk_score": score
+            "weighted_score": int(score),
+            "risk_score": risk_score
         })
 
-    return result
+    return sorted(
+        result,
+        key=lambda x: x["risk_score"],
+        reverse=True
+    )
