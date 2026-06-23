@@ -114,3 +114,25 @@ motorcycle theft near Mysuru Bus Stand.
 ### Demo Question 3:
 ವಾಹನ ಕಳ್ಳತನ ಎಲ್ಲಿ ಹೆಚ್ಚು ನಡೆಯುತ್�ದೆ?
 (Where do most vehicle thefts happen?)
+---
+
+## 5 Language Demo Sentences (for judges)
+
+### 1. Kannada:
+ಇಲ್ಲಿ ಬೈಕ್ ಕಳ್ಳತನ ಆಯಿತು, ಮೈಸೂರು ಬಸ್ ನಿಲ್ದಾಣದ ಬಳಿ
+(Bike theft happened here, near Mysuru Bus Stand)
+
+### 2. Tulu:
+Ikala oru bike kalatanad, police ku report maadond
+(Today one bike was stolen, reporting to police)
+
+### 3. Urdu:
+یہاں ایک موٹرسائیکل چوری ہوئی ہے، مجرم فرار ہو گیا
+(A motorcycle was stolen here, criminal escaped)
+
+### 4. Hindi-Kannada mix:
+Yahan ek bike chori hui, Mysuru mein raat ko
+(A bike was stolen here, in Mysuru at night)
+
+### 5. English:
+Bike theft reported near Mysuru Bus Stand at 9 PM
