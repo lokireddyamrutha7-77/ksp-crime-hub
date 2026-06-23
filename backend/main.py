@@ -7,7 +7,8 @@ import sys
 import tempfile
 import pandas as pd
 from dotenv import load_dotenv
-from backend.network import get_criminals, get_network_graph
+from network import get_criminals, get_network_graph
+
 
 
 sys.path.append(os.path.dirname(__file__))
