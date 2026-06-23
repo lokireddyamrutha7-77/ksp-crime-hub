@@ -137,31 +137,115 @@ async def transcribe_audio_route(file: UploadFile = File(...)):
         "transcribed_text": text
     }
 
-@app.get("/crimes")
-async def get_crimes():
-    async with httpx.AsyncClient() as client:
-        response = await client.get(f"{SUPABASE_URL}/rest/v1/crimes?select=*", headers=HEADERS)
-        return response.json()
+from fastapi import Query
 
+@app.get("/crimes")
+async def get_crimes(
+    page: int = Query(1, ge=1),
+    limit: int = Query(100, ge=1, le=500)
+):
+    try:
+        start = (page - 1) * limit
+        end = start + limit - 1
+
+        async with httpx.AsyncClient() as client:
+            response = await client.get(
+                f"{SUPABASE_URL}/rest/v1/crimes?select=*",
+                headers={
+                    **HEADERS,
+                    "Range": f"{start}-{end}"
+                }
+            )
+
+            return {
+                "success": True,
+                "page": page,
+                "limit": limit,
+                "data": response.json()
+            }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
 @app.get("/crimes/district/{district}")
 async def get_crimes_by_district(district: str):
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.get(
+                f"{SUPABASE_URL}/rest/v1/crimes?district=eq.{district}&select=*",
+                headers=HEADERS
+            )
+
+            return {
+                "success": True,
+                "data": response.json()
+            }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.get("/crimes/filter")
+async def filter_crimes(
+    crime_type: str = None,
+    district: str = None
+):
+    query = f"{SUPABASE_URL}/rest/v1/crimes?select=*"
+
+    if crime_type:
+        query += f"&crime_type=eq.{crime_type}"
+
+    if district:
+        query += f"&district=eq.{district}"
+
     async with httpx.AsyncClient() as client:
-        response = await client.get(f"{SUPABASE_URL}/rest/v1/crimes?district=eq.{district}&select=*", headers=HEADERS)
+        response = await client.get(query, headers=HEADERS)
         return response.json()
 
 @app.get("/districts")
 async def get_districts():
-    async with httpx.AsyncClient() as client:
-        response = await client.get(f"{SUPABASE_URL}/rest/v1/crimes?select=district", headers=HEADERS)
-        data = response.json()
-        districts = list(set([r["district"] for r in data]))
-        return {"districts": sorted(districts)}
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.get(
+                f"{SUPABASE_URL}/rest/v1/crimes?select=district",
+                headers=HEADERS
+            )
+
+            data = response.json()
+            districts = list(set([r["district"] for r in data]))
+
+            return {
+                "success": True,
+                "districts": sorted(districts)
+            }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 @app.get("/hotspots")
 def get_hotspots():
-    df = pd.read_csv("data/crimes.csv")
-    return detect_hotspots(df)
+    try:
+        df = pd.read_csv("data/crimes.csv")
 
+        return {
+            "success": True,
+            "data": detect_hotspots(df)
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
 @app.get("/stats")
 def get_stats():
     df = pd.read_csv("data/crimes.csv")
@@ -175,33 +259,74 @@ def get_stats():
 
 @app.get("/stats/summary")
 def get_stats_summary():
-    df = pd.read_csv("data/crimes.csv")
-    top_districts = df["district"].value_counts().head(5).to_dict()
-    top_crime_types = df["crime_type"].value_counts().head(5).to_dict()
-    return {
-        "total_crimes": len(df),
-        "top_districts": top_districts,
-        "top_crime_types": top_crime_types
-    }
+    try:
+        df = pd.read_csv("data/crimes.csv")
+
+        top_districts = df["district"].value_counts().head(5).to_dict()
+        top_crime_types = df["crime_type"].value_counts().head(5).to_dict()
+
+        return {
+            "success": True,
+            "total_crimes": len(df),
+            "top_districts": top_districts,
+            "top_crime_types": top_crime_types
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 @app.get("/stats/trend")
 def get_crime_trend():
-    df = pd.read_csv("data/crimes.csv")
-    df["date"] = pd.to_datetime(df["date"])
-    trend = df.groupby(df["date"].dt.month).size().to_dict()
-    return trend
+    try:
+        df = pd.read_csv("data/crimes.csv")
 
+        df["date"] = pd.to_datetime(df["date"])
+
+        trend = df.groupby(df["date"].dt.month).size().to_dict()
+
+        return {
+            "success": True,
+            "data": trend
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
 @app.get("/risk")
 def get_risk_scores():
-    df = pd.read_csv("data/crimes.csv")
-    district_counts = df.groupby("district").size()
-    max_count = district_counts.max()
-    result = []
-    for district, count in district_counts.items():
-        score = round((count / max_count) * 100)
-        result.append({"district": district, "crime_count": int(count), "risk_score": score})
-    return result
-from ml.dialect_detector import detect_dialect as ml_detect_dialect
+    try:
+        df = pd.read_csv("data/crimes.csv")
+
+        district_counts = df.groupby("district").size()
+        max_count = district_counts.max()
+
+        result = []
+
+        for district, count in district_counts.items():
+            score = round((count / max_count) * 100)
+
+            result.append({
+                "district": district,
+                "crime_count": int(count),
+                "risk_score": score
+            })
+
+        return {
+            "success": True,
+            "data": result
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 @app.post("/dialect/detect")
 def dialect_detect(data: TextInput):
