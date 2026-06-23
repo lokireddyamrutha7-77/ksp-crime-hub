@@ -7,6 +7,7 @@ import sys
 import tempfile
 import pandas as pd
 from dotenv import load_dotenv
+from backend.network import get_criminals
 
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -342,3 +343,6 @@ def dialect_detect(data: TextInput):
             "success": False,
             "error": str(e)
         }
+@app.get("/network/criminals")
+def get_network_criminals():
+    return get_criminals()
