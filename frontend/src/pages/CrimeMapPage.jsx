@@ -1,8 +1,14 @@
+import { useState } from "react";
 import CrimeMapV2 from "../components/CrimeMapV2";
 import DistrictPanel from "../components/DistrictPanel";
 import StatCards from "../components/StatCards";
+import CrimeFilter from "../components/CrimeFilter";
+import SeverityFilter from "../components/SeverityFilter";
 
 function CrimeMapPage() {
+  const [crimeType, setCrimeType] = useState("All");
+  const [severity, setSeverity] = useState("all");
+
   return (
     <div style={{ padding: "20px" }}>
       <h1>Crime Intelligence Map</h1>
@@ -12,6 +18,26 @@ function CrimeMapPage() {
       <div
         style={{
           display: "flex",
+          gap: "20px",
+          marginBottom: "20px",
+          flexWrap: "wrap"
+        }}
+      >
+        <CrimeFilter
+          selected={crimeType}
+          setSelected={setCrimeType}
+        />
+
+        <SeverityFilter
+          severity={severity}
+          setSeverity={setSeverity}
+        />
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
           gap: "20px",
           alignItems: "flex-start"
         }}
