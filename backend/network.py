@@ -21,3 +21,26 @@ def get_criminals():
         """)
 
         return [dict(record) for record in result]
+    
+def get_network_graph():
+    with driver.session() as session:
+
+        nodes_result = session.run("""
+            MATCH (c:Criminal)
+            RETURN c.name AS id,
+                   c.name AS name
+        """)
+
+        links_result = session.run("""
+            MATCH (a:Criminal)-[:ASSOCIATED_WITH]->(b:Criminal)
+            RETURN a.name AS source,
+                   b.name AS target
+        """)
+
+        nodes = [dict(record) for record in nodes_result]
+        links = [dict(record) for record in links_result]
+
+        return {
+            "nodes": nodes,
+            "links": links
+        }
