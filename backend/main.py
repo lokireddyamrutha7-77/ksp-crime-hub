@@ -6,8 +6,11 @@ import os
 import sys
 import tempfile
 import pandas as pd
+from backend.criminal_routes import router as criminal_router
 from dotenv import load_dotenv
 from backend.network import get_criminals, get_network_graph
+from backend.network import get_gangs
+from backend.network import get_criminal_details
 
 
 sys.path.append(os.path.dirname(__file__))
@@ -30,6 +33,8 @@ load_dotenv("backend/.env")
 
 
 app = FastAPI(title="KSP Crime Intelligence Hub")
+
+app.include_router(criminal_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -391,3 +396,35 @@ def get_network_criminals():
 @app.get("/network/graph")
 def get_network_graph_api():
     return get_network_graph()
+
+@app.get("/network/gangs")
+def network_gangs():
+    try:
+        gangs = get_gangs()
+
+        return {
+            "success": True,
+            "data": gangs
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
+@app.get("/network/criminal/{criminal_id}")
+def criminal_details(criminal_id: str):
+    try:
+        criminal = get_criminal_details(criminal_id)
+
+        return {
+            "success": True,
+            "data": criminal
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
