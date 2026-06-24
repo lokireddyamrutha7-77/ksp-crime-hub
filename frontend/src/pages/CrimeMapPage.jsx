@@ -10,7 +10,13 @@ function CrimeMapPage() {
   const [severity, setSeverity] = useState("all");
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div
+  style={{
+    padding: "20px",
+    background: "#f1f5f9",
+    minHeight: "100vh",
+  }}
+>
       <h1>Crime Intelligence Map</h1>
 
       <StatCards />
