@@ -14,7 +14,9 @@ const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
   const svg = d3.select(svgRef.current);
-  svg.selectAll("*").remove();
+svg.selectAll("*").remove();
+
+const zoomLayer = svg.append("g");
 
   const nodes = [
     {
@@ -22,6 +24,8 @@ const [searchTerm, setSearchTerm] = useState("");
       x: 500,
       y: 250,
       type: "suspect",
+       gang: "Alpha",
+       repeatOffender: true,
       district: "Mysuru",
       crime: "Cyber Fraud",
       risk: "High",
@@ -54,6 +58,8 @@ const [searchTerm, setSearchTerm] = useState("");
       x: 500,
       y: 420,
       type: "suspect",
+      gang: "Beta",
+      repeatOffender: false,
       district: "Mandya",
       crime: "Drug Trafficking",
       risk: "Medium",
@@ -109,27 +115,32 @@ if (suspectMatch) {
   const getNode = (id) =>
     nodes.find((n) => n.id === id);
 
-  const getColor = (type) => {
-    switch (type) {
-      case "suspect":
-        return "#0ea5e9";
+  const getColor = (node) => {
+    if (node.repeatOffender) {
+  return "#dc2626";
+}
+  if (node.type === "suspect") {
+    if (node.gang === "Alpha") return "#3b82f6";
+    if (node.gang === "Beta") return "#8b5cf6";
+  }
 
-      case "district":
-        return "#64748b";
+  switch (node.type) {
+    case "district":
+      return "#64748b";
 
-      case "crime":
-        return "#f59e0b";
+    case "crime":
+      return "#f59e0b";
 
-      case "evidence":
-        return "#10b981";
+    case "evidence":
+      return "#10b981";
 
-      default:
-        return "#94a3b8";
-    }
-  };
+    default:
+      return "#94a3b8";
+  }
+};
 
-  svg
-    .selectAll("line")
+  zoomLayer
+  .selectAll("line")
     .data(links)
     .enter()
     .append("line")
@@ -140,7 +151,7 @@ if (suspectMatch) {
     .attr("stroke", "#475569")
     .attr("stroke-width", 2);
 
-  const nodeGroup = svg
+  const nodeGroup = zoomLayer
     .selectAll(".node")
     .data(nodes)
     .enter()
@@ -152,10 +163,35 @@ if (suspectMatch) {
 
   nodeGroup
     .append("circle")
-    .attr("r", d =>
-  d.type === "suspect" ? 34 : 26
+    .attr("stroke", (d) =>
+  searchTerm &&
+  d.id.toLowerCase().includes(
+    searchTerm.toLowerCase()
+  )
+    ? "#facc15"
+    : "none"
 )
-    .attr("fill", (d) => getColor(d.type))
+.attr("stroke-width", (d) =>
+  searchTerm &&
+  d.id.toLowerCase().includes(
+    searchTerm.toLowerCase()
+  )
+    ? 8
+    : 0
+)
+    .attr("r", d =>
+  searchTerm &&
+  d.id.toLowerCase().includes(
+    searchTerm.toLowerCase()
+  )
+    ? 55
+    : d.repeatOffender
+    ? 42
+    : d.type === "suspect"
+    ? 34
+    : 26
+)
+    .attr("fill", (d) => getColor(d))
     .style("cursor", "pointer");
 
   nodeGroup
@@ -174,6 +210,16 @@ if (suspectMatch) {
       setSelectedNode(d);
     }
   });
+  const zoom = d3.zoom()
+  .scaleExtent([0.5, 3])
+  .on("zoom", (event) => {
+    zoomLayer.attr(
+      "transform",
+      event.transform
+    );
+  });
+
+svg.call(zoom);
 }, [searchTerm]);
   const cardStyle = {
   background: "white",
@@ -246,24 +292,29 @@ if (suspectMatch) {
       }}
     >
       <div style={cardStyle}>
-        <h3>Total Suspects</h3>
-        <h2>52</h2>
-      </div>
+  <h3>Total Gangs</h3>
+  <h2>4</h2>
+</div>
 
-      <div style={cardStyle}>
-        <h3>Active Networks</h3>
-        <h2>14</h2>
-      </div>
+<div style={cardStyle}>
+  <h3>Total Members</h3>
+  <h2>52</h2>
+</div>
 
-      <div style={cardStyle}>
-        <h3>High Risk Links</h3>
-        <h2>7</h2>
-      </div>
+<div style={cardStyle}>
+  <h3>Repeat Offenders</h3>
+  <h2>11</h2>
+</div>
 
-      <div style={cardStyle}>
-        <h3>Evidence Sources</h3>
-        <h2>126</h2>
-      </div>
+<div style={cardStyle}>
+  <h3>Active Investigations</h3>
+  <h2>18</h2>
+</div>
+
+<div style={cardStyle}>
+  <h3>Districts Covered</h3>
+  <h2>12</h2>
+</div>
     </div>
 
     {/* Graph + Right Panel */}
@@ -346,7 +397,9 @@ if (suspectMatch) {
         <p>
           <b>Crime:</b> {selectedNode?.crime}
         </p>
-
+<p>
+  <b>Gang:</b> {selectedNode?.gang || "N/A"}
+</p>
         <p>
           <b>Risk Level:</b>
 
@@ -366,14 +419,53 @@ if (suspectMatch) {
             {selectedNode?.risk}
           </span>
         </p>
+<div style={{ marginTop: "15px" }}>
+  <b>Risk Score:</b> 82 / 100
 
+  <div
+    style={{
+      width: "100%",
+      height: "12px",
+      background: "#e2e8f0",
+      borderRadius: "10px",
+      marginTop: "8px",
+    }}
+  >
+    <div
+      style={{
+        width: "82%",
+        height: "12px",
+        background: "#dc2626",
+        borderRadius: "10px",
+      }}
+    />
+  </div>
+</div>
         <p>
           <b>Connections:</b>{" "}
           {selectedNode?.connections}
         </p>
-
+<p>
+  <b>Repeat Offender:</b>{" "}
+  {selectedNode?.repeatOffender ? "Yes" : "No"}
+</p>
+<p>
+  <b>Associates:</b> 12
+</p>
         <p>
-          <b>Status:</b> Active Investigation
+          <div
+  style={{
+    display: "inline-block",
+    background: "#dcfce7",
+    color: "#166534",
+    padding: "4px 10px",
+    borderRadius: "20px",
+    fontSize: "12px",
+    fontWeight: "600",
+  }}
+>
+  Active Investigation
+</div>
         </p>
 
         <p>
@@ -389,50 +481,54 @@ if (suspectMatch) {
         <p>🟠 Crime Type</p>
         <p>🟢 Evidence Source</p>
       </div>
-          {/* Investigation Timeline */}
+          
+    
+    {/* Investigation Timeline */}
 
-    <div
-      style={{
-        marginTop: "25px",
-        background: "white",
-        padding: "20px",
-        borderRadius: "16px",
-        boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-      }}
-    >
-      <h2>Investigation Timeline</h2>
-
-      <div
-        style={{
-          marginTop: "20px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "12px",
-        }}
-      >
-        <div>
-          <b>21-Jun-2026</b> — Cyber Fraud linked to Suspect A
-        </div>
-
-        <div>
-          <b>20-Jun-2026</b> — Phone Records Added
-        </div>
-
-        <div>
-          <b>18-Jun-2026</b> — New FIR Registered
-        </div>
-
-        <div>
-          <b>15-Jun-2026</b> — Bank Transaction Flagged
-        </div>
-
-        <div>
-          <b>12-Jun-2026</b> — Suspect B added to watchlist
-        </div>
-      </div>
+<div
+  style={{
+    marginTop: "25px",
+    background: "white",
+    padding: "20px",
+    borderRadius: "16px",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+  }}
+>
+  
+  
+    <div style={{ marginBottom: "20px" }}>
+      <h4 style={{ color: "#dc2626" }}>
+        FIR Registered
+      </h4>
+      <p>21-Jun-2026</p>
     </div>
+
+    <div style={{ marginBottom: "20px" }}>
+      <h4 style={{ color: "#f59e0b" }}>
+        Evidence Linked
+      </h4>
+      <p>22-Jun-2026</p>
+    </div>
+
+    <div style={{ marginBottom: "20px" }}>
+      <h4 style={{ color: "#10b981" }}>
+        Suspect Identified
+      </h4>
+      <p>24-Jun-2026</p>
+    </div>
+
+    <div>
+      <h4 style={{ color: "#0ea5e9" }}>
+        Investigation Active
+      </h4>
+      <p>25-Jun-2026</p>
     </div>
   </div>
+
+</div>
+</div>
+
 );
+  
 }
 export default NetworkGraph;
