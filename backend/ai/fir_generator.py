@@ -3,7 +3,7 @@ import os
 from groq import Groq
 from dotenv import load_dotenv
 
-load_dotenv("backend/.env")
+load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def generate_fir(speech_text: str) -> dict:
@@ -30,6 +30,14 @@ BNS Section Reference:
 - Extortion: BNS Section 308
 - Drug Trafficking: NDPS Act Section 20
 - Eve Teasing: BNS Section 79
+- Hit and Run: BNS Section 106 + MV Act Section 134
+- Drunk Driving: MV Act Section 185
+- Rioting: BNS Section 191
+- Arson: BNS Section 238
+- Stalking: BNS Section 78
+- Cheating Online: IT Act Section 66C
+- Identity Theft: IT Act Section 66C
+- Attempt to Murder: BNS Section 109
 
 BNS Section Descriptions:
 - BNS 303: Theft — punishment up to 3 years imprisonment
@@ -42,6 +50,16 @@ BNS Section Descriptions:
 - BNS 305: Burglary — punishment up to 3 years imprisonment
 - BNS 308: Extortion — punishment up to 3 years imprisonment
 - BNS 79: Eve Teasing — punishment up to 1 year imprisonment
+- BNS 106: Causing death by negligence — punishment up to 5 years
+- BNS 191: Rioting — punishment up to 2 years imprisonment
+- BNS 238: Arson — punishment up to 7 years imprisonment
+- BNS 78: Stalking — punishment up to 3 years imprisonment
+- BNS 109: Attempt to Murder — punishment up to life imprisonment
+- IT Act 66: Cybercrime — punishment up to 3 years imprisonment
+- IT Act 66C: Identity Theft — punishment up to 3 years imprisonment
+- MV Act 134: Hit and Run — punishment up to 2 years imprisonment
+- MV Act 185: Drunk Driving — punishment up to 6 months imprisonment
+- NDPS Act 20: Drug Trafficking — punishment up to 10 years imprisonment
 
 Extract all details and generate a structured FIR.
 Respond ONLY in this exact JSON format, no extra text, no markdown:
@@ -59,7 +77,7 @@ Respond ONLY in this exact JSON format, no extra text, no markdown:
   "evidence": "<any evidence mentioned>",
   "bns_sections": [
     {{
-      "section": "<BNS Section number>",
+      "section": "<exact BNS/IPC/IT Act/MV Act Section number>",
       "description": "<crime name>",
       "punishment": "<punishment details>",
       "confidence": "<High/Medium/Low>"
@@ -76,16 +94,18 @@ Respond ONLY in this exact JSON format, no extra text, no markdown:
         messages=[
             {
                 "role": "system",
-                "content": """You are an expert Karnataka Police FIR generator with deep knowledge of 
-Bharatiya Nyaya Sanhita (BNS) 2023. Always suggest the most accurate BNS sections 
-for each crime type. Include punishment details for each section."""
+                "content": """You are an expert Karnataka Police FIR generator with deep knowledge of
+Bharatiya Nyaya Sanhita (BNS) 2023, IT Act, Motor Vehicles Act and NDPS Act.
+Always suggest the most accurate legal sections for each crime type.
+Include punishment details for each section.
+Never use wrong sections — accuracy is critical for legal purposes."""
             },
             {
                 "role": "user",
                 "content": prompt
             }
         ],
-        temperature=0.2
+        temperature=0.1
     )
 
     response_text = response.choices[0].message.content.strip()

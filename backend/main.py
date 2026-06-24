@@ -8,9 +8,14 @@ import tempfile
 import pandas as pd
 from backend.criminal_routes import router as criminal_router
 from dotenv import load_dotenv
+
 from backend.network import get_criminals, get_network_graph
 from backend.network import get_gangs
 from backend.network import get_criminal_details
+
+from network import get_criminals, get_network_graph
+
+
 
 
 sys.path.append(os.path.dirname(__file__))
