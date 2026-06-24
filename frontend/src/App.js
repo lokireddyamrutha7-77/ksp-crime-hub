@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import CrimeMapPage from "./pages/CrimeMapPage";
 import FIRGenerator from "./components/FIRGenerator";
 import NetworkGraphPage from "./pages/NetworkGraphPage";
+import RiskDashboard from "./pages/RiskDashboard";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("map");
@@ -135,6 +136,13 @@ function App() {
           🕸️ Network Analysis
         </button>
 
+        <button
+          style={menuButtonStyle("risk")}
+          onClick={() => setCurrentPage("risk")}
+        >
+          📈 Risk Prediction
+        </button>
+
         <div
           style={{
             marginTop: "40px",
@@ -169,13 +177,22 @@ function App() {
       <div
         style={{
           flex: 1,
+          minWidth: 0,
           overflowY: "auto",
         }}
       >
         {currentPage === "map" && <CrimeMapPage />}
-        {currentPage === "fir" && <FIRGenerator />}
+
+        {currentPage === "fir" && (
+          <FIRGenerator />
+        )}
+
         {currentPage === "network" && (
           <NetworkGraphPage />
+        )}
+
+        {currentPage === "risk" && (
+          <RiskDashboard />
         )}
       </div>
     </div>
