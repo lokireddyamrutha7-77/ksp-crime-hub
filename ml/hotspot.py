@@ -19,12 +19,25 @@ def detect_hotspots(df):
 
     for cluster_id, group in grouped:
 
+        
+        crime_count = len(group)
+
+        if crime_count >= 10000:
+            risk_level = "VERY HIGH"
+        elif crime_count >= 5000:
+            risk_level = "HIGH"
+        elif crime_count >= 2000:
+            risk_level = "MEDIUM"
+        else:
+            risk_level = "LOW"
+
         hotspots.append({
-            "cluster_id": int(cluster_id),
-            "crime_count": len(group),
-            "center_lat": float(group['latitude'].mean()),
-            "center_lon": float(group['longitude'].mean())
+             "cluster_id": int(cluster_id),
+             "crime_count": crime_count,
+             "risk_level": risk_level,
+             "center_lat": float(group['latitude'].mean()),
+             "center_lon": float(group['longitude'].mean())
         })
 
     return hotspots
-  
+     
