@@ -13,7 +13,6 @@ from backend.network import get_criminals, get_network_graph
 from backend.network import get_gangs
 from backend.network import get_criminal_details
 
-from network import get_criminals, get_network_graph
 
 
 
@@ -21,13 +20,18 @@ from network import get_criminals, get_network_graph
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-load_dotenv()
+load_dotenv("backend/.env")
 
 from ai.fir_generator import generate_fir
 from ai.dialect_ai import process_dialect
 from ai.investigator import investigate
 from ai.sketch_ai import generate_sketch
 from ml.hotspot import detect_hotspots
+
+from ml.crime_predictor import (
+    predict_crime_count,
+    get_hotspot_predictions
+)
 
 from backend.ai.whisper_ai import transcribe_audio
 from ml.dialect_detector import detect_dialect as ml_detect_dialect
@@ -429,6 +433,54 @@ def criminal_details(criminal_id: str):
         }
 
     except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
+@app.get("/predict/district")
+def predict_district(
+    district: str,
+    crime_type: str,
+    month: int
+):
+    try:
+
+        prediction = predict_crime_count(
+            district,
+            crime_type,
+            month
+        )
+
+        return {
+            "success": True,
+            "district": district,
+            "crime_type": crime_type,
+            "month": month,
+            "predicted_crime_count": round(prediction, 2)
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
+@app.get("/predict/hotspot")
+def predict_hotspot():
+
+    try:
+
+        hotspots = get_hotspot_predictions()
+
+        return {
+            "success": True,
+            "forecast_month": "Next Month",
+            "predicted_hotspots": hotspots
+        }
+
+    except Exception as e:
+
         return {
             "success": False,
             "error": str(e)

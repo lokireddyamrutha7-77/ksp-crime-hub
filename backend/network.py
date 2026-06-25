@@ -1,7 +1,7 @@
 from neo4j import GraphDatabase
 import pandas as pd
 
-URI = "neo4j://localhost:7687"
+URI = "bolt://localhost:7687"
 USERNAME = "neo4j"
 PASSWORD = "Ksp@12345"
 
@@ -33,10 +33,13 @@ def get_network_graph():
         """)
 
         links_result = session.run("""
-            MATCH (a:Criminal)-[:ASSOCIATED_WITH]->(b:Criminal)
-            RETURN a.name AS source,
-                   b.name AS target
-        """)
+    MATCH (a:Criminal)-[:BELONGS_TO]->(g:Gang)<-[:BELONGS_TO]-(b:Criminal)
+    WHERE a.criminal_id <> b.criminal_id
+
+    RETURN
+        a.name AS source,
+        b.name AS target
+""")
 
         nodes = [dict(record) for record in nodes_result]
         links = [dict(record) for record in links_result]
