@@ -3,6 +3,7 @@ import CrimeMapPage from "./pages/CrimeMapPage";
 import FIRGenerator from "./components/FIRGenerator";
 import NetworkGraphPage from "./pages/NetworkGraphPage";
 import RiskDashboard from "./pages/RiskDashboard";
+import AlertCenter from "./pages/AlertCenter";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("map");
@@ -142,6 +143,34 @@ function App() {
         >
           📈 Risk Prediction
         </button>
+        <button
+  onClick={() => setCurrentPage("alerts")}
+  style={{
+    ...menuButtonStyle("alerts"),
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  }}
+>
+  <span>🚨 Alerts</span>
+
+  <span
+    style={{
+      background: "#dc2626",
+      color: "white",
+      borderRadius: "50%",
+      minWidth: "22px",
+      height: "22px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "12px",
+      fontWeight: "700",
+    }}
+  >
+    3
+  </span>
+</button>
 
         <div
           style={{
@@ -194,6 +223,10 @@ function App() {
         {currentPage === "risk" && (
           <RiskDashboard />
         )}
+
+        {currentPage === "alerts" && (
+  <AlertCenter />
+)}
       </div>
     </div>
   );

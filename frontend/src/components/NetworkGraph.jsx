@@ -150,59 +150,119 @@ if (suspectMatch) {
     .attr("y2", (d) => getNode(d[1]).y)
     .attr("stroke", "#475569")
     .attr("stroke-width", 2);
+    zoomLayer
+  .selectAll(".lightning")
+  .data(links)
+  .enter()
+  .append("text")
+  .attr(
+    "x",
+    (d) => (getNode(d[0]).x + getNode(d[1]).x) / 2
+  )
+  .attr(
+    "y",
+    (d) => (getNode(d[0]).y + getNode(d[1]).y) / 2
+  )
+  .text("⚡")
+  .attr("text-anchor", "middle")
+  .attr("dominant-baseline", "middle")
+  .style("font-size", "22px")
+  .style("fill", "#facc15")
+  .style(
+    "filter",
+    "drop-shadow(0px 0px 8px #facc15)"
+  );
 
   const nodeGroup = zoomLayer
     .selectAll(".node")
     .data(nodes)
     .enter()
     .append("g")
+    
     .attr(
       "transform",
       (d) => `translate(${d.x},${d.y})`
     );
+    // Outer Glow Ring
+nodeGroup
+  .append("circle")
+  .attr("r", (d) =>
+    d.repeatOffender
+      ? 50
+      : d.type === "suspect"
+      ? 42
+      : 34
+  )
+  .attr("fill", "none")
+  .attr("stroke", (d) => getColor(d))
+  .attr("stroke-width", 2)
+  .attr("opacity", 0.35)
+  .style(
+    "filter",
+    (d) => `drop-shadow(0px 0px 10px ${getColor(d)})`
+  );
 
   nodeGroup
-    .append("circle")
-    .attr("stroke", (d) =>
-  searchTerm &&
-  d.id.toLowerCase().includes(
-    searchTerm.toLowerCase()
+  .append("circle")
+  .attr("stroke", (d) =>
+    searchTerm &&
+    d.id.toLowerCase().includes(searchTerm.toLowerCase())
+      ? "#facc15"
+      : getColor(d)
   )
-    ? "#facc15"
-    : "none"
-)
-.attr("stroke-width", (d) =>
-  searchTerm &&
-  d.id.toLowerCase().includes(
-    searchTerm.toLowerCase()
+  .attr("stroke-width", (d) =>
+    searchTerm &&
+    d.id.toLowerCase().includes(searchTerm.toLowerCase())
+      ? 8
+      : 4
   )
-    ? 8
-    : 0
-)
-    .attr("r", d =>
-  searchTerm &&
-  d.id.toLowerCase().includes(
-    searchTerm.toLowerCase()
+  .attr("r", d =>
+    searchTerm &&
+    d.id.toLowerCase().includes(searchTerm.toLowerCase())
+      ? 55
+      : d.repeatOffender
+      ? 42
+      : d.type === "suspect"
+      ? 34
+      : 26
   )
-    ? 55
-    : d.repeatOffender
-    ? 42
-    : d.type === "suspect"
-    ? 34
-    : 26
-)
-    .attr("fill", (d) => getColor(d))
-    .style("cursor", "pointer");
+  .attr("fill", (d) => getColor(d))
+  .style(
+    "filter",
+    (d) => `drop-shadow(0px 0px 12px ${getColor(d)})`
+  )
+  .style("cursor", "pointer");
+nodeGroup
+  .append("text")
+  .text((d) => {
+    switch (d.type) {
+      case "suspect":
+        return "👤";
 
+      case "crime":
+        return "⚖️";
+
+      case "evidence":
+        return "📱";
+
+      case "district":
+        return "📍";
+
+      default:
+        return "●";
+    }
+  })
+  .attr("text-anchor", "middle")
+  .attr("dominant-baseline", "middle")
+  .style("font-size", "24px")
+  .style("pointer-events", "none");
   nodeGroup
     .append("text")
     .text((d) => d.id)
-    .attr("x", 35)
+    .attr("x", 45)
     .attr("y", 5)
     .style("fill", "white")
-    .style("font-size", d =>
-  d.type === "suspect" ? "16px" : "13px"
-)
+   .style("font-size", "15px")
     .style("font-weight", "600");
 
   nodeGroup.on("click", (event, d) => {
@@ -346,7 +406,7 @@ svg.call(zoom);
           width="900"
           height="650"
           style={{
-            background: "#0f172a",
+            background:  "#062c21",
             borderRadius: "12px",
             border: "1px solid #e2e8f0",
           }}

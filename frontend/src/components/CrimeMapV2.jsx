@@ -62,7 +62,22 @@ function ZoomWatcher({ setZoom }) {
 function CrimeMapV2() {
     const [zoom, setZoom] = useState(7);
 const [districtData] = useState({});
-
+const alertMarkers = [
+  {
+    district: "Bengaluru",
+    lat: 12.9716,
+    lng: 77.5946,
+    alert: "Crime Spike",
+    severity: "Critical",
+  },
+  {
+    district: "Mysuru",
+    lat: 12.2958,
+    lng: 76.6394,
+    alert: "Vehicle Theft",
+    severity: "Warning",
+  },
+];
 
 
 
@@ -217,6 +232,39 @@ zoom={8}
     
   );
 })}
+{alertMarkers.map((alert) => (
+  <Marker
+    key={alert.district + "-alert"}
+    position={[alert.lat, alert.lng]}
+    icon={
+      new L.DivIcon({
+        html: `
+          <div style="
+            width:24px;
+            height:24px;
+            background:#dc2626;
+            border-radius:50%;
+            border:4px solid white;
+            box-shadow:0 0 15px red;
+            animation:pulse 1.2s infinite;
+          "></div>
+        `,
+        className: "",
+        iconSize: [24, 24],
+      })
+    }
+  >
+    <Popup>
+      <h3>🚨 {alert.alert}</h3>
+
+      <b>District:</b> {alert.district}
+
+      <br />
+
+      <b>Severity:</b> {alert.severity}
+    </Popup>
+  </Marker>
+))}
     </MapContainer>
   );
 }
