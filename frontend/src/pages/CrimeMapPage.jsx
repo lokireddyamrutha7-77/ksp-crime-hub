@@ -41,19 +41,26 @@ function CrimeMapPage() {
       </div>
 
       <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "20px",
-          alignItems: "flex-start"
-        }}
-      >
-        <div style={{ flex: 1 }}>
-          <CrimeMapV2 />
-        </div>
+  style={{
+    display: "grid",
+    gridTemplateColumns: "minmax(700px, 1fr) 320px",
+    gap: "20px",
+    alignItems: "start",
+  }}
+>
+  <div
+    style={{
+      width: "100%",
+    }}
+  >
+    <CrimeMapV2
+      severity={severity}
+      crimeType={crimeType}
+    />
+  </div>
 
-        <DistrictPanel />
-      </div>
+  <DistrictPanel />
+</div>
 
       {/* Charts will be enabled when backend is connected */}
 
