@@ -34,6 +34,11 @@ from ml.crime_predictor import (
 )
 
 from backend.ai.whisper_ai import transcribe_audio
+from ml.spike_detector import (
+    get_spike_alerts,
+    get_emerging_hotspots,
+    get_crime_patterns,
+)
 from ml.dialect_detector import detect_dialect as ml_detect_dialect
 
 load_dotenv("backend/.env")
@@ -485,3 +490,36 @@ def predict_hotspot():
             "success": False,
             "error": str(e)
         }
+    
+@app.get("/alerts/spikes")
+def alert_spikes():
+
+    alerts = get_spike_alerts()
+
+    return {
+        "success": True,
+        "total_alerts": len(alerts),
+        "alerts": alerts
+    }
+
+@app.get("/alerts/emerging")
+def alert_emerging():
+
+    hotspots = get_emerging_hotspots()
+
+    return {
+        "success": True,
+        "total_hotspots": len(hotspots),
+        "emerging_hotspots": hotspots,
+    }
+
+@app.get("/alerts/patterns")
+def alert_patterns():
+
+    patterns = get_crime_patterns()
+
+    return {
+        "success": True,
+        "total_patterns": len(patterns),
+        "patterns": patterns
+    }
