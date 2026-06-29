@@ -1,4 +1,6 @@
 from fastapi import FastAPI, UploadFile, File
+import time
+from fastapi import Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import httpx
@@ -43,10 +45,21 @@ from ml.dialect_detector import detect_dialect as ml_detect_dialect
 
 load_dotenv("backend/.env")
 
-
-
-
 app = FastAPI(title="KSP Crime Intelligence Hub")
+
+@app.middleware("http")
+async def log_response_time(request: Request, call_next):
+    start_time = time.time()
+
+    response = await call_next(request)
+
+    process_time = time.time() - start_time
+
+    print(
+        f"{request.method} {request.url.path} completed in {process_time:.3f} seconds"
+    )
+
+    return response
 
 app.include_router(criminal_router)
 
