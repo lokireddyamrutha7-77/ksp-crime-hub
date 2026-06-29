@@ -25,3 +25,9 @@ env/
 
 # Node modules
 node_modules/
+
+ml/model.pkl
+ml/district_encoder.pkl
+ml/crime_encoder.pkl
+__pycache__/
+*.pyc
