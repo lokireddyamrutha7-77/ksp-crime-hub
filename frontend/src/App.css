@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+/* Hide scrollbar for AI chat */
+
+.chat-messages::-webkit-scrollbar {
+  width: 0px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Firefox */
+.chat-messages {
+  scrollbar-width: none;
+}

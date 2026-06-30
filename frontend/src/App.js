@@ -4,6 +4,7 @@ import FIRGenerator from "./components/FIRGenerator";
 import NetworkGraphPage from "./pages/NetworkGraphPage";
 import RiskDashboard from "./pages/RiskDashboard";
 import AlertCenter from "./pages/AlertCenter";
+import AIInvestigator from "./pages/AIInvestigator";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("map");
@@ -171,7 +172,27 @@ function App() {
     3
   </span>
 </button>
-
+<button
+  onClick={() => setCurrentPage("ai")}
+  style={{
+    width: "100%",
+    padding: "14px",
+    background:
+      currentPage === "ai"
+        ? "#0ea5e9"
+        : "transparent",
+    color: "white",
+    border: "none",
+    borderRadius: "10px",
+    textAlign: "left",
+    cursor: "pointer",
+    fontSize: "16px",
+    fontWeight: "600",
+    marginBottom: "12px",
+  }}
+>
+  🤖 AI Investigator
+</button>
         <div
           style={{
             marginTop: "40px",
@@ -227,6 +248,9 @@ function App() {
         {currentPage === "alerts" && (
   <AlertCenter />
 )}
+        {currentPage === "ai" && (
+          <AIInvestigator />
+        )}
       </div>
     </div>
   );
