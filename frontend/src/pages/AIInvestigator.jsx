@@ -3,27 +3,41 @@ import { useState, useEffect, useRef } from "react";
 function AIInvestigator() {
   const [question, setQuestion] = useState("");
   const [messages, setMessages] = useState([
-    {
-      sender: "ai",
-     text:
-"👮 Welcome Officer.\n\nI'm your AI CrimeZero AI.\n\nI can help with:\n• FIRs\n• Suspects\n• Crime Hotspots\n• District Statistics"
-    },
-  ]);
+  {
+    sender: "ai",
+    text:
+      "👮 Welcome Officer.\n\nI'm your AI CrimeZero Assistant.\n\nI can help with:\n• FIRs\n• Suspects\n• Crime Hotspots\n• District Statistics",
+  },
+]);
 
   const [loading, setLoading] = useState(false);
+  const [language, setLanguage] = useState("en");
   const messagesEndRef = useRef(null);
 useEffect(() => {
   messagesEndRef.current?.scrollIntoView({
     behavior: "smooth",
   });
 }, [messages, loading]);
-  const suggestions = [
-"Highest crime district",
-"Show cybercrime hotspots",
-"Top repeat offenders",
-"Pending FIR statistics",
-"Most wanted suspects"
+  const englishSuggestions = [
+  "Highest crime district",
+  "Show cybercrime hotspots",
+  "Top repeat offenders",
+  "Pending FIR statistics",
+  "Most wanted suspects",
 ];
+
+const kannadaSuggestions = [
+  "ಹೆಚ್ಚು ಅಪರಾಧಗಳ ಜಿಲ್ಲೆ",
+  "ಸೈಬರ್ ಅಪರಾಧ ಹಾಟ್‌ಸ್ಪಾಟ್‌ಗಳು",
+  "ಪುನರಾವರ್ತಿತ ಅಪರಾಧಿಗಳು",
+  "ಬಾಕಿ ಇರುವ FIR ಅಂಕಿಅಂಶಗಳು",
+  "ಅತೀ ಹೆಚ್ಚು ಬೇಕಾಗಿರುವ ಶಂಕಿತರು",
+];
+
+const suggestions =
+  language === "en"
+    ? englishSuggestions
+    : kannadaSuggestions;
 
   const sendMessage = (text) => {
     const userQuestion = text || question;
@@ -46,12 +60,16 @@ useEffect(() => {
       setLoading(false);
 
       let answer =
-"I couldn't find an exact answer. Try asking about theft, cybercrime, FIRs, repeat offenders, hotspots, or high-risk districts.";
+  language === "en"
+    ? "I couldn't find an exact answer. Try asking about theft, cybercrime, FIRs, repeat offenders, hotspots or high-risk districts."
+    : "ನಿಖರವಾದ ಉತ್ತರ ಸಿಗಲಿಲ್ಲ. ಕಳ್ಳತನ, ಸೈಬರ್ ಅಪರಾಧ, FIRಗಳು, ಹಾಟ್‌ಸ್ಪಾಟ್‌ಗಳು ಅಥವಾ ಹೆಚ್ಚಿನ ಅಪಾಯದ ಜಿಲ್ಲೆಗಳ ಬಗ್ಗೆ ಕೇಳಿ.";
 
-      if (userQuestion.includes("theft")) {
-        answer =
-          "Bengaluru currently reports the highest number of theft cases.";
-      }
+      if (userQuestion.toLowerCase().includes("theft")) {
+  answer =
+    language === "en"
+      ? "Bengaluru currently reports the highest number of theft cases."
+      : "ಬೆಂಗಳೂರುದಲ್ಲಿ ಪ್ರಸ್ತುತ ಅತ್ಯಧಿಕ ಕಳ್ಳತನ ಪ್ರಕರಣಗಳು ದಾಖಲಾಗಿವೆ.";
+}
 
       else if (userQuestion.includes("cyber")) {
         answer =
@@ -60,12 +78,16 @@ useEffect(() => {
 
       else if (userQuestion.includes("repeat")) {
         answer =
-          "There are currently 21 repeat offenders under observation.";
+  language === "en"
+    ? "There are currently 21 repeat offenders under observation."
+    : "ಪ್ರಸ್ತುತ 21 ಪುನರಾವರ್ತಿತ ಅಪರಾಧಿಗಳು ಮೇಲ್ವಿಚಾರಣೆಯಲ್ಲಿದ್ದಾರೆ.";
       }
 
       else if (userQuestion.includes("Pending")) {
-        answer =
-          "There are currently 126 pending FIRs across Karnataka.";
+       answer =
+  language === "en"
+    ? "There are currently 126 pending FIRs across Karnataka."
+    : "ಪ್ರಸ್ತುತ ಕರ್ನಾಟಕದಾದ್ಯಂತ 126 ಬಾಕಿ ಇರುವ FIRಗಳಿವೆ.";
       }
 
       else if (
@@ -74,7 +96,9 @@ useEffect(() => {
   userQuestion.toLowerCase().includes("highest")
 ) {
   answer =
-    "Based on current records, Bengaluru has the highest crime rate in Karnataka.";
+  language === "en"
+    ? "Based on current records, Bengaluru has the highest crime rate in Karnataka."
+    : "ಪ್ರಸ್ತುತ ದಾಖಲೆಗಳ ಪ್ರಕಾರ, ಕರ್ನಾಟಕದಲ್ಲಿ ಅತ್ಯಧಿಕ ಅಪರಾಧ ಪ್ರಮಾಣವು ಬೆಂಗಳೂರಿನಲ್ಲಿದೆ.";
 }
 
       setMessages((prev) => [
@@ -93,22 +117,74 @@ useEffect(() => {
     padding: "40px 30px 30px 30px",
         background: "#f1f5f9",
         minHeight: "100vh",
+        fontFamily:
+      language === "en"
+        ? "Arial, sans-serif"
+        : "'Noto Sans Kannada', sans-serif",
       }}
     >
-      <h1>🤖 AI Investigator</h1>
+      <h1>
+  {language === "en"
+    ? "🤖 AI Investigator"
+    : "🤖 AI ತನಿಖಾಧಿಕಾರಿ"}
+</h1>
 
-      
+{/* Language Toggle */}
 
-      <div
+<div
+  style={{
+    display: "flex",
+    justifyContent: "flex-end",
+    marginTop: "15px",
+    marginBottom: "20px",
+    gap: "10px",
+  }}
+>
+  <button
+    onClick={() => setLanguage("en")}
+    style={{
+      padding: "8px 18px",
+      borderRadius: "20px",
+      border: "none",
+      cursor: "pointer",
+      background:
+        language === "en" ? "#2563eb" : "#e5e7eb",
+      color:
+        language === "en" ? "white" : "black",
+    }}
+  >
+    🇬🇧 EN
+  </button>
+
+  <button
+    onClick={() => setLanguage("kn")}
+    style={{
+      padding: "8px 18px",
+      borderRadius: "20px",
+      border: "none",
+      cursor: "pointer",
+      background:
+        language === "kn" ? "#2563eb" : "#e5e7eb",
+      color:
+        language === "kn" ? "white" : "black",
+    }}
+  >
+    🇮🇳 ಕನ್ನಡ
+  </button>
+</div>
+
+{/* Suggested Questions */}
+
+<div
   style={{
     display: "flex",
     flexWrap: "wrap",
     gap: "10px",
-    marginTop: "15px",
     marginBottom: "25px",
   }}
 >
         {suggestions.map((item) => (
+            
           <button
           onMouseEnter={(e) => {
   e.target.style.background = "#2563eb";
@@ -155,32 +231,50 @@ onMouseLeave={(e) => {
   }}
 >
   <div>
-    <h3
-      style={{
-        margin: 0,
-        fontSize: "20px",
-      }}
-    >
-      🤖 AI Investigator
-    </h3>
+  <h3
+    style={{
+      margin: 0,
+      fontSize: "20px",
+    }}
+  >
+    {language === "en"
+      ? "🤖 AI Investigator"
+      : "🤖 AI ತನಿಖಾಧಿಕಾರಿ"}
+  </h3>
 
-    <span
-      style={{
-        color: "#16a34a",
-        fontSize: "14px",
-      }}
-    >
-      🟢 AI Ready
-    </span>
+  <div
+    style={{
+      color: "#16a34a",
+      fontSize: "14px",
+      marginTop: "4px",
+    }}
+  >
+    {language === "en"
+      ? "🟢 AI Ready"
+      : "🟢 AI ಸಿದ್ಧವಾಗಿದೆ"}
   </div>
 
+  <div
+    style={{
+      fontSize: "13px",
+      color: "#64748b",
+      marginTop: "4px",
+    }}
+  >
+    {language === "en"
+      ? "🌐 English Mode"
+      : "🌐 ಕನ್ನಡ ಮೋಡ್"}
+  </div>
+</div>
   <span
     style={{
       color: "#64748b",
       fontSize: "14px",
     }}
   >
-    Crime Intelligence Assistant
+    {language === "en"
+  ? "Crime Intelligence Assistant"
+  : "ಅಪರಾಧ ಗುಪ್ತಚರ ಸಹಾಯಕ"}
   </span>
 </div>
         <div
@@ -189,7 +283,7 @@ onMouseLeave={(e) => {
             
             flex: 1,
             overflowY: "auto",
-            overflowY: "auto",
+            
 scrollbarWidth: "none",
 msOverflowStyle: "none",
             padding: "25px",
@@ -258,7 +352,11 @@ msOverflowStyle: "none",
             onKeyDown={(e) => {
               if (e.key === "Enter") sendMessage();
             }}
-           placeholder="Ask anything about crimes, FIRs or suspects..."
+           placeholder={
+  language === "en"
+    ? "Ask anything about crimes, FIRs or suspects..."
+    : "ಅಪರಾಧಗಳು, FIRಗಳು ಅಥವಾ ಶಂಕಿತರ ಬಗ್ಗೆ ಕೇಳಿ..."
+}
             style={{
               flex: 1,
               padding: "15px",
