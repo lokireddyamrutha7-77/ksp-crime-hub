@@ -59,7 +59,11 @@ function ZoomWatcher({ setZoom }) {
   return null;
 }
 
-function CrimeMapV2() {
+function CrimeMapV2({
+  severity,
+  crimeType,
+}) {
+  console.log("Selected crime type:", crimeType);
     const [zoom, setZoom] = useState(7);
 const [districtData] = useState({});
 const alertMarkers = [
@@ -79,7 +83,20 @@ const alertMarkers = [
   },
 ];
 
+const filteredDistricts = districts.filter((district) => {
+  const severityMatch =
+    severity === "all" ||
+    district.risk.toLowerCase() === severity;
 
+  const crimeMatch =
+    crimeType === "All" ||
+    district.topCrime === crimeType ||
+    district.crimeBreakdown.some(
+      (crime) => crime.crime === crimeType
+    );
+
+  return severityMatch && crimeMatch;
+});
 
   return (
     <MapContainer
@@ -94,7 +111,7 @@ zoom={8}
   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 />
 
-    {districts.map((district) => {
+    {filteredDistricts.map((district) => {
   const realData =
     districtData[district.district];
 
@@ -237,22 +254,22 @@ zoom={8}
     key={alert.district + "-alert"}
     position={[alert.lat, alert.lng]}
     icon={
-      new L.DivIcon({
-        html: `
-          <div style="
-            width:24px;
-            height:24px;
-            background:#dc2626;
-            border-radius:50%;
-            border:4px solid white;
-            box-shadow:0 0 15px red;
-            animation:pulse 1.2s infinite;
-          "></div>
-        `,
-        className: "",
-        iconSize: [24, 24],
-      })
-    }
+  new L.DivIcon({
+    html: `
+      <div style="
+        width:8px;
+        height:8px;
+        background:#dc2626;
+        border-radius:50%;
+        border:2px solid white;
+        box-shadow:0 0 4px rgba(220,38,38,0.6);
+      "></div>
+    `,
+    className: "",
+    iconSize: [8, 8],
+    iconAnchor: [4, 4],
+  })
+}
   >
     <Popup>
       <h3>🚨 {alert.alert}</h3>
