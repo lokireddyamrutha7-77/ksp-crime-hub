@@ -5,6 +5,7 @@ import NetworkGraphPage from "./pages/NetworkGraphPage";
 import RiskDashboard from "./pages/RiskDashboard";
 import AlertCenter from "./pages/AlertCenter";
 import AIInvestigator from "./pages/AIInvestigator";
+import VoiceFIR from "./pages/VoiceFIR";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("map");
@@ -193,6 +194,27 @@ function App() {
 >
   🤖 AI Investigator
 </button>
+<button
+  onClick={() => setCurrentPage("voice")}
+  style={{
+    width: "100%",
+    padding: "14px",
+    background:
+      currentPage === "voice"
+        ? "#0ea5e9"
+        : "transparent",
+    color: "white",
+    border: "none",
+    borderRadius: "10px",
+    textAlign: "left",
+    cursor: "pointer",
+    fontSize: "16px",
+    fontWeight: "600",
+    marginBottom: "12px",
+  }}
+>
+  🎤 Voice FIR
+</button>
         <div
           style={{
             marginTop: "40px",
@@ -251,6 +273,9 @@ function App() {
         {currentPage === "ai" && (
           <AIInvestigator />
         )}
+        {currentPage === "voice" && (
+  <VoiceFIR />
+)}
       </div>
     </div>
   );
