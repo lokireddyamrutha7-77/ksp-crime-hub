@@ -26,7 +26,7 @@ load_dotenv("backend/.env")
 
 from ai.fir_generator import generate_fir
 from ai.dialect_ai import process_dialect
-from ai.investigator import investigate
+from ml.ai_investigator import investigate
 from ai.sketch_ai import generate_sketch
 from ml.hotspot import detect_hotspots
 
@@ -106,9 +106,17 @@ def detect_dialect(data: TextInput):
 def ai_investigator(data: TextInput):
     try:
         result = investigate(data.text)
-        return {"success": True, "structured_data": result["structured_data"], "formatted_report": result["formatted_report"]}
+        return {
+            "success": True,
+            "question": result["question"],
+            "answer": result["answer"]
+        }
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        return {
+            "success": False,
+            "error": str(e)
+        }
+    
 
 @app.post("/generate-sketch")
 def sketch_ai(data: TextInput):
@@ -536,3 +544,46 @@ def alert_patterns():
         "total_patterns": len(patterns),
         "patterns": patterns
     }
+
+class TranslateRequest(BaseModel):
+    text: str
+
+@app.post("/translate")
+async def translate_text(request: TranslateRequest):
+    from groq import Groq
+    import os
+    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+    
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[{
+            "role": "user",
+            "content": f"Translate this to English. Return only the translation, nothing else:\n{request.text}"
+        }],
+        temperature=0,
+        max_tokens=200
+    )
+    
+    translated = response.choices[0].message.content.strip()
+    return {
+        "original": request.text,
+        "translated": translated,
+        "success": True
+    }
+
+from ml.fir_generator import generate_fir
+
+class FIRRequest(BaseModel):
+    text: str
+
+@app.post("/fir/generate")
+async def fir_generate(request: FIRRequest):
+    try:
+        result = generate_fir(request.text)
+        return result
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+    
+class TranslateRequest(BaseModel):
+    text: str
+
