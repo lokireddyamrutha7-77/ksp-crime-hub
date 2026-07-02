@@ -7,12 +7,13 @@ import AlertCenter from "./pages/AlertCenter";
 import AIInvestigator from "./pages/AIInvestigator";
 import VoiceFIR from "./pages/VoiceFIR";
 import DialectAI from "./pages/DialectAI";
+import Home from "./pages/Home";
+
 function App() {
-  const [currentPage, setCurrentPage] = useState("map");
+  const [currentPage, setCurrentPage] = useState("home");
   const [sidebarWidth, setSidebarWidth] = useState(280);
   const [isDragging, setIsDragging] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!isDragging) return;
@@ -117,7 +118,12 @@ function App() {
         >
           🚔 KSP Crime Hub
         </h1>
-
+<button
+  style={menuButtonStyle("home")}
+  onClick={() => setCurrentPage("home")}
+>
+  🏠 Home
+</button>
         <button
           style={menuButtonStyle("map")}
           onClick={() => setCurrentPage("map")}
@@ -299,6 +305,9 @@ function App() {
 )}
 {currentPage === "dialect" && (
   <DialectAI />
+)}
+{currentPage === "home" && (
+  <Home setCurrentPage={setCurrentPage} />
 )}
       </div>
     </div>
