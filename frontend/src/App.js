@@ -6,7 +6,7 @@ import RiskDashboard from "./pages/RiskDashboard";
 import AlertCenter from "./pages/AlertCenter";
 import AIInvestigator from "./pages/AIInvestigator";
 import VoiceFIR from "./pages/VoiceFIR";
-
+import DialectAI from "./pages/DialectAI";
 function App() {
   const [currentPage, setCurrentPage] = useState("map");
   const [sidebarWidth, setSidebarWidth] = useState(280);
@@ -215,6 +215,27 @@ function App() {
 >
   🎤 Voice FIR
 </button>
+<button
+  onClick={() => setCurrentPage("dialect")}
+  style={{
+    width: "100%",
+    padding: "14px",
+    background:
+      currentPage === "dialect"
+        ? "#0ea5e9"
+        : "transparent",
+    color: "white",
+    border: "none",
+    borderRadius: "10px",
+    textAlign: "left",
+    cursor: "pointer",
+    fontSize: "16px",
+    fontWeight: "600",
+    marginBottom: "12px",
+  }}
+>
+  🌐 Dialect AI
+</button>
         <div
           style={{
             marginTop: "40px",
@@ -275,6 +296,9 @@ function App() {
         )}
         {currentPage === "voice" && (
   <VoiceFIR />
+)}
+{currentPage === "dialect" && (
+  <DialectAI />
 )}
       </div>
     </div>
