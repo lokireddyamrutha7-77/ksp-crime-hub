@@ -587,3 +587,29 @@ async def fir_generate(request: FIRRequest):
 class TranslateRequest(BaseModel):
     text: str
 
+@app.post("/dialect/voice")
+async def dialect_voice(audio: UploadFile = File(...)):
+    try:
+        from ai.whisper_test import transcribe_audio
+        
+        # Save audio temporarily
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
+            tmp.write(await audio.read())
+            tmp_path = tmp.name
+        
+        # Transcribe audio
+        transcribed_text = transcribe_audio(tmp_path)
+        os.unlink(tmp_path)
+        
+        # Detect dialect and extract crime info
+        from ml.dialect_detector import detect_dialect as process_dialect
+        result = process_dialect(transcribed_text)
+        
+        return {
+            "success": True,
+            "transcribed_text": transcribed_text,
+            "structured_data": result["structured_data"],
+            "formatted_report": result["formatted_report"]
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}

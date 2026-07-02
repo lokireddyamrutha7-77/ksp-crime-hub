@@ -57,7 +57,25 @@ Respond ONLY in this exact JSON format, no extra text, no markdown:
         if response_text.startswith("json"):
             response_text = response_text[4:]
 
-    data = json.loads(response_text)
+    try:
+        data = json.loads(response_text)
+    except json.JSONDecodeError:
+        return {
+            "structured_data": {
+                "detected_language": "Unknown",
+                "confidence": "Low",
+                "translated_text": text,
+                "crime_info": {
+                    "crime_type": "Unknown",
+                    "location": "Unknown",
+                    "district": "Unknown",
+                    "time": "Unknown",
+                    "suspect_description": "Unknown",
+                    "summary": "Could not process the input language"
+                }
+            },
+            "formatted_report": "Language could not be detected. Please try again in Kannada, Tulu, Kodava, Urdu or Hindi-Kannada."
+        }
 
     formatted_report = f"""
 ╔══════════════════════════════════════════════════╗
