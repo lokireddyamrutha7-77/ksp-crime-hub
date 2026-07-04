@@ -3,6 +3,7 @@ import time
 from fastapi import Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from fastapi import HTTPException
 import httpx
 import os
 import sys
@@ -14,8 +15,6 @@ from dotenv import load_dotenv
 from backend.network import get_criminals, get_network_graph
 from backend.network import get_gangs
 from backend.network import get_criminal_details
-
-
 
 
 
@@ -92,7 +91,7 @@ def create_fir_from_text(data: TextInput):
         fir = generate_fir(data.text)
         return {"success": True, "transcribed_text": data.text, "fir": fir}
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/detect-dialect")
 def detect_dialect(data: TextInput):
@@ -100,7 +99,7 @@ def detect_dialect(data: TextInput):
         result = process_dialect(data.text)
         return {"success": True, "structured_data": result["structured_data"], "formatted_report": result["formatted_report"]}
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/investigate")
 def ai_investigator(data: TextInput):
@@ -112,10 +111,7 @@ def ai_investigator(data: TextInput):
             "answer": result["answer"]
         }
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
     
 
 @app.post("/generate-sketch")
@@ -124,7 +120,7 @@ def sketch_ai(data: TextInput):
         result = generate_sketch(data.text)
         return {"success": True, "structured_data": result["structured_data"], "formatted_report": result["formatted_report"]}
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/fir/generate")
 def fir_generate(data: TextInput):
@@ -132,7 +128,7 @@ def fir_generate(data: TextInput):
         fir = generate_fir(data.text)
         return {"success": True, "transcribed_text": data.text, "fir": fir}
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/transcribe-voice")
 async def transcribe_voice(audio: UploadFile = File(...)):
@@ -145,7 +141,7 @@ async def transcribe_voice(audio: UploadFile = File(...)):
         os.unlink(tmp_path)
         return {"success": True, "transcribed_text": text}
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/voice-to-fir")
 async def voice_to_fir(audio: UploadFile = File(...)):
@@ -159,7 +155,7 @@ async def voice_to_fir(audio: UploadFile = File(...)):
         fir = generate_fir(transcribed_text)
         return {"success": True, "transcribed_text": transcribed_text, "fir": fir}
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/transcribe-audio")
 async def transcribe_audio_route(file: UploadFile = File(...)):
@@ -204,10 +200,7 @@ async def get_crimes(
             }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
     
 @app.get("/crimes/district/{district}")
 async def get_crimes_by_district(district: str):
@@ -224,11 +217,8 @@ async def get_crimes_by_district(district: str):
             }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
-
+        raise HTTPException(status_code=500, detail=str(e)) 
+    
 @app.get("/crimes/filter")
 async def filter_crimes(
     crime_type: str = None,
@@ -264,10 +254,7 @@ async def filter_crimes(
             }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+          raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/districts")
 async def get_districts():
@@ -287,10 +274,7 @@ async def get_districts():
             }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/hotspots")
 def get_hotspots():
@@ -303,10 +287,7 @@ def get_hotspots():
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
     
 @app.get("/stats")
 def get_stats():
@@ -323,10 +304,7 @@ def get_stats():
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/stats/summary")
 def get_stats_summary():
@@ -346,10 +324,7 @@ def get_stats_summary():
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/stats/trend")
 def get_crime_trend():
@@ -366,10 +341,7 @@ def get_crime_trend():
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
     
 @app.get("/risk/all")
 def get_risk_scores():
@@ -405,10 +377,7 @@ def get_risk_scores():
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/dialect/detect")
 def dialect_detect(data: TextInput):
@@ -420,10 +389,7 @@ def dialect_detect(data: TextInput):
             "formatted_report": result["formatted_report"]
         }
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
 @app.get("/network/criminals")
 def get_network_criminals():
     return get_criminals()
@@ -443,10 +409,7 @@ def network_gangs():
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+       raise HTTPException(status_code=500, detail=str(e))
     
 @app.get("/network/criminal/{criminal_id}")
 def criminal_details(criminal_id: str):
@@ -459,10 +422,7 @@ def criminal_details(criminal_id: str):
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
     
 @app.get("/predict/district")
 def predict_district(
@@ -487,10 +447,7 @@ def predict_district(
         }
 
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        raise HTTPException(status_code=500, detail=str(e))
     
 @app.get("/predict/hotspot")
 def predict_hotspot():
@@ -506,11 +463,7 @@ def predict_hotspot():
         }
 
     except Exception as e:
-
-        return {
-            "success": False,
-            "error": str(e)
-        }
+         raise HTTPException(status_code=500, detail=str(e))
     
 @app.get("/alerts/spikes")
 def alert_spikes():
@@ -582,7 +535,7 @@ async def fir_generate(request: FIRRequest):
         result = generate_fir(request.text)
         return result
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
     
 class TranslateRequest(BaseModel):
     text: str
@@ -612,4 +565,4 @@ async def dialect_voice(audio: UploadFile = File(...)):
             "formatted_report": result["formatted_report"]
         }
     except Exception as e:
-        return {"success": False, "error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
