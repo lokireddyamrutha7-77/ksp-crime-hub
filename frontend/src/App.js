@@ -8,6 +8,7 @@ import AIInvestigator from "./pages/AIInvestigator";
 import VoiceFIR from "./pages/VoiceFIR";
 import DialectAI from "./pages/DialectAI";
 import Home from "./pages/Home";
+import SketchWitness from "./pages/SketchWitness";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -242,6 +243,27 @@ function App() {
 >
   🌐 Dialect AI
 </button>
+<button
+  onClick={() => setCurrentPage("sketch")}
+  style={{
+    width: "100%",
+    padding: "14px",
+    background:
+      currentPage === "sketch"
+        ? "#0ea5e9"
+        : "transparent",
+    color: "white",
+    border: "none",
+    borderRadius: "10px",
+    textAlign: "left",
+    cursor: "pointer",
+    fontSize: "16px",
+    fontWeight: "600",
+    marginBottom: "12px",
+  }}
+>
+  🖼️ Sketch AI
+</button>
         <div
           style={{
             marginTop: "40px",
@@ -305,6 +327,9 @@ function App() {
 )}
 {currentPage === "dialect" && (
   <DialectAI />
+)}
+{currentPage === "sketch" && (
+  <SketchWitness />
 )}
 {currentPage === "home" && (
   <Home setCurrentPage={setCurrentPage} />
