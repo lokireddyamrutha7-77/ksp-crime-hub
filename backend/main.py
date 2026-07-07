@@ -9,12 +9,12 @@ import os
 import sys
 import tempfile
 import pandas as pd
-from backend.criminal_routes import router as criminal_router
+from criminal_routes import router as criminal_router
 from dotenv import load_dotenv
 
-from backend.network import get_criminals, get_network_graph
-from backend.network import get_gangs
-from backend.network import get_criminal_details
+from network import get_criminals, get_network_graph
+from network import get_gangs
+from network import get_criminal_details
 
 
 
@@ -34,7 +34,7 @@ from ml.crime_predictor import (
     get_hotspot_predictions
 )
 
-from backend.ai.whisper_ai import transcribe_audio
+from ai.whisper_ai import transcribe_audio
 from ml.spike_detector import (
     get_spike_alerts,
     get_emerging_hotspots,
