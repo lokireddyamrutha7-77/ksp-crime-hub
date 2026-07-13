@@ -1,9 +1,14 @@
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import pandas as pd
 
 
 def get_spike_alerts():
 
-    df = pd.read_csv("data/crimes.csv")
+    df = pd.read_csv(os.path.join(BASE_DIR, "data", "crimes.csv"))
 
     df["date"] = pd.to_datetime(df["date"])
 
@@ -80,7 +85,7 @@ def get_emerging_hotspots():
 
 def get_crime_patterns():
 
-    df = pd.read_csv("data/crimes.csv")
+    df = pd.read_csv(os.path.join(BASE_DIR, "data", "crimes.csv"))
 
     patterns = (
         df.groupby(

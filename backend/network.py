@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from neo4j import GraphDatabase
 import pandas as pd
 
@@ -96,7 +100,8 @@ def get_criminal_details(criminal_id):
 
         data = dict(record)
 
-        crimes_df = pd.read_csv("data/crimes.csv")
+        
+        crimes_df = pd.read_csv(os.path.join(BASE_DIR, "data", "crimes.csv"))
 
         criminal_crimes = crimes_df[
             crimes_df["criminal_id"] == criminal_id

@@ -275,7 +275,7 @@ async def get_districts():
 @app.get("/hotspots")
 def get_hotspots():
     try:
-        df = pd.read_csv("data/crimes.csv")
+        df = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "crimes.csv"))
 
         return {
             "success": True,
@@ -288,7 +288,7 @@ def get_hotspots():
 @app.get("/stats")
 def get_stats():
     try:
-        df = pd.read_csv("data/crimes.csv")
+        df = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "crimes.csv"))
 
         return {
             "success": True,
@@ -305,7 +305,7 @@ def get_stats():
 @app.get("/stats/summary")
 def get_stats_summary():
     try:
-        df = pd.read_csv("data/crimes.csv")
+        df = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "crimes.csv"))
 
         top_districts = df["district"].value_counts().head(5).to_dict()
         top_crime_types = df["crime_type"].value_counts().head(5).to_dict()
@@ -325,7 +325,7 @@ def get_stats_summary():
 @app.get("/stats/trend")
 def get_crime_trend():
     try:
-        df = pd.read_csv("data/crimes.csv")
+        df = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "crimes.csv"))
 
         df["date"] = pd.to_datetime(df["date"])
 
@@ -342,7 +342,7 @@ def get_crime_trend():
 @app.get("/risk/all")
 def get_risk_scores():
     try:
-        df = pd.read_csv("data/crimes.csv")
+        df = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "crimes.csv"))
 
         severity_weights = {
             "low": 1,

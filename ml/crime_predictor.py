@@ -3,6 +3,8 @@ import joblib
 
 from sklearn.preprocessing import LabelEncoder
 from xgboost import XGBRegressor
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 MODEL_PATH = "ml/model.pkl"
 DISTRICT_ENCODER_PATH = "ml/district_encoder.pkl"
@@ -11,7 +13,7 @@ CRIME_ENCODER_PATH = "ml/crime_encoder.pkl"
 
 def train_model():
 
-    df = pd.read_csv("data/crimes.csv")
+    df = pd.read_csv(os.path.join(BASE_DIR, "data", "crimes.csv"))
 
     df["date"] = pd.to_datetime(df["date"])
     df["month"] = df["date"].dt.month
@@ -101,7 +103,7 @@ def predict_crime_count(
 
 def get_hotspot_predictions():
 
-    df = pd.read_csv("data/crimes.csv")
+    df = pd.read_csv(os.path.join(BASE_DIR, "data", "crimes.csv"))
 
     districts = sorted(
         df["district"].unique()

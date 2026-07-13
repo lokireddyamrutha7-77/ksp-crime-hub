@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from fastapi import APIRouter
 from ml.criminal_profile import get_criminal_profile
 from ml.most_wanted import get_most_wanted

@@ -1,8 +1,10 @@
 import pandas as pd
 
 
-criminals_df = pd.read_csv("data/criminals.csv")
-crimes_df = pd.read_csv("data/crimes.csv")
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+criminals_df = pd.read_csv(os.path.join(BASE_DIR, "data", "criminals.csv"))
+crimes_df = pd.read_csv(os.path.join(BASE_DIR, "data", "crimes.csv"))
 
 
 def get_criminal_profile(criminal_id):

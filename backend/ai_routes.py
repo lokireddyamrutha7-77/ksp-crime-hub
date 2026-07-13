@@ -1,12 +1,13 @@
+
 from fastapi import APIRouter
 from groq import Groq
 
 router = APIRouter()
 
-client = Groq(
-    api_key="YOUR_GROQ_API_KEY"
-)
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 @router.post("/investigate")
 def investigate(data: dict):
 

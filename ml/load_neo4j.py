@@ -1,5 +1,7 @@
 import pandas as pd
 from neo4j import GraphDatabase
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 URI = "bolt://127.0.0.1:7687"
 USERNAME = "neo4j"
@@ -10,7 +12,8 @@ driver = GraphDatabase.driver(
     auth=(USERNAME, PASSWORD)
 )
 
-df = pd.read_csv("data/criminals.csv")
+
+df = pd.read_csv(os.path.join(BASE_DIR, "data", "criminals.csv"))
 
 with driver.session() as session:
 
