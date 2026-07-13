@@ -1,9 +1,12 @@
 from groq import Groq
 
 # Paste your Groq API key below
-client = Groq(
-    api_key="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"
-)
+import os
+from dotenv import load_dotenv
+from groq import Groq
+
+load_dotenv()
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 query = input("Ask a crime question: ")
 
