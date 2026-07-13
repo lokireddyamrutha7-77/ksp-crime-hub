@@ -9,31 +9,27 @@ import os
 import sys
 import tempfile
 import pandas as pd
-from criminal_routes import router as criminal_router
+from backend.criminal_routes import router as criminal_router
 from dotenv import load_dotenv
 
-from network import get_criminals, get_network_graph
-from network import get_gangs
-from network import get_criminal_details
-
-
+from backend.network import get_criminals, get_network_graph
+from backend.network import get_gangs
+from backend.network import get_criminal_details
 
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-load_dotenv("backend/.env")
+load_dotenv()
 
 from ai.fir_generator import generate_fir
 from ai.dialect_ai import process_dialect
 from ml.ai_investigator import investigate
 from ai.sketch_ai import generate_sketch
 from ml.hotspot import detect_hotspots
-
 from ml.crime_predictor import (
     predict_crime_count,
     get_hotspot_predictions
 )
-
 from ai.whisper_ai import transcribe_audio
 from ml.spike_detector import (
     get_spike_alerts,
@@ -42,7 +38,7 @@ from ml.spike_detector import (
 )
 from ml.dialect_detector import detect_dialect as ml_detect_dialect
 
-load_dotenv("backend/.env")
+load_dotenv()
 
 app = FastAPI(title="KSP Crime Intelligence Hub")
 
