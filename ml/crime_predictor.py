@@ -6,10 +6,19 @@ from xgboost import XGBRegressor
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-MODEL_PATH = "ml/model.pkl"
-DISTRICT_ENCODER_PATH = "ml/district_encoder.pkl"
-CRIME_ENCODER_PATH = "ml/crime_encoder.pkl"
+MODEL_PATH = os.path.join(BASE_DIR, "ml", "model.pkl")
 
+DISTRICT_ENCODER_PATH = os.path.join(
+    BASE_DIR,
+    "ml",
+    "district_encoder.pkl"
+)
+
+CRIME_ENCODER_PATH = os.path.join(
+    BASE_DIR,
+    "ml",
+    "crime_encoder.pkl"
+)
 
 def train_model():
 

@@ -18,6 +18,10 @@ def get_criminal_profile(criminal_id):
 
     criminal = criminal.iloc[0]
 
+    print("DEBUG START")
+    print(criminal.to_dict())
+    print("DEBUG END")
+
     crimes = crimes_df[
         crimes_df["criminal_id"] == criminal_id
     ]
@@ -72,7 +76,7 @@ def get_criminal_profile(criminal_id):
             criminal["name"],
 
         "age":
-            int(criminal["age"]),
+            0 if pd.isna(criminal["age"]) else int(criminal["age"]),
 
         "home_state":
             criminal["home_state"],
@@ -80,8 +84,9 @@ def get_criminal_profile(criminal_id):
         "home_district":
             criminal["home_district"],
 
+        
         "gang_id":
-            criminal["gang_id"],
+              "" if pd.isna(criminal["gang_id"]) else criminal["gang_id"],
 
         "total_crimes":
             total_crimes,
