@@ -18,9 +18,7 @@ def get_criminal_profile(criminal_id):
 
     criminal = criminal.iloc[0]
 
-    print("DEBUG START")
-    print(criminal.to_dict())
-    print("DEBUG END")
+    
 
     crimes = crimes_df[
         crimes_df["criminal_id"] == criminal_id
@@ -105,4 +103,3 @@ def get_criminal_profile(criminal_id):
     }
 
     return profile
-print(get_criminal_profile("C0001"))
