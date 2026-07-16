@@ -1,0 +1,2501 @@
+criminal_id,name,age,home_state,home_district,district,gang_id
+C0001,Chandan Udupa,26,Karnataka,Hassan,Hassan,Gang_15
+C0002,Arun Udupa,49,Telangana,Dharwad,Dharwad,None
+C0003,Girish Pandit,20,Karnataka,Koppal,Koppal,None
+C0004,Yogesh Devadiga,30,Karnataka,Vijayapura,Vijayapura,None
+C0005,Jagadish Shetty,34,Karnataka,Bidar,Bidar,None
+C0006,Ravi Shettigar,40,Karnataka,Shivamogga,Shivamogga,Gang_38
+C0007,Manoj Poojary,34,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0008,Gautham Devadiga,28,Telangana,Shivamogga,Shivamogga,None
+C0009,Amith Rai,60,Karnataka,Belagavi,Belagavi,None
+C0010,Raghav Shetty,46,Karnataka,Belagavi,Belagavi,None
+C0011,Shankar Shet,29,Karnataka,Shivamogga,Shivamogga,None
+C0012,Mukesh Shanbhag,54,Karnataka,Bidar,Bidar,None
+C0013,Mahesh Reddy,57,Karnataka,Dharwad,Dharwad,Gang_26
+C0014,Ravi Pujari,44,Karnataka,Bidar,Bidar,Gang_12
+C0015,Jagannath Devadiga,39,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0016,Manoj Gowda,50,Karnataka,Ballari,Ballari,None
+C0017,Darshan Murthy,58,Maharashtra,Koppal,Koppal,None
+C0018,Umesh Alva,47,Karnataka,Raichur,Raichur,None
+C0019,Rajesh Nayak,43,Karnataka,Raichur,Raichur,None
+C0020,Deepak Bollineni,37,Karnataka,Bidar,Bidar,Gang_40
+C0021,Umesh Kamath,57,Karnataka,Mysuru,Mysuru,None
+C0022,Darshan Bollineni,46,Karnataka,Raichur,Raichur,Gang_38
+C0023,Ajay Acharya,56,Karnataka,Kalaburagi,Kalaburagi,Gang_17
+C0024,Harish Rai,31,Karnataka,Raichur,Raichur,None
+C0025,Nagaraj Shekar,23,Karnataka,Belagavi,Belagavi,Gang_16
+C0026,Aditya Mallya,27,Telangana,Mysuru,Mysuru,None
+C0027,Ramesh D'Souza,36,Karnataka,Kalaburagi,Kalaburagi,Gang_48
+C0028,Shashank Shanbhag,27,Karnataka,Hassan,Hassan,Gang_20
+C0029,Anil Shet,29,Karnataka,Raichur,Raichur,Gang_32
+C0030,Abhishek Udupa,51,Kerala,Ballari,Ballari,None
+C0031,Manjunath Shetty,20,Telangana,Bengaluru Rural,Bengaluru Rural,Gang_12
+C0032,Mohan Udupa,59,Karnataka,Raichur,Raichur,Gang_18
+C0033,Bharath Shetty,39,Karnataka,Shivamogga,Shivamogga,None
+C0034,Naveen Shettigar,53,Karnataka,Hassan,Hassan,None
+C0035,Deepak Alva,35,Karnataka,Koppal,Koppal,None
+C0036,Shankar Shekar,33,Telangana,Shivamogga,Shivamogga,None
+C0037,Santosh Naik,43,Karnataka,Koppal,Koppal,Gang_43
+C0038,Pavan Rao,24,Karnataka,Koppal,Koppal,None
+C0039,Hemant Bhat,23,Karnataka,Belagavi,Belagavi,None
+C0040,Ravi Lobo,36,Karnataka,Shivamogga,Shivamogga,None
+C0041,Gopal Suvarna,22,Karnataka,Bidar,Bidar,None
+C0042,Aditya Verma,53,Karnataka,Mysuru,Mysuru,None
+C0043,Harsha Sharma,27,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0044,Jagannath Kulkarni,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0045,Ajay Lobo,21,Karnataka,Dharwad,Dharwad,None
+C0046,Raghav Pandit,25,Karnataka,Tumakuru,Tumakuru,Gang_25
+C0047,Gopal Kulkarni,54,Karnataka,Hassan,Hassan,None
+C0048,Abhishek Lobo,32,Karnataka,Vijayapura,Vijayapura,None
+C0049,Ashok Gowda,24,Karnataka,Koppal,Koppal,None
+C0050,Deepak Salian,38,Karnataka,Bidar,Bidar,Gang_15
+C0051,Jagadish Kudva,27,Karnataka,Dharwad,Dharwad,None
+C0052,Kiran Moily,24,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_23
+C0053,Madan Kulkarni,51,Maharashtra,Vijayapura,Vijayapura,None
+C0054,Sachin Kulkarni,33,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_1
+C0055,Sharath Gowda,45,Karnataka,Bidar,Bidar,Gang_47
+C0056,Varun D'Souza,27,Karnataka,Raichur,Raichur,None
+C0057,Devraj Noronha,22,Telangana,Hassan,Hassan,None
+C0058,Ravi Rao,22,Karnataka,Bidar,Bidar,Gang_47
+C0059,Akash Verma,58,Andhra Pradesh,Raichur,Raichur,Gang_28
+C0060,Karthik Murthy,25,Karnataka,Bidar,Bidar,None
+C0061,Jagadish Bollineni,22,Karnataka,Shivamogga,Shivamogga,None
+C0062,Abhishek Salian,49,Karnataka,Bidar,Bidar,None
+C0063,Manoj Nayak,50,Karnataka,Hassan,Hassan,None
+C0064,Tarun Nayak,23,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_19
+C0065,Anand Bhat,31,Karnataka,Belagavi,Belagavi,Gang_4
+C0066,Vikas Naik,21,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_28
+C0067,Sandeep Ramesh,48,Telangana,Raichur,Raichur,Gang_22
+C0068,Gopal Moily,25,Karnataka,Kodagu,Kodagu,Gang_9
+C0069,Bharath Sharma,38,Karnataka,Shivamogga,Shivamogga,None
+C0070,Srinivas Udupa,37,Karnataka,Bidar,Bidar,None
+C0071,Gautham Shetty,43,Maharashtra,Hassan,Hassan,None
+C0072,Srinivas D'Souza,59,Karnataka,Vijayapura,Vijayapura,None
+C0073,Rohit D'Souza,27,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0074,Jagadish Rao,46,Karnataka,Raichur,Raichur,Gang_33
+C0075,Nithin Shekar,25,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0076,Prakash D'Souza,24,Karnataka,Raichur,Raichur,None
+C0077,Rakesh Kumar,44,Karnataka,Dharwad,Dharwad,None
+C0078,Nithin Udupa,57,Karnataka,Dharwad,Dharwad,None
+C0079,Darshan Shetty,23,Karnataka,Dharwad,Dharwad,None
+C0080,Nithin Fernandes,33,Karnataka,Raichur,Raichur,None
+C0081,Shashank Ramesh,57,Karnataka,Shivamogga,Shivamogga,None
+C0082,Anand Bangera,40,Karnataka,Belagavi,Belagavi,None
+C0083,Chethan D'Souza,24,Karnataka,Bidar,Bidar,None
+C0084,Girish Moily,33,Karnataka,Koppal,Koppal,None
+C0085,Manjunath Devadiga,45,Karnataka,Koppal,Koppal,None
+C0086,Akash Rao,35,Karnataka,Shivamogga,Shivamogga,None
+C0087,Pranav Hegde,36,Karnataka,Raichur,Raichur,None
+C0088,Prakash Salian,38,Karnataka,Bidar,Bidar,None
+C0089,Akash Acharya,28,Karnataka,Bidar,Bidar,None
+C0090,Jagadish Moily,45,Karnataka,Kalaburagi,Kalaburagi,None
+C0091,Gopal Joshi,51,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_5
+C0092,Anoop Rai,56,Karnataka,Ballari,Ballari,None
+C0093,Naveen Bhat,41,Karnataka,Ballari,Ballari,None
+C0094,Vijay Kumar,22,Karnataka,Belagavi,Belagavi,None
+C0095,Krishna Acharya,21,Maharashtra,Raichur,Raichur,None
+C0096,Suresh Reddy,31,Karnataka,Koppal,Koppal,None
+C0097,Shankar Verma,23,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0098,Pranav Kumar,26,Karnataka,Vijayapura,Vijayapura,None
+C0099,Darshan Ramesh,59,Karnataka,Kalaburagi,Kalaburagi,None
+C0100,Shankar Kudva,31,Karnataka,Kalaburagi,Kalaburagi,None
+C0101,Chirag Suvarna,47,Telangana,Shivamogga,Shivamogga,None
+C0102,Karthik Bhat,30,Telangana,Bengaluru Urban,Bengaluru Urban,Gang_18
+C0103,Vijay Mendonca,55,Karnataka,Hassan,Hassan,Gang_16
+C0104,Pavan Desai,35,Karnataka,Bidar,Bidar,None
+C0105,Mohan Kunder,20,Maharashtra,Bengaluru Rural,Bengaluru Rural,None
+C0106,Harsha Devadiga,45,Karnataka,Shivamogga,Shivamogga,Gang_47
+C0107,Yash Bollineni,26,Kerala,Kodagu,Kodagu,Gang_1
+C0108,Harish Salian,39,Karnataka,Belagavi,Belagavi,None
+C0109,Mohan Ramesh,39,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0110,Ranjith Bangera,29,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0111,Ajay Rao,38,Karnataka,Koppal,Koppal,None
+C0112,Darshan Pinto,25,Karnataka,Dharwad,Dharwad,None
+C0113,Manjunath Lobo,45,Andhra Pradesh,Belagavi,Belagavi,None
+C0114,Mithun Nayak,35,Karnataka,Vijayapura,Vijayapura,Gang_29
+C0115,Mukesh Mendonca,59,Karnataka,Bidar,Bidar,Gang_47
+C0116,Lohith Mendonca,37,Andhra Pradesh,Ballari,Ballari,None
+C0117,Lohith D'Souza,29,Karnataka,Koppal,Koppal,None
+C0118,Mohan Pandit,34,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0119,Deepak Kulkarni,48,Karnataka,Ballari,Ballari,None
+C0120,Lokesh Rai,36,Karnataka,Ballari,Ballari,None
+C0121,Ramesh Desai,46,Karnataka,Vijayapura,Vijayapura,None
+C0122,Rakesh Hegde,37,Karnataka,Koppal,Koppal,None
+C0123,Nagaraj Shanbhag,21,Karnataka,Bidar,Bidar,Gang_2
+C0124,Yash Verma,35,Kerala,Bengaluru Rural,Bengaluru Rural,None
+C0125,Nagaraj Naik,24,Karnataka,Ballari,Ballari,None
+C0126,Jagadish Gowda,45,Karnataka,Hassan,Hassan,None
+C0127,Mohan Poojary,34,Karnataka,Vijayapura,Vijayapura,None
+C0128,Varun Devadiga,39,Karnataka,Vijayapura,Vijayapura,None
+C0129,Nandakumar Poojary,49,Andhra Pradesh,Ballari,Ballari,None
+C0130,Rakesh Patil,54,Karnataka,Kalaburagi,Kalaburagi,None
+C0131,Naveen Poojary,51,Karnataka,Bidar,Bidar,None
+C0132,Mohan Shetty,24,Telangana,Hassan,Hassan,Gang_28
+C0133,Pranav Patil,41,Telangana,Mysuru,Mysuru,None
+C0134,Kiran Pai,57,Karnataka,Koppal,Koppal,Gang_22
+C0135,Ashok Bangera,59,Karnataka,Koppal,Koppal,None
+C0136,Yash Shet,26,Karnataka,Tumakuru,Tumakuru,None
+C0137,Sachin Kamath,58,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_33
+C0138,Nandakumar Shettigar,44,Karnataka,Kodagu,Kodagu,None
+C0139,Yash Joshi,22,Karnataka,Tumakuru,Tumakuru,Gang_30
+C0140,Deepak Nayak,22,Karnataka,Ballari,Ballari,None
+C0141,Lohith Gowda,54,Karnataka,Raichur,Raichur,None
+C0142,Anand Shet,54,Karnataka,Belagavi,Belagavi,None
+C0143,Nagaraj Gowda,54,Tamil Nadu,Dharwad,Dharwad,None
+C0144,Chirag Mendonca,27,Karnataka,Tumakuru,Tumakuru,Gang_22
+C0145,Lohith Bangera,55,Karnataka,Vijayapura,Vijayapura,None
+C0146,Madan Acharya,20,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0147,Lokesh Lobo,60,Andhra Pradesh,Hassan,Hassan,None
+C0148,Chandan Pujari,28,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_34
+C0149,Mukesh Sharma,27,Karnataka,Kalaburagi,Kalaburagi,None
+C0150,Mahesh Noronha,25,Karnataka,Shivamogga,Shivamogga,None
+C0151,Lokesh Kudva,47,Karnataka,Tumakuru,Tumakuru,None
+C0152,Ashok Adiga,27,Karnataka,Belagavi,Belagavi,None
+C0153,Ramesh Udupa,36,Karnataka,Ballari,Ballari,None
+C0154,Sandeep Devadiga,34,Telangana,Ballari,Ballari,None
+C0155,Pranav Fernandes,57,Karnataka,Ballari,Ballari,Gang_36
+C0156,Rakesh Alva,50,Karnataka,Kalaburagi,Kalaburagi,Gang_47
+C0157,Chandan Bhat,59,Karnataka,Vijayapura,Vijayapura,None
+C0158,Tejas Udupa,46,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0159,Pradeep Shekar,24,Karnataka,Ballari,Ballari,None
+C0160,Shivakumar Moily,54,Karnataka,Koppal,Koppal,None
+C0161,Bharath Shekar,41,Karnataka,Vijayapura,Vijayapura,None
+C0162,Kishore Kudva,45,Telangana,Ballari,Ballari,None
+C0163,Darshan Naik,34,Karnataka,Belagavi,Belagavi,None
+C0164,Sachin Kumar,59,Karnataka,Tumakuru,Tumakuru,None
+C0165,Karthik Hegde,27,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0166,Sharath Sharma,27,Karnataka,Tumakuru,Tumakuru,Gang_50
+C0167,Santosh Nayak,52,Karnataka,Belagavi,Belagavi,None
+C0168,Sunil Pai,39,Karnataka,Kodagu,Kodagu,None
+C0169,Rohit Bangera,45,Karnataka,Raichur,Raichur,None
+C0170,Manjunath Bairy,46,Karnataka,Kalaburagi,Kalaburagi,None
+C0171,Girish Salian,37,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0172,Karthik Lobo,42,Karnataka,Koppal,Koppal,None
+C0173,Manjunath Fernandes,56,Karnataka,Vijayapura,Vijayapura,Gang_35
+C0174,Devraj Pai,37,Maharashtra,Mysuru,Mysuru,None
+C0175,Gautham Rai,55,Andhra Pradesh,Dharwad,Dharwad,Gang_43
+C0176,Jagadish Adiga,31,Karnataka,Koppal,Koppal,None
+C0177,Tarun Shekar,25,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_22
+C0178,Jagadish Udupa,58,Karnataka,Kodagu,Kodagu,None
+C0179,Ranjith Pinto,51,Karnataka,Vijayapura,Vijayapura,None
+C0180,Nagaraj Hegde,41,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0181,Rohit Kunder,25,Karnataka,Koppal,Koppal,None
+C0182,Vinod Naik,30,Karnataka,Hassan,Hassan,None
+C0183,Ramesh Nayak,22,Karnataka,Shivamogga,Shivamogga,None
+C0184,Sharath Karkera,48,Karnataka,Kodagu,Kodagu,None
+C0185,Sunil Bhat,29,Karnataka,Vijayapura,Vijayapura,None
+C0186,Darshan Kudva,36,Karnataka,Raichur,Raichur,Gang_14
+C0187,Sunil Noronha,25,Karnataka,Shivamogga,Shivamogga,None
+C0188,Ganesh Mallya,49,Telangana,Mysuru,Mysuru,None
+C0189,Kiran Naik,33,Karnataka,Dharwad,Dharwad,None
+C0190,Sachin Bairy,35,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0191,Rajesh Karkera,58,Karnataka,Hassan,Hassan,Gang_48
+C0192,Abhishek Pandit,49,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_4
+C0193,Amith Udupa,22,Karnataka,Vijayapura,Vijayapura,Gang_46
+C0194,Aditya Nayak,48,Karnataka,Shivamogga,Shivamogga,None
+C0195,Pavan Pujari,58,Karnataka,Vijayapura,Vijayapura,None
+C0196,Kishore Ramesh,30,Tamil Nadu,Belagavi,Belagavi,None
+C0197,Darshan Bairy,22,Telangana,Ballari,Ballari,None
+C0198,Srinivas Shanbhag,54,Tamil Nadu,Bengaluru Urban,Bengaluru Urban,None
+C0199,Umesh Lobo,28,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_16
+C0200,Aravind Joshi,51,Karnataka,Dharwad,Dharwad,Gang_26
+C0201,Sachin Bollineni,57,Karnataka,Koppal,Koppal,None
+C0202,Santosh Hegde,41,Karnataka,Ballari,Ballari,Gang_22
+C0203,Lohith Fernandes,24,Karnataka,Tumakuru,Tumakuru,None
+C0204,Anoop Desai,55,Karnataka,Kodagu,Kodagu,None
+C0205,Lokesh Nayak,36,Tamil Nadu,Bengaluru Urban,Bengaluru Urban,None
+C0206,Rajesh Noronha,25,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0207,Akhil Noronha,53,Karnataka,Dharwad,Dharwad,None
+C0208,Akhil Lobo,27,Karnataka,Shivamogga,Shivamogga,Gang_4
+C0209,Sandeep Pai,20,Karnataka,Vijayapura,Vijayapura,Gang_43
+C0210,Vijay D'Souza,45,Karnataka,Bidar,Bidar,Gang_23
+C0211,Karthik Adiga,54,Karnataka,Kodagu,Kodagu,None
+C0212,Ravi Adiga,49,Karnataka,Tumakuru,Tumakuru,None
+C0213,Manjunath Desai,41,Tamil Nadu,Belagavi,Belagavi,None
+C0214,Mahesh Rao,31,Karnataka,Raichur,Raichur,Gang_12
+C0215,Arun Salian,46,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_19
+C0216,Girish Verma,56,Karnataka,Koppal,Koppal,None
+C0217,Amith Shetty,44,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0218,Varun Karkera,46,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0219,Mukesh Rao,48,Telangana,Kalaburagi,Kalaburagi,None
+C0220,Venkatesh Karkera,41,Karnataka,Raichur,Raichur,None
+C0221,Gopal Sharma,42,Karnataka,Raichur,Raichur,None
+C0222,Jagannath Salian,55,Telangana,Bidar,Bidar,None
+C0223,Anand Rai,38,Karnataka,Belagavi,Belagavi,None
+C0224,Vinod Acharya,24,Karnataka,Mysuru,Mysuru,Gang_32
+C0225,Kishore Salian,21,Karnataka,Hassan,Hassan,None
+C0226,Lohith Nayak,34,Karnataka,Tumakuru,Tumakuru,Gang_26
+C0227,Girish Rao,35,Karnataka,Shivamogga,Shivamogga,None
+C0228,Dinesh Devadiga,34,Karnataka,Shivamogga,Shivamogga,None
+C0229,Dinesh Rao,58,Karnataka,Bidar,Bidar,Gang_9
+C0230,Gautham Adiga,51,Karnataka,Kalaburagi,Kalaburagi,Gang_2
+C0231,Jagannath Poojary,54,Karnataka,Tumakuru,Tumakuru,None
+C0232,Raghav Poojary,51,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_12
+C0233,Deepak Sharma,27,Karnataka,Koppal,Koppal,None
+C0234,Shashank Gowda,53,Tamil Nadu,Kodagu,Kodagu,None
+C0235,Deepak Suvarna,47,Karnataka,Mysuru,Mysuru,None
+C0236,Jagadish Suvarna,48,Karnataka,Vijayapura,Vijayapura,None
+C0237,Ramesh Pai,29,Telangana,Raichur,Raichur,Gang_14
+C0238,Ravi Noronha,30,Karnataka,Koppal,Koppal,Gang_10
+C0239,Chandan Poojary,40,Karnataka,Shivamogga,Shivamogga,None
+C0240,Umesh D'Souza,37,Karnataka,Koppal,Koppal,Gang_41
+C0241,Shashank Kudva,56,Karnataka,Vijayapura,Vijayapura,Gang_13
+C0242,Harish Kulkarni,28,Karnataka,Kalaburagi,Kalaburagi,None
+C0243,Manoj Kumar,25,Karnataka,Kalaburagi,Kalaburagi,None
+C0244,Karthik Karkera,49,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0245,Suresh Fernandes,46,Andhra Pradesh,Bengaluru Urban,Bengaluru Urban,None
+C0246,Amith Alva,20,Karnataka,Kalaburagi,Kalaburagi,Gang_11
+C0247,Hemant Sharma,57,Karnataka,Belagavi,Belagavi,Gang_19
+C0248,Raghav Patil,37,Karnataka,Hassan,Hassan,None
+C0249,Varun Pandit,32,Karnataka,Raichur,Raichur,None
+C0250,Vijay Bangera,37,Karnataka,Shivamogga,Shivamogga,None
+C0251,Chethan Pai,45,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0252,Venkatesh Mallya,30,Karnataka,Kodagu,Kodagu,Gang_32
+C0253,Suresh D'Souza,41,Karnataka,Raichur,Raichur,None
+C0254,Akhil Pujari,29,Karnataka,Shivamogga,Shivamogga,None
+C0255,Mithun Adiga,54,Karnataka,Dharwad,Dharwad,None
+C0256,Kishore Pai,49,Karnataka,Ballari,Ballari,None
+C0257,Lokesh Udupa,23,Karnataka,Hassan,Hassan,None
+C0258,Vikas Patil,39,Karnataka,Kalaburagi,Kalaburagi,None
+C0259,Vijay Hegde,50,Karnataka,Shivamogga,Shivamogga,None
+C0260,Amith Patil,37,Karnataka,Dharwad,Dharwad,Gang_30
+C0261,Bhaskar Mendonca,30,Karnataka,Mysuru,Mysuru,None
+C0262,Umesh Mallya,48,Karnataka,Raichur,Raichur,Gang_9
+C0263,Umesh Bangera,29,Karnataka,Kodagu,Kodagu,Gang_3
+C0264,Nithin D'Souza,38,Karnataka,Tumakuru,Tumakuru,None
+C0265,Sunil Patil,44,Karnataka,Kodagu,Kodagu,None
+C0266,Mukesh Gowda,33,Karnataka,Raichur,Raichur,None
+C0267,Darshan Karkera,53,Karnataka,Vijayapura,Vijayapura,None
+C0268,Vinod Pandit,51,Karnataka,Bidar,Bidar,None
+C0269,Jagannath Suvarna,39,Karnataka,Ballari,Ballari,Gang_33
+C0270,Ravi D'Souza,50,Karnataka,Mysuru,Mysuru,None
+C0271,Lokesh Naik,54,Karnataka,Dharwad,Dharwad,Gang_10
+C0272,Girish Gowda,44,Karnataka,Raichur,Raichur,Gang_22
+C0273,Rajesh Reddy,42,Karnataka,Belagavi,Belagavi,None
+C0274,Varun Rai,24,Karnataka,Koppal,Koppal,None
+C0275,Bhaskar Hegde,35,Karnataka,Dharwad,Dharwad,None
+C0276,Suresh Kudva,26,Karnataka,Belagavi,Belagavi,None
+C0277,Nikhil Shet,60,Telangana,Dharwad,Dharwad,None
+C0278,Devraj Udupa,44,Karnataka,Dharwad,Dharwad,None
+C0279,Lohith Kamath,20,Karnataka,Dharwad,Dharwad,Gang_30
+C0280,Mithun Hegde,48,Karnataka,Bidar,Bidar,None
+C0281,Shankar Kamath,47,Karnataka,Tumakuru,Tumakuru,None
+C0282,Nagaraj D'Souza,57,Karnataka,Dharwad,Dharwad,None
+C0283,Manjunath Karkera,44,Telangana,Mysuru,Mysuru,None
+C0284,Shivakumar Mallya,25,Karnataka,Kodagu,Kodagu,None
+C0285,Deepak Kotian,44,Kerala,Kalaburagi,Kalaburagi,Gang_30
+C0286,Manjunath Verma,22,Karnataka,Belagavi,Belagavi,None
+C0287,Krishna Poojary,48,Karnataka,Kalaburagi,Kalaburagi,Gang_20
+C0288,Vinod Udupa,24,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0289,Shankar Noronha,31,Karnataka,Dharwad,Dharwad,None
+C0290,Akash Murthy,60,Karnataka,Shivamogga,Shivamogga,None
+C0291,Aditya Salian,29,Karnataka,Vijayapura,Vijayapura,None
+C0292,Yogesh Alva,49,Karnataka,Hassan,Hassan,Gang_40
+C0293,Krishna Rao,42,Karnataka,Belagavi,Belagavi,None
+C0294,Ravi Kumar,60,Karnataka,Kodagu,Kodagu,Gang_22
+C0295,Pavan Bhat,60,Karnataka,Dharwad,Dharwad,None
+C0296,Mahesh Pai,35,Karnataka,Vijayapura,Vijayapura,None
+C0297,Jagadish Patil,54,Tamil Nadu,Vijayapura,Vijayapura,None
+C0298,Sharath Pandit,47,Andhra Pradesh,Bengaluru Rural,Bengaluru Rural,None
+C0299,Srinivas Kumar,27,Karnataka,Hassan,Hassan,None
+C0300,Vijay Pai,37,Karnataka,Vijayapura,Vijayapura,None
+C0301,Akhil Verma,30,Karnataka,Tumakuru,Tumakuru,None
+C0302,Karthik Devadiga,48,Karnataka,Belagavi,Belagavi,None
+C0303,Darshan Gowda,39,Karnataka,Raichur,Raichur,None
+C0304,Madan Shekar,55,Karnataka,Mysuru,Mysuru,None
+C0305,Jagannath Mallya,34,Karnataka,Vijayapura,Vijayapura,None
+C0306,Harsha Karkera,23,Telangana,Tumakuru,Tumakuru,Gang_2
+C0307,Shivakumar Karkera,38,Karnataka,Shivamogga,Shivamogga,None
+C0308,Aravind Udupa,45,Kerala,Kalaburagi,Kalaburagi,None
+C0309,Anand Alva,28,Karnataka,Tumakuru,Tumakuru,Gang_33
+C0310,Pranav Bhat,52,Karnataka,Hassan,Hassan,Gang_28
+C0311,Mithun Reddy,45,Karnataka,Tumakuru,Tumakuru,Gang_18
+C0312,Bhaskar Lobo,44,Karnataka,Ballari,Ballari,None
+C0313,Nagaraj Mendonca,23,Karnataka,Koppal,Koppal,Gang_21
+C0314,Arun Mendonca,39,Telangana,Belagavi,Belagavi,None
+C0315,Ranjith Gowda,27,Karnataka,Dharwad,Dharwad,None
+C0316,Gopal Kamath,32,Tamil Nadu,Tumakuru,Tumakuru,None
+C0317,Shashank Mendonca,24,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0318,Hemant Fernandes,32,Karnataka,Hassan,Hassan,Gang_38
+C0319,Ganesh Reddy,56,Karnataka,Kalaburagi,Kalaburagi,None
+C0320,Nandakumar Gowda,59,Karnataka,Vijayapura,Vijayapura,Gang_50
+C0321,Manoj Lobo,40,Karnataka,Raichur,Raichur,None
+C0322,Raghav Bangera,53,Karnataka,Raichur,Raichur,None
+C0323,Aravind Desai,38,Karnataka,Raichur,Raichur,None
+C0324,Mithun Mendonca,26,Karnataka,Kodagu,Kodagu,None
+C0325,Rohit Gowda,38,Karnataka,Raichur,Raichur,Gang_21
+C0326,Naveen Karkera,28,Karnataka,Raichur,Raichur,None
+C0327,Gopal Shettigar,49,Karnataka,Kalaburagi,Kalaburagi,None
+C0328,Ramesh Patil,24,Karnataka,Shivamogga,Shivamogga,Gang_36
+C0329,Akash Kunder,53,Karnataka,Hassan,Hassan,None
+C0330,Kishore Shet,60,Karnataka,Tumakuru,Tumakuru,Gang_3
+C0331,Nagaraj Salian,57,Karnataka,Kodagu,Kodagu,None
+C0332,Vinod Gowda,34,Andhra Pradesh,Vijayapura,Vijayapura,Gang_1
+C0333,Vinod Shettigar,28,Karnataka,Kalaburagi,Kalaburagi,None
+C0334,Madan Moily,52,Telangana,Shivamogga,Shivamogga,None
+C0335,Sandeep Salian,39,Karnataka,Koppal,Koppal,Gang_26
+C0336,Jagannath Mendonca,20,Karnataka,Kodagu,Kodagu,Gang_48
+C0337,Anil Udupa,57,Karnataka,Koppal,Koppal,None
+C0338,Akhil Patil,53,Karnataka,Kodagu,Kodagu,None
+C0339,Venkatesh Kudva,25,Telangana,Bengaluru Urban,Bengaluru Urban,None
+C0340,Sandeep Noronha,29,Karnataka,Kalaburagi,Kalaburagi,None
+C0341,Krishna Kulkarni,45,Karnataka,Vijayapura,Vijayapura,None
+C0342,Deepak Patil,59,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0343,Sachin Joshi,57,Karnataka,Koppal,Koppal,None
+C0344,Sunil Alva,39,Karnataka,Shivamogga,Shivamogga,None
+C0345,Mohan Moily,50,Karnataka,Raichur,Raichur,Gang_15
+C0346,Bharath Noronha,50,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_18
+C0347,Rajesh Moily,48,Maharashtra,Bengaluru Rural,Bengaluru Rural,None
+C0348,Gautham Bairy,21,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0349,Shankar Udupa,45,Karnataka,Hassan,Hassan,None
+C0350,Gautham Moily,60,Telangana,Dharwad,Dharwad,None
+C0351,Umesh Rai,42,Karnataka,Dharwad,Dharwad,Gang_38
+C0352,Yogesh D'Souza,38,Karnataka,Tumakuru,Tumakuru,None
+C0353,Sharath Pujari,52,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0354,Jagannath Reddy,22,Karnataka,Koppal,Koppal,Gang_41
+C0355,Krishna D'Souza,36,Karnataka,Kodagu,Kodagu,Gang_43
+C0356,Suresh Suvarna,48,Karnataka,Koppal,Koppal,Gang_29
+C0357,Naveen Mendonca,43,Karnataka,Kalaburagi,Kalaburagi,None
+C0358,Kishore Udupa,21,Karnataka,Ballari,Ballari,None
+C0359,Tejas Bairy,58,Karnataka,Koppal,Koppal,Gang_33
+C0360,Harsha Hegde,42,Karnataka,Bidar,Bidar,None
+C0361,Sunil Hegde,29,Karnataka,Raichur,Raichur,None
+C0362,Venkatesh Adiga,42,Karnataka,Koppal,Koppal,Gang_42
+C0363,Rakesh Pai,35,Telangana,Hassan,Hassan,Gang_32
+C0364,Shankar Pai,60,Karnataka,Dharwad,Dharwad,None
+C0365,Jagadish Shanbhag,42,Karnataka,Belagavi,Belagavi,Gang_11
+C0366,Girish Lobo,48,Karnataka,Koppal,Koppal,None
+C0367,Nikhil Shekar,44,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0368,Vikas Shet,28,Tamil Nadu,Kalaburagi,Kalaburagi,None
+C0369,Arun Reddy,39,Karnataka,Vijayapura,Vijayapura,None
+C0370,Shashank Suvarna,58,Karnataka,Ballari,Ballari,Gang_39
+C0371,Mukesh Bollineni,48,Karnataka,Vijayapura,Vijayapura,None
+C0372,Tarun Rao,31,Karnataka,Tumakuru,Tumakuru,None
+C0373,Mithun Joshi,32,Karnataka,Bidar,Bidar,None
+C0374,Aditya Reddy,59,Tamil Nadu,Bengaluru Urban,Bengaluru Urban,None
+C0375,Harish Kumar,47,Karnataka,Bidar,Bidar,None
+C0376,Ganesh Kotian,43,Tamil Nadu,Mysuru,Mysuru,None
+C0377,Yogesh Pandit,54,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0378,Rajesh Suvarna,45,Karnataka,Belagavi,Belagavi,None
+C0379,Krishna Udupa,23,Karnataka,Bidar,Bidar,None
+C0380,Mukesh Pai,35,Karnataka,Koppal,Koppal,None
+C0381,Prakash Mallya,24,Karnataka,Bidar,Bidar,None
+C0382,Suresh Lobo,31,Karnataka,Dharwad,Dharwad,None
+C0383,Aravind Shet,20,Andhra Pradesh,Kalaburagi,Kalaburagi,None
+C0384,Harsha Rai,20,Karnataka,Koppal,Koppal,Gang_44
+C0385,Aditya Rai,35,Karnataka,Raichur,Raichur,Gang_22
+C0386,Lokesh Gowda,26,Karnataka,Vijayapura,Vijayapura,None
+C0387,Mukesh Acharya,51,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0388,Tarun Noronha,26,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0389,Shashank Sharma,56,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_37
+C0390,Mukesh Desai,32,Karnataka,Raichur,Raichur,None
+C0391,Dinesh Joshi,35,Andhra Pradesh,Raichur,Raichur,Gang_39
+C0392,Vinod Fernandes,39,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0393,Madan Desai,27,Karnataka,Dharwad,Dharwad,None
+C0394,Anand Bairy,48,Karnataka,Hassan,Hassan,None
+C0395,Nandakumar Hegde,42,Karnataka,Koppal,Koppal,None
+C0396,Chethan Poojary,55,Karnataka,Vijayapura,Vijayapura,None
+C0397,Gopal Mendonca,59,Karnataka,Kodagu,Kodagu,None
+C0398,Harish Udupa,50,Karnataka,Kodagu,Kodagu,None
+C0399,Manjunath Poojary,60,Karnataka,Koppal,Koppal,None
+C0400,Sunil Bairy,31,Maharashtra,Mysuru,Mysuru,None
+C0401,Ravi Kunder,25,Karnataka,Hassan,Hassan,None
+C0402,Kiran Pujari,21,Karnataka,Bidar,Bidar,None
+C0403,Amith Devadiga,33,Karnataka,Koppal,Koppal,None
+C0404,Mukesh Noronha,58,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0405,Chethan Rao,38,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0406,Akash Karkera,40,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0407,Ranjith Patil,52,Karnataka,Mysuru,Mysuru,None
+C0408,Dinesh Fernandes,23,Karnataka,Bidar,Bidar,None
+C0409,Madan Nayak,22,Karnataka,Belagavi,Belagavi,None
+C0410,Nagaraj Kotian,34,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_46
+C0411,Tejas Pandit,58,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0412,Anil Adiga,54,Andhra Pradesh,Mysuru,Mysuru,Gang_36
+C0413,Mahesh Shetty,47,Karnataka,Shivamogga,Shivamogga,Gang_32
+C0414,Harish Poojary,50,Telangana,Ballari,Ballari,Gang_21
+C0415,Devraj Pujari,43,Karnataka,Mysuru,Mysuru,None
+C0416,Rakesh Gowda,45,Telangana,Dharwad,Dharwad,None
+C0417,Devraj Fernandes,53,Andhra Pradesh,Bengaluru Rural,Bengaluru Rural,Gang_48
+C0418,Krishna Shetty,56,Karnataka,Ballari,Ballari,Gang_50
+C0419,Chandan Bairy,48,Karnataka,Mysuru,Mysuru,None
+C0420,Gopal Bhat,22,Karnataka,Bidar,Bidar,Gang_33
+C0421,Devraj Shetty,41,Karnataka,Raichur,Raichur,Gang_39
+C0422,Shivakumar Shettigar,52,Karnataka,Mysuru,Mysuru,None
+C0423,Srinivas Adiga,57,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0424,Tarun Mallya,56,Karnataka,Raichur,Raichur,None
+C0425,Ganesh Fernandes,36,Karnataka,Koppal,Koppal,None
+C0426,Bharath Bhat,60,Karnataka,Kalaburagi,Kalaburagi,Gang_25
+C0427,Anil Joshi,45,Karnataka,Tumakuru,Tumakuru,None
+C0428,Jagannath Alva,58,Karnataka,Koppal,Koppal,None
+C0429,Bhaskar Kudva,35,Karnataka,Kodagu,Kodagu,None
+C0430,Varun Pai,41,Karnataka,Kalaburagi,Kalaburagi,None
+C0431,Gopal Ramesh,40,Karnataka,Dharwad,Dharwad,None
+C0432,Pradeep Pandit,48,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0433,Raghav Kunder,60,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_26
+C0434,Arun Shetty,60,Karnataka,Vijayapura,Vijayapura,None
+C0435,Girish Kudva,49,Karnataka,Ballari,Ballari,Gang_48
+C0436,Chandan Murthy,49,Karnataka,Shivamogga,Shivamogga,None
+C0437,Mahesh Kamath,30,Karnataka,Belagavi,Belagavi,None
+C0438,Akhil Kamath,34,Andhra Pradesh,Hassan,Hassan,Gang_28
+C0439,Pradeep Ramesh,32,Karnataka,Koppal,Koppal,None
+C0440,Chandan Mallya,32,Karnataka,Shivamogga,Shivamogga,None
+C0441,Vikas Rao,48,Tamil Nadu,Belagavi,Belagavi,Gang_8
+C0442,Aditya Suvarna,43,Karnataka,Tumakuru,Tumakuru,None
+C0443,Tarun Shettigar,58,Karnataka,Bidar,Bidar,None
+C0444,Pradeep Kudva,22,Maharashtra,Kodagu,Kodagu,None
+C0445,Rakesh Udupa,35,Karnataka,Vijayapura,Vijayapura,None
+C0446,Yash Rao,44,Karnataka,Koppal,Koppal,Gang_35
+C0447,Manoj Fernandes,21,Karnataka,Kodagu,Kodagu,Gang_24
+C0448,Chandan Pai,29,Kerala,Hassan,Hassan,None
+C0449,Pavan Pinto,54,Karnataka,Ballari,Ballari,None
+C0450,Vijay Poojary,30,Karnataka,Ballari,Ballari,None
+C0451,Aditya Naik,39,Karnataka,Kalaburagi,Kalaburagi,None
+C0452,Harish Shekar,44,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0453,Gopal Devadiga,51,Karnataka,Vijayapura,Vijayapura,None
+C0454,Darshan Rai,47,Karnataka,Dharwad,Dharwad,Gang_31
+C0455,Rohit Pandit,38,Karnataka,Dharwad,Dharwad,None
+C0456,Amith D'Souza,27,Karnataka,Kodagu,Kodagu,None
+C0457,Jagadish Fernandes,24,Karnataka,Tumakuru,Tumakuru,None
+C0458,Rohit Pujari,51,Kerala,Raichur,Raichur,None
+C0459,Devraj Ramesh,36,Karnataka,Vijayapura,Vijayapura,None
+C0460,Kishore Sharma,59,Karnataka,Dharwad,Dharwad,None
+C0461,Suresh Poojary,51,Karnataka,Hassan,Hassan,Gang_23
+C0462,Devraj Pandit,38,Karnataka,Tumakuru,Tumakuru,Gang_45
+C0463,Varun Shetty,20,Karnataka,Raichur,Raichur,None
+C0464,Shivakumar Bhat,47,Karnataka,Mysuru,Mysuru,Gang_22
+C0465,Madan Kotian,37,Karnataka,Vijayapura,Vijayapura,None
+C0466,Devraj Lobo,55,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0467,Rajesh Bhat,36,Karnataka,Raichur,Raichur,Gang_10
+C0468,Sachin Shekar,22,Karnataka,Kodagu,Kodagu,Gang_12
+C0469,Abhishek Kulkarni,49,Karnataka,Tumakuru,Tumakuru,Gang_46
+C0470,Karthik Kumar,23,Andhra Pradesh,Kodagu,Kodagu,Gang_46
+C0471,Devraj Kamath,29,Karnataka,Shivamogga,Shivamogga,None
+C0472,Umesh Udupa,42,Karnataka,Kalaburagi,Kalaburagi,Gang_6
+C0473,Pradeep Pai,50,Karnataka,Shivamogga,Shivamogga,Gang_17
+C0474,Akash Poojary,21,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0475,Pradeep Pinto,25,Karnataka,Koppal,Koppal,None
+C0476,Varun Verma,60,Karnataka,Shivamogga,Shivamogga,Gang_6
+C0477,Harsha Bairy,23,Karnataka,Kalaburagi,Kalaburagi,Gang_45
+C0478,Sachin Patil,36,Karnataka,Dharwad,Dharwad,None
+C0479,Sandeep Udupa,32,Tamil Nadu,Dharwad,Dharwad,None
+C0480,Mohan Gowda,44,Karnataka,Shivamogga,Shivamogga,None
+C0481,Jagannath Kunder,39,Karnataka,Tumakuru,Tumakuru,None
+C0482,Anand Reddy,41,Maharashtra,Koppal,Koppal,None
+C0483,Manoj D'Souza,26,Karnataka,Kalaburagi,Kalaburagi,Gang_3
+C0484,Shankar Alva,49,Karnataka,Koppal,Koppal,None
+C0485,Umesh Desai,33,Karnataka,Hassan,Hassan,None
+C0486,Yash Pai,38,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0487,Krishna Mallya,21,Karnataka,Koppal,Koppal,None
+C0488,Chirag Mallya,26,Karnataka,Tumakuru,Tumakuru,None
+C0489,Nandakumar Ramesh,59,Telangana,Dharwad,Dharwad,None
+C0490,Sunil Shet,49,Telangana,Tumakuru,Tumakuru,Gang_43
+C0491,Anand Noronha,60,Karnataka,Vijayapura,Vijayapura,Gang_46
+C0492,Manoj Kunder,24,Karnataka,Raichur,Raichur,None
+C0493,Madan Naik,60,Karnataka,Hassan,Hassan,None
+C0494,Chirag Bhat,60,Karnataka,Belagavi,Belagavi,None
+C0495,Akash Lobo,41,Kerala,Bengaluru Rural,Bengaluru Rural,None
+C0496,Jagannath Shetty,55,Tamil Nadu,Kodagu,Kodagu,Gang_39
+C0497,Jagannath Ramesh,55,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_36
+C0498,Bhaskar Rao,31,Karnataka,Raichur,Raichur,None
+C0499,Ranjith Kunder,36,Karnataka,Raichur,Raichur,None
+C0500,Shashank Mallya,29,Karnataka,Hassan,Hassan,Gang_46
+C0501,Mithun Pai,46,Karnataka,Bidar,Bidar,Gang_35
+C0502,Nandakumar Devadiga,23,Karnataka,Kodagu,Kodagu,None
+C0503,Suresh Shettigar,23,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0504,Suresh Shanbhag,51,Karnataka,Vijayapura,Vijayapura,Gang_50
+C0505,Nikhil Pujari,41,Karnataka,Shivamogga,Shivamogga,None
+C0506,Kiran Shanbhag,20,Karnataka,Dharwad,Dharwad,None
+C0507,Pradeep Alva,35,Telangana,Bengaluru Urban,Bengaluru Urban,None
+C0508,Mahesh Naik,42,Karnataka,Kodagu,Kodagu,None
+C0509,Akash Hegde,21,Karnataka,Mysuru,Mysuru,None
+C0510,Manoj Reddy,57,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_36
+C0511,Sunil Joshi,49,Karnataka,Mysuru,Mysuru,None
+C0512,Anand Devadiga,40,Karnataka,Tumakuru,Tumakuru,None
+C0513,Prakash Hegde,55,Karnataka,Bidar,Bidar,None
+C0514,Devraj Hegde,23,Karnataka,Mysuru,Mysuru,None
+C0515,Venkatesh Acharya,41,Karnataka,Kodagu,Kodagu,Gang_50
+C0516,Bharath Udupa,44,Karnataka,Raichur,Raichur,None
+C0517,Chirag Bollineni,30,Karnataka,Belagavi,Belagavi,None
+C0518,Yash Kudva,52,Karnataka,Raichur,Raichur,None
+C0519,Ramesh Kunder,54,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_50
+C0520,Sandeep Gowda,48,Andhra Pradesh,Kodagu,Kodagu,None
+C0521,Ashok Shekar,43,Karnataka,Raichur,Raichur,None
+C0522,Harsha Bhat,38,Karnataka,Kalaburagi,Kalaburagi,None
+C0523,Akhil Naik,51,Karnataka,Vijayapura,Vijayapura,None
+C0524,Harsha Murthy,22,Karnataka,Dharwad,Dharwad,None
+C0525,Gautham Kulkarni,38,Karnataka,Bidar,Bidar,None
+C0526,Devraj Desai,40,Karnataka,Raichur,Raichur,None
+C0527,Ganesh Alva,46,Karnataka,Koppal,Koppal,None
+C0528,Pradeep Patil,58,Karnataka,Mysuru,Mysuru,Gang_48
+C0529,Bhaskar Ramesh,26,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0530,Shashank Udupa,38,Maharashtra,Mysuru,Mysuru,Gang_8
+C0531,Bhaskar Verma,33,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_6
+C0532,Ashok Desai,39,Karnataka,Raichur,Raichur,None
+C0533,Pavan Sharma,48,Karnataka,Belagavi,Belagavi,None
+C0534,Ravi Alva,52,Karnataka,Raichur,Raichur,None
+C0535,Umesh Shanbhag,51,Karnataka,Tumakuru,Tumakuru,Gang_41
+C0536,Harish Kamath,23,Karnataka,Belagavi,Belagavi,Gang_30
+C0537,Pavan Hegde,20,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_25
+C0538,Bharath Shanbhag,30,Karnataka,Shivamogga,Shivamogga,None
+C0539,Krishna Hegde,37,Karnataka,Tumakuru,Tumakuru,None
+C0540,Manjunath Pinto,32,Karnataka,Ballari,Ballari,None
+C0541,Sharath Acharya,57,Karnataka,Dharwad,Dharwad,None
+C0542,Sharath Shekar,27,Karnataka,Shivamogga,Shivamogga,None
+C0543,Bhaskar Fernandes,51,Karnataka,Tumakuru,Tumakuru,None
+C0544,Manoj Naik,23,Karnataka,Tumakuru,Tumakuru,None
+C0545,Nandakumar Kumar,24,Karnataka,Bidar,Bidar,Gang_18
+C0546,Rakesh Noronha,39,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0547,Umesh Pujari,35,Karnataka,Dharwad,Dharwad,Gang_43
+C0548,Mohan Mallya,30,Karnataka,Kalaburagi,Kalaburagi,Gang_41
+C0549,Santosh Udupa,60,Karnataka,Ballari,Ballari,None
+C0550,Akhil Bhat,41,Telangana,Mysuru,Mysuru,None
+C0551,Aditya Kulkarni,54,Karnataka,Shivamogga,Shivamogga,Gang_14
+C0552,Shashank Joshi,42,Karnataka,Hassan,Hassan,None
+C0553,Anand Udupa,31,Andhra Pradesh,Ballari,Ballari,None
+C0554,Rohit Shanbhag,33,Karnataka,Vijayapura,Vijayapura,Gang_13
+C0555,Karthik Kunder,57,Karnataka,Mysuru,Mysuru,None
+C0556,Kishore Shekar,20,Karnataka,Kalaburagi,Kalaburagi,None
+C0557,Amith Kudva,26,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0558,Prakash Devadiga,46,Karnataka,Bidar,Bidar,Gang_42
+C0559,Lokesh Reddy,33,Karnataka,Hassan,Hassan,Gang_39
+C0560,Anil Mendonca,31,Karnataka,Tumakuru,Tumakuru,None
+C0561,Ajay Shet,21,Karnataka,Shivamogga,Shivamogga,Gang_31
+C0562,Ranjith Noronha,25,Karnataka,Bidar,Bidar,None
+C0563,Ajay Pai,42,Karnataka,Belagavi,Belagavi,None
+C0564,Bhaskar Adiga,37,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_34
+C0565,Harsha Reddy,55,Karnataka,Vijayapura,Vijayapura,None
+C0566,Mohan Kulkarni,34,Karnataka,Koppal,Koppal,Gang_16
+C0567,Ajay Shettigar,25,Karnataka,Ballari,Ballari,None
+C0568,Nagaraj Mallya,52,Telangana,Raichur,Raichur,None
+C0569,Vinod Shetty,49,Karnataka,Koppal,Koppal,Gang_50
+C0570,Deepak Kamath,48,Karnataka,Koppal,Koppal,None
+C0571,Suresh Kumar,49,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0572,Aravind Pandit,52,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0573,Anand Adiga,35,Karnataka,Hassan,Hassan,None
+C0574,Tejas Bollineni,53,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0575,Dinesh Naik,27,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_5
+C0576,Deepak Shettigar,57,Karnataka,Mysuru,Mysuru,Gang_5
+C0577,Sunil Moily,51,Karnataka,Raichur,Raichur,Gang_15
+C0578,Jagannath D'Souza,31,Karnataka,Bidar,Bidar,Gang_4
+C0579,Lohith Kudva,60,Karnataka,Tumakuru,Tumakuru,Gang_27
+C0580,Dinesh Shettigar,45,Karnataka,Shivamogga,Shivamogga,None
+C0581,Mahesh Acharya,40,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_14
+C0582,Darshan Kamath,55,Karnataka,Tumakuru,Tumakuru,None
+C0583,Chethan Noronha,28,Karnataka,Kodagu,Kodagu,None
+C0584,Srinivas Kamath,38,Karnataka,Koppal,Koppal,None
+C0585,Anil Kamath,33,Karnataka,Kalaburagi,Kalaburagi,None
+C0586,Anil D'Souza,20,Karnataka,Tumakuru,Tumakuru,Gang_27
+C0587,Girish Nayak,24,Kerala,Hassan,Hassan,None
+C0588,Sunil Kudva,28,Karnataka,Belagavi,Belagavi,Gang_7
+C0589,Aravind Hegde,27,Karnataka,Koppal,Koppal,None
+C0590,Umesh Murthy,38,Karnataka,Vijayapura,Vijayapura,None
+C0591,Suresh Mallya,60,Karnataka,Hassan,Hassan,Gang_13
+C0592,Mohan Karkera,51,Karnataka,Mysuru,Mysuru,Gang_35
+C0593,Sandeep Bhat,23,Karnataka,Shivamogga,Shivamogga,None
+C0594,Ramesh Kamath,59,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0595,Nagaraj Noronha,26,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0596,Varun Bollineni,21,Kerala,Hassan,Hassan,None
+C0597,Shashank Kotian,39,Karnataka,Vijayapura,Vijayapura,None
+C0598,Manoj Pujari,44,Maharashtra,Shivamogga,Shivamogga,Gang_34
+C0599,Vijay Shet,31,Karnataka,Koppal,Koppal,None
+C0600,Akash Shet,24,Karnataka,Tumakuru,Tumakuru,None
+C0601,Jagadish Bhat,53,Karnataka,Mysuru,Mysuru,Gang_38
+C0602,Darshan Shekar,21,Karnataka,Mysuru,Mysuru,None
+C0603,Darshan Kunder,58,Karnataka,Mysuru,Mysuru,None
+C0604,Shashank Desai,42,Andhra Pradesh,Bengaluru Rural,Bengaluru Rural,None
+C0605,Arun Moily,48,Karnataka,Ballari,Ballari,None
+C0606,Vinod Noronha,23,Karnataka,Bidar,Bidar,None
+C0607,Karthik Noronha,43,Karnataka,Kodagu,Kodagu,None
+C0608,Madan Bhat,58,Karnataka,Vijayapura,Vijayapura,Gang_20
+C0609,Ajay Sharma,51,Karnataka,Vijayapura,Vijayapura,Gang_12
+C0610,Karthik D'Souza,24,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0611,Yogesh Salian,33,Karnataka,Raichur,Raichur,None
+C0612,Yash Noronha,53,Karnataka,Ballari,Ballari,None
+C0613,Aravind Poojary,20,Karnataka,Bidar,Bidar,None
+C0614,Bhaskar Shetty,40,Karnataka,Raichur,Raichur,Gang_8
+C0615,Ashok Devadiga,27,Tamil Nadu,Ballari,Ballari,None
+C0616,Ravi Kudva,49,Karnataka,Ballari,Ballari,None
+C0617,Venkatesh D'Souza,42,Karnataka,Raichur,Raichur,Gang_18
+C0618,Harsha Kumar,50,Karnataka,Vijayapura,Vijayapura,None
+C0619,Rajesh Kulkarni,38,Karnataka,Ballari,Ballari,None
+C0620,Sharath Hegde,43,Karnataka,Kalaburagi,Kalaburagi,Gang_45
+C0621,Nikhil Kudva,21,Karnataka,Bidar,Bidar,None
+C0622,Karthik Nayak,20,Karnataka,Shivamogga,Shivamogga,Gang_42
+C0623,Gautham Naik,50,Karnataka,Koppal,Koppal,None
+C0624,Karthik Shetty,25,Karnataka,Vijayapura,Vijayapura,None
+C0625,Sachin Suvarna,21,Andhra Pradesh,Mysuru,Mysuru,None
+C0626,Yash Mendonca,20,Karnataka,Belagavi,Belagavi,None
+C0627,Ashok Bhat,22,Karnataka,Mysuru,Mysuru,None
+C0628,Santosh Rai,55,Karnataka,Hassan,Hassan,None
+C0629,Raghav Shettigar,45,Andhra Pradesh,Kalaburagi,Kalaburagi,Gang_34
+C0630,Devraj Kotian,36,Maharashtra,Mysuru,Mysuru,None
+C0631,Ramesh Adiga,25,Karnataka,Kodagu,Kodagu,None
+C0632,Rohit Shet,42,Karnataka,Dharwad,Dharwad,None
+C0633,Ramesh Salian,51,Telangana,Mysuru,Mysuru,None
+C0634,Ashok Poojary,57,Karnataka,Dharwad,Dharwad,Gang_49
+C0635,Mukesh Bhat,48,Karnataka,Kalaburagi,Kalaburagi,None
+C0636,Naveen Bangera,35,Karnataka,Ballari,Ballari,None
+C0637,Nithin Ramesh,59,Karnataka,Ballari,Ballari,None
+C0638,Krishna Fernandes,36,Karnataka,Koppal,Koppal,None
+C0639,Anand Nayak,28,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0640,Akhil Hegde,56,Karnataka,Kalaburagi,Kalaburagi,None
+C0641,Rajesh Udupa,33,Karnataka,Kodagu,Kodagu,Gang_50
+C0642,Chirag Kulkarni,54,Karnataka,Mysuru,Mysuru,None
+C0643,Arun D'Souza,40,Karnataka,Shivamogga,Shivamogga,None
+C0644,Rohit Moily,22,Karnataka,Ballari,Ballari,None
+C0645,Pavan Ramesh,32,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0646,Chethan Desai,54,Karnataka,Tumakuru,Tumakuru,Gang_19
+C0647,Pradeep Acharya,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0648,Anoop Karkera,58,Karnataka,Koppal,Koppal,None
+C0649,Vinod Pinto,51,Karnataka,Kalaburagi,Kalaburagi,None
+C0650,Venkatesh Murthy,38,Karnataka,Shivamogga,Shivamogga,None
+C0651,Vinod Poojary,23,Karnataka,Tumakuru,Tumakuru,Gang_2
+C0652,Shankar Rao,21,Karnataka,Raichur,Raichur,Gang_13
+C0653,Dinesh Sharma,34,Tamil Nadu,Hassan,Hassan,None
+C0654,Krishna Sharma,30,Karnataka,Vijayapura,Vijayapura,Gang_14
+C0655,Vinod Karkera,45,Karnataka,Ballari,Ballari,None
+C0656,Bharath Kulkarni,28,Karnataka,Koppal,Koppal,None
+C0657,Chirag Karkera,34,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0658,Sachin Alva,51,Karnataka,Raichur,Raichur,Gang_20
+C0659,Srinivas Pandit,60,Karnataka,Shivamogga,Shivamogga,None
+C0660,Shashank Bollineni,46,Karnataka,Koppal,Koppal,Gang_30
+C0661,Gopal Noronha,29,Karnataka,Ballari,Ballari,None
+C0662,Rakesh Reddy,34,Maharashtra,Dharwad,Dharwad,None
+C0663,Vikas Moily,26,Karnataka,Vijayapura,Vijayapura,None
+C0664,Bharath Poojary,46,Karnataka,Kalaburagi,Kalaburagi,None
+C0665,Anand Pinto,22,Andhra Pradesh,Shivamogga,Shivamogga,None
+C0666,Manjunath Kulkarni,59,Karnataka,Ballari,Ballari,Gang_29
+C0667,Nagaraj Pinto,28,Karnataka,Ballari,Ballari,Gang_13
+C0668,Mohan Kumar,54,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0669,Ramesh Karkera,30,Karnataka,Raichur,Raichur,None
+C0670,Umesh Mendonca,49,Karnataka,Raichur,Raichur,None
+C0671,Tarun Poojary,40,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0672,Kiran Reddy,54,Karnataka,Hassan,Hassan,Gang_40
+C0673,Akhil Nayak,25,Karnataka,Hassan,Hassan,Gang_12
+C0674,Manjunath Shekar,24,Andhra Pradesh,Vijayapura,Vijayapura,None
+C0675,Manoj Mallya,33,Kerala,Vijayapura,Vijayapura,None
+C0676,Sachin Hegde,33,Karnataka,Tumakuru,Tumakuru,None
+C0677,Akhil Gowda,42,Karnataka,Tumakuru,Tumakuru,None
+C0678,Pranav Suvarna,34,Karnataka,Kalaburagi,Kalaburagi,None
+C0679,Pavan Udupa,31,Karnataka,Bidar,Bidar,None
+C0680,Ramesh Devadiga,60,Karnataka,Bidar,Bidar,None
+C0681,Lokesh Devadiga,57,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_39
+C0682,Pranav Poojary,28,Karnataka,Raichur,Raichur,None
+C0683,Harish Joshi,24,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0684,Harsha Shettigar,30,Maharashtra,Ballari,Ballari,Gang_39
+C0685,Pranav Rai,34,Karnataka,Kodagu,Kodagu,None
+C0686,Ranjith Alva,58,Karnataka,Bidar,Bidar,Gang_48
+C0687,Abhishek Murthy,57,Kerala,Bidar,Bidar,Gang_20
+C0688,Rajesh Devadiga,53,Karnataka,Shivamogga,Shivamogga,Gang_24
+C0689,Vijay Bairy,43,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_28
+C0690,Rajesh Bangera,44,Karnataka,Vijayapura,Vijayapura,Gang_37
+C0691,Rohit Fernandes,38,Karnataka,Hassan,Hassan,None
+C0692,Amith Pandit,46,Karnataka,Hassan,Hassan,None
+C0693,Ajay Shanbhag,50,Telangana,Shivamogga,Shivamogga,Gang_31
+C0694,Amith Ramesh,24,Karnataka,Dharwad,Dharwad,None
+C0695,Umesh Sharma,25,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0696,Shashank Reddy,20,Karnataka,Mysuru,Mysuru,Gang_10
+C0697,Pavan Rai,47,Karnataka,Koppal,Koppal,None
+C0698,Abhishek Shekar,57,Karnataka,Vijayapura,Vijayapura,Gang_39
+C0699,Vijay Kulkarni,48,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0700,Manoj Shettigar,47,Karnataka,Belagavi,Belagavi,None
+C0701,Nithin Kudva,53,Karnataka,Koppal,Koppal,None
+C0702,Shivakumar Shanbhag,36,Karnataka,Bidar,Bidar,Gang_32
+C0703,Sharath Noronha,36,Karnataka,Koppal,Koppal,Gang_13
+C0704,Lokesh Ramesh,32,Karnataka,Kalaburagi,Kalaburagi,Gang_40
+C0705,Pranav Shet,59,Karnataka,Ballari,Ballari,None
+C0706,Umesh Shet,20,Karnataka,Vijayapura,Vijayapura,None
+C0707,Tarun Ramesh,25,Karnataka,Ballari,Ballari,Gang_11
+C0708,Abhishek Noronha,52,Andhra Pradesh,Vijayapura,Vijayapura,Gang_6
+C0709,Kishore Hegde,31,Karnataka,Belagavi,Belagavi,None
+C0710,Amith Naik,44,Karnataka,Vijayapura,Vijayapura,None
+C0711,Suresh Kamath,28,Karnataka,Mysuru,Mysuru,None
+C0712,Raghav Rai,27,Karnataka,Dharwad,Dharwad,Gang_18
+C0713,Sandeep Mendonca,24,Telangana,Bengaluru Urban,Bengaluru Urban,Gang_20
+C0714,Gautham Ramesh,30,Karnataka,Raichur,Raichur,None
+C0715,Shashank Shetty,44,Karnataka,Vijayapura,Vijayapura,Gang_20
+C0716,Ashok D'Souza,32,Karnataka,Dharwad,Dharwad,Gang_29
+C0717,Kiran D'Souza,36,Karnataka,Shivamogga,Shivamogga,None
+C0718,Varun Ramesh,54,Karnataka,Dharwad,Dharwad,None
+C0719,Mithun Shetty,24,Karnataka,Tumakuru,Tumakuru,Gang_4
+C0720,Kiran Devadiga,43,Karnataka,Shivamogga,Shivamogga,None
+C0721,Sharath Kumar,35,Karnataka,Mysuru,Mysuru,None
+C0722,Pranav Sharma,53,Karnataka,Raichur,Raichur,Gang_49
+C0723,Yogesh Moily,44,Telangana,Mysuru,Mysuru,Gang_17
+C0724,Gopal Shet,29,Karnataka,Vijayapura,Vijayapura,None
+C0725,Nikhil Noronha,25,Karnataka,Hassan,Hassan,None
+C0726,Chirag Gowda,27,Karnataka,Koppal,Koppal,None
+C0727,Nithin Gowda,30,Maharashtra,Kodagu,Kodagu,Gang_38
+C0728,Bhaskar Pujari,51,Karnataka,Shivamogga,Shivamogga,Gang_10
+C0729,Shankar Mallya,24,Karnataka,Raichur,Raichur,None
+C0730,Nikhil Gowda,34,Karnataka,Ballari,Ballari,None
+C0731,Sharath Devadiga,58,Telangana,Belagavi,Belagavi,None
+C0732,Venkatesh Rao,57,Karnataka,Hassan,Hassan,None
+C0733,Harish Gowda,49,Karnataka,Belagavi,Belagavi,Gang_49
+C0734,Chirag Bangera,24,Karnataka,Kodagu,Kodagu,Gang_5
+C0735,Tarun Kotian,47,Karnataka,Raichur,Raichur,None
+C0736,Gopal Pandit,35,Karnataka,Mysuru,Mysuru,None
+C0737,Arun Verma,29,Karnataka,Koppal,Koppal,None
+C0738,Mohan Bairy,55,Karnataka,Dharwad,Dharwad,None
+C0739,Anoop Reddy,47,Karnataka,Kodagu,Kodagu,None
+C0740,Hemant Desai,39,Tamil Nadu,Mysuru,Mysuru,Gang_5
+C0741,Sunil Poojary,30,Karnataka,Raichur,Raichur,Gang_19
+C0742,Akhil Kudva,41,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0743,Ganesh Pai,34,Karnataka,Hassan,Hassan,Gang_25
+C0744,Gautham Hegde,45,Karnataka,Dharwad,Dharwad,Gang_31
+C0745,Vinod Kotian,48,Karnataka,Ballari,Ballari,None
+C0746,Mukesh Kunder,56,Karnataka,Dharwad,Dharwad,None
+C0747,Ashok Rai,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0748,Girish Acharya,42,Karnataka,Belagavi,Belagavi,None
+C0749,Sunil Rao,31,Karnataka,Koppal,Koppal,Gang_4
+C0750,Sandeep Shet,49,Karnataka,Shivamogga,Shivamogga,None
+C0751,Gautham Karkera,29,Karnataka,Kalaburagi,Kalaburagi,None
+C0752,Amith Joshi,57,Karnataka,Koppal,Koppal,Gang_36
+C0753,Ganesh Verma,55,Andhra Pradesh,Mysuru,Mysuru,None
+C0754,Anand Salian,42,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0755,Nithin Joshi,57,Andhra Pradesh,Ballari,Ballari,None
+C0756,Yogesh Rai,38,Andhra Pradesh,Tumakuru,Tumakuru,Gang_10
+C0757,Pavan Joshi,30,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0758,Pranav Pandit,37,Karnataka,Raichur,Raichur,None
+C0759,Abhishek Rai,49,Karnataka,Dharwad,Dharwad,None
+C0760,Gautham Shettigar,25,Karnataka,Dharwad,Dharwad,None
+C0761,Devraj Bhat,27,Karnataka,Koppal,Koppal,None
+C0762,Umesh Noronha,28,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0763,Akash Pujari,28,Karnataka,Kodagu,Kodagu,None
+C0764,Aravind Noronha,46,Karnataka,Bidar,Bidar,Gang_45
+C0765,Pradeep Salian,28,Karnataka,Raichur,Raichur,None
+C0766,Ravi Moily,52,Karnataka,Tumakuru,Tumakuru,None
+C0767,Madan Lobo,44,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0768,Mithun Pujari,40,Kerala,Belagavi,Belagavi,None
+C0769,Naveen Rao,44,Tamil Nadu,Mysuru,Mysuru,None
+C0770,Chirag Murthy,44,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_49
+C0771,Tejas Kumar,53,Karnataka,Belagavi,Belagavi,Gang_10
+C0772,Pavan Devadiga,26,Telangana,Bengaluru Rural,Bengaluru Rural,None
+C0773,Mithun D'Souza,45,Karnataka,Shivamogga,Shivamogga,Gang_11
+C0774,Manoj Sharma,21,Karnataka,Bidar,Bidar,None
+C0775,Amith Desai,45,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0776,Sandeep Adiga,53,Maharashtra,Raichur,Raichur,None
+C0777,Varun Moily,22,Karnataka,Kodagu,Kodagu,None
+C0778,Shivakumar Hegde,32,Karnataka,Shivamogga,Shivamogga,Gang_48
+C0779,Ganesh Shettigar,41,Karnataka,Kalaburagi,Kalaburagi,None
+C0780,Chandan Shanbhag,51,Karnataka,Ballari,Ballari,None
+C0781,Chandan Noronha,57,Karnataka,Vijayapura,Vijayapura,None
+C0782,Nagaraj Kulkarni,39,Karnataka,Bidar,Bidar,None
+C0783,Raghav Mallya,52,Karnataka,Ballari,Ballari,Gang_19
+C0784,Aravind Gowda,22,Karnataka,Ballari,Ballari,Gang_10
+C0785,Shankar Moily,56,Karnataka,Vijayapura,Vijayapura,None
+C0786,Kiran Bhat,39,Karnataka,Vijayapura,Vijayapura,Gang_34
+C0787,Sunil D'Souza,31,Karnataka,Hassan,Hassan,None
+C0788,Santosh D'Souza,50,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0789,Nagaraj Ramesh,58,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0790,Anand Rao,33,Karnataka,Belagavi,Belagavi,Gang_4
+C0791,Ajay Bangera,58,Karnataka,Mysuru,Mysuru,None
+C0792,Jagannath Patil,28,Karnataka,Koppal,Koppal,Gang_37
+C0793,Aditya Pai,42,Karnataka,Shivamogga,Shivamogga,None
+C0794,Santosh Shanbhag,28,Karnataka,Shivamogga,Shivamogga,Gang_36
+C0795,Akhil Pandit,58,Karnataka,Mysuru,Mysuru,None
+C0796,Nikhil Naik,22,Karnataka,Tumakuru,Tumakuru,None
+C0797,Krishna Naik,41,Karnataka,Kodagu,Kodagu,None
+C0798,Yogesh Pujari,32,Karnataka,Dharwad,Dharwad,None
+C0799,Jagadish Reddy,50,Karnataka,Ballari,Ballari,None
+C0800,Pradeep Bangera,28,Karnataka,Kodagu,Kodagu,None
+C0801,Gopal Patil,30,Karnataka,Ballari,Ballari,None
+C0802,Kishore Murthy,32,Karnataka,Mysuru,Mysuru,None
+C0803,Chirag Alva,23,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0804,Jagannath Bollineni,51,Karnataka,Shivamogga,Shivamogga,None
+C0805,Tejas Lobo,30,Karnataka,Dharwad,Dharwad,Gang_39
+C0806,Umesh Suvarna,44,Karnataka,Koppal,Koppal,Gang_4
+C0807,Ajay Ramesh,22,Karnataka,Dharwad,Dharwad,None
+C0808,Bhaskar Rai,51,Telangana,Bengaluru Rural,Bengaluru Rural,None
+C0809,Mahesh Rai,20,Karnataka,Bidar,Bidar,Gang_32
+C0810,Sharath Ramesh,53,Karnataka,Koppal,Koppal,None
+C0811,Ramesh Bangera,49,Karnataka,Belagavi,Belagavi,None
+C0812,Anand Lobo,44,Karnataka,Koppal,Koppal,None
+C0813,Nithin Pandit,28,Telangana,Shivamogga,Shivamogga,Gang_50
+C0814,Naveen Sharma,48,Kerala,Mysuru,Mysuru,None
+C0815,Sunil Udupa,30,Kerala,Bidar,Bidar,None
+C0816,Mahesh Mallya,23,Karnataka,Hassan,Hassan,None
+C0817,Dinesh Bollineni,40,Karnataka,Kalaburagi,Kalaburagi,None
+C0818,Jagannath Pai,46,Karnataka,Raichur,Raichur,None
+C0819,Yash Bairy,59,Karnataka,Koppal,Koppal,None
+C0820,Sharath Bhat,54,Karnataka,Dharwad,Dharwad,Gang_48
+C0821,Aditya Bollineni,52,Karnataka,Koppal,Koppal,Gang_46
+C0822,Aditya Kotian,36,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_9
+C0823,Anil Murthy,47,Karnataka,Vijayapura,Vijayapura,None
+C0824,Sandeep Bollineni,30,Karnataka,Dharwad,Dharwad,None
+C0825,Anoop Shekar,56,Karnataka,Mysuru,Mysuru,None
+C0826,Kiran Bangera,46,Karnataka,Koppal,Koppal,None
+C0827,Anil Bhat,33,Telangana,Kodagu,Kodagu,None
+C0828,Ranjith Rao,39,Telangana,Hassan,Hassan,None
+C0829,Mukesh Fernandes,23,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_30
+C0830,Shivakumar Pinto,60,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0831,Srinivas Kulkarni,51,Karnataka,Raichur,Raichur,Gang_9
+C0832,Devraj Rai,41,Karnataka,Ballari,Ballari,None
+C0833,Varun Fernandes,60,Karnataka,Shivamogga,Shivamogga,Gang_1
+C0834,Arun Bhat,26,Karnataka,Koppal,Koppal,None
+C0835,Lokesh Karkera,20,Telangana,Bengaluru Urban,Bengaluru Urban,Gang_2
+C0836,Arun Desai,24,Karnataka,Kodagu,Kodagu,None
+C0837,Mahesh Hegde,49,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0838,Mahesh Kumar,41,Tamil Nadu,Tumakuru,Tumakuru,None
+C0839,Mithun Pinto,30,Karnataka,Shivamogga,Shivamogga,None
+C0840,Nagaraj Karkera,47,Maharashtra,Shivamogga,Shivamogga,Gang_42
+C0841,Tarun Bollineni,51,Karnataka,Ballari,Ballari,None
+C0842,Nandakumar Shanbhag,37,Karnataka,Kalaburagi,Kalaburagi,None
+C0843,Chandan Suvarna,31,Telangana,Dharwad,Dharwad,Gang_4
+C0844,Mahesh Suvarna,38,Telangana,Shivamogga,Shivamogga,None
+C0845,Bhaskar Bairy,43,Karnataka,Bidar,Bidar,Gang_38
+C0846,Raghav Adiga,51,Karnataka,Koppal,Koppal,Gang_10
+C0847,Santosh Ramesh,36,Karnataka,Bidar,Bidar,None
+C0848,Rakesh Acharya,44,Karnataka,Vijayapura,Vijayapura,None
+C0849,Bhaskar Desai,60,Karnataka,Shivamogga,Shivamogga,Gang_48
+C0850,Tejas Pai,43,Karnataka,Tumakuru,Tumakuru,Gang_47
+C0851,Rakesh Nayak,60,Karnataka,Vijayapura,Vijayapura,None
+C0852,Rajesh Mallya,38,Karnataka,Kodagu,Kodagu,Gang_27
+C0853,Darshan Patil,24,Karnataka,Tumakuru,Tumakuru,None
+C0854,Madan Pinto,23,Andhra Pradesh,Vijayapura,Vijayapura,None
+C0855,Raghav Naik,53,Andhra Pradesh,Kalaburagi,Kalaburagi,Gang_38
+C0856,Santosh Fernandes,59,Tamil Nadu,Kalaburagi,Kalaburagi,None
+C0857,Karthik Bollineni,25,Karnataka,Raichur,Raichur,None
+C0858,Yogesh Naik,22,Karnataka,Koppal,Koppal,Gang_1
+C0859,Ashok Pandit,38,Karnataka,Ballari,Ballari,Gang_15
+C0860,Rajesh Kunder,29,Karnataka,Tumakuru,Tumakuru,None
+C0861,Chandan Mendonca,26,Andhra Pradesh,Tumakuru,Tumakuru,None
+C0862,Dinesh Pandit,32,Karnataka,Belagavi,Belagavi,None
+C0863,Girish Kunder,34,Karnataka,Kodagu,Kodagu,Gang_40
+C0864,Lohith Shekar,56,Karnataka,Raichur,Raichur,None
+C0865,Akhil Shekar,33,Karnataka,Ballari,Ballari,Gang_14
+C0866,Lohith Bhat,36,Karnataka,Kalaburagi,Kalaburagi,Gang_37
+C0867,Pradeep Bollineni,50,Karnataka,Ballari,Ballari,Gang_25
+C0868,Gopal Kotian,38,Karnataka,Tumakuru,Tumakuru,None
+C0869,Shivakumar Ramesh,30,Telangana,Kodagu,Kodagu,None
+C0870,Sandeep Lobo,37,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0871,Harish Pinto,45,Karnataka,Shivamogga,Shivamogga,None
+C0872,Vinod D'Souza,26,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_25
+C0873,Pavan Reddy,57,Karnataka,Dharwad,Dharwad,Gang_49
+C0874,Manjunath Kunder,33,Karnataka,Belagavi,Belagavi,None
+C0875,Rohit Lobo,33,Maharashtra,Bengaluru Rural,Bengaluru Rural,None
+C0876,Lokesh Salian,23,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_35
+C0877,Anil Rai,24,Karnataka,Hassan,Hassan,None
+C0878,Madan D'Souza,39,Karnataka,Belagavi,Belagavi,None
+C0879,Sunil Verma,59,Karnataka,Ballari,Ballari,None
+C0880,Pavan Kudva,51,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_19
+C0881,Manoj Hegde,47,Karnataka,Mysuru,Mysuru,None
+C0882,Nagaraj Sharma,51,Karnataka,Dharwad,Dharwad,None
+C0883,Yogesh Adiga,52,Karnataka,Hassan,Hassan,Gang_34
+C0884,Sandeep Joshi,34,Karnataka,Mysuru,Mysuru,Gang_37
+C0885,Akash Gowda,34,Karnataka,Shivamogga,Shivamogga,None
+C0886,Anoop Adiga,43,Karnataka,Koppal,Koppal,None
+C0887,Rohit Adiga,23,Karnataka,Belagavi,Belagavi,None
+C0888,Arun Patil,25,Karnataka,Hassan,Hassan,Gang_30
+C0889,Mohan Fernandes,54,Karnataka,Tumakuru,Tumakuru,Gang_2
+C0890,Ravi Joshi,24,Karnataka,Kodagu,Kodagu,None
+C0891,Girish Joshi,38,Karnataka,Ballari,Ballari,None
+C0892,Aravind Adiga,27,Karnataka,Hassan,Hassan,None
+C0893,Lohith Kumar,21,Karnataka,Belagavi,Belagavi,Gang_24
+C0894,Nithin Bangera,48,Kerala,Hassan,Hassan,None
+C0895,Sachin Mallya,48,Karnataka,Belagavi,Belagavi,None
+C0896,Pranav Bangera,37,Karnataka,Ballari,Ballari,Gang_19
+C0897,Sandeep Naik,37,Karnataka,Dharwad,Dharwad,None
+C0898,Ranjith Sharma,43,Telangana,Hassan,Hassan,None
+C0899,Ajay Salian,20,Karnataka,Vijayapura,Vijayapura,Gang_40
+C0900,Manoj Kulkarni,59,Karnataka,Koppal,Koppal,None
+C0901,Aravind Rai,46,Karnataka,Hassan,Hassan,None
+C0902,Yash Sharma,38,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0903,Anil Shetty,25,Karnataka,Dharwad,Dharwad,None
+C0904,Amith Poojary,60,Karnataka,Kalaburagi,Kalaburagi,None
+C0905,Aditya Shettigar,29,Karnataka,Hassan,Hassan,Gang_38
+C0906,Suresh Bollineni,48,Karnataka,Belagavi,Belagavi,None
+C0907,Hemant Ramesh,47,Karnataka,Bidar,Bidar,None
+C0908,Chethan Kamath,25,Karnataka,Tumakuru,Tumakuru,None
+C0909,Raghav Pujari,50,Karnataka,Tumakuru,Tumakuru,None
+C0910,Umesh Pai,35,Karnataka,Dharwad,Dharwad,Gang_50
+C0911,Santosh Murthy,43,Karnataka,Tumakuru,Tumakuru,None
+C0912,Sunil Kotian,55,Karnataka,Mysuru,Mysuru,None
+C0913,Vijay Udupa,45,Telangana,Kalaburagi,Kalaburagi,Gang_18
+C0914,Ranjith Murthy,53,Karnataka,Vijayapura,Vijayapura,Gang_25
+C0915,Raghav Acharya,35,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_17
+C0916,Tarun Kumar,45,Karnataka,Bidar,Bidar,None
+C0917,Arun Sharma,39,Karnataka,Koppal,Koppal,Gang_25
+C0918,Mukesh Reddy,40,Karnataka,Belagavi,Belagavi,None
+C0919,Abhishek Pujari,54,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_14
+C0920,Santosh Pujari,41,Karnataka,Vijayapura,Vijayapura,None
+C0921,Dinesh Gowda,23,Karnataka,Koppal,Koppal,None
+C0922,Akhil Acharya,49,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_39
+C0923,Kiran Hegde,53,Karnataka,Shivamogga,Shivamogga,Gang_49
+C0924,Mohan Adiga,26,Karnataka,Kodagu,Kodagu,None
+C0925,Pradeep Shanbhag,38,Karnataka,Tumakuru,Tumakuru,None
+C0926,Pavan Poojary,47,Telangana,Hassan,Hassan,Gang_40
+C0927,Ashok Shettigar,57,Karnataka,Ballari,Ballari,None
+C0928,Anand Mallya,31,Karnataka,Raichur,Raichur,None
+C0929,Ranjith Pandit,34,Karnataka,Shivamogga,Shivamogga,None
+C0930,Ranjith Kotian,40,Karnataka,Bidar,Bidar,Gang_24
+C0931,Rohit Udupa,36,Karnataka,Tumakuru,Tumakuru,Gang_1
+C0932,Sharath Reddy,37,Karnataka,Kalaburagi,Kalaburagi,None
+C0933,Nikhil Kumar,56,Karnataka,Dharwad,Dharwad,None
+C0934,Anoop Mallya,33,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0935,Mohan Bollineni,48,Andhra Pradesh,Bengaluru Urban,Bengaluru Urban,Gang_26
+C0936,Chandan Alva,44,Karnataka,Kalaburagi,Kalaburagi,None
+C0937,Harsha Kulkarni,57,Karnataka,Ballari,Ballari,None
+C0938,Girish Murthy,29,Karnataka,Kalaburagi,Kalaburagi,None
+C0939,Naveen Kulkarni,21,Karnataka,Mysuru,Mysuru,None
+C0940,Ajay Poojary,52,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_49
+C0941,Umesh Shettigar,45,Karnataka,Bidar,Bidar,Gang_10
+C0942,Ravi Bairy,48,Karnataka,Kalaburagi,Kalaburagi,Gang_36
+C0943,Girish Poojary,39,Telangana,Raichur,Raichur,None
+C0944,Pradeep Lobo,27,Tamil Nadu,Kodagu,Kodagu,None
+C0945,Girish Hegde,46,Telangana,Kalaburagi,Kalaburagi,None
+C0946,Lohith Pujari,23,Karnataka,Mysuru,Mysuru,Gang_30
+C0947,Mithun Sharma,39,Karnataka,Raichur,Raichur,Gang_32
+C0948,Raghav Bollineni,39,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0949,Nithin Rai,28,Andhra Pradesh,Bidar,Bidar,None
+C0950,Gautham Gowda,27,Karnataka,Belagavi,Belagavi,Gang_33
+C0951,Dinesh Lobo,40,Karnataka,Mysuru,Mysuru,None
+C0952,Aravind Sharma,53,Karnataka,Belagavi,Belagavi,None
+C0953,Krishna Kotian,29,Karnataka,Shivamogga,Shivamogga,None
+C0954,Vinod Patil,47,Karnataka,Raichur,Raichur,Gang_3
+C0955,Mohan Nayak,59,Karnataka,Dharwad,Dharwad,None
+C0956,Rakesh Devadiga,50,Karnataka,Dharwad,Dharwad,Gang_30
+C0957,Tejas Poojary,43,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0958,Suresh Shekar,33,Andhra Pradesh,Belagavi,Belagavi,None
+C0959,Chandan Adiga,24,Karnataka,Mysuru,Mysuru,Gang_39
+C0960,Naveen Murthy,41,Karnataka,Bidar,Bidar,None
+C0961,Ashok Alva,20,Karnataka,Belagavi,Belagavi,None
+C0962,Yash Kumar,38,Karnataka,Vijayapura,Vijayapura,None
+C0963,Lohith Adiga,40,Karnataka,Mysuru,Mysuru,None
+C0964,Shivakumar Gowda,31,Telangana,Tumakuru,Tumakuru,None
+C0965,Tarun Shanbhag,39,Karnataka,Kalaburagi,Kalaburagi,Gang_20
+C0966,Yash Bhat,25,Andhra Pradesh,Raichur,Raichur,None
+C0967,Ranjith Bhat,40,Karnataka,Tumakuru,Tumakuru,None
+C0968,Arun Bollineni,58,Karnataka,Raichur,Raichur,Gang_25
+C0969,Manoj Rao,20,Telangana,Vijayapura,Vijayapura,Gang_13
+C0970,Manjunath Kudva,59,Karnataka,Shivamogga,Shivamogga,None
+C0971,Bharath Kamath,28,Karnataka,Tumakuru,Tumakuru,None
+C0972,Yash Shanbhag,60,Karnataka,Dharwad,Dharwad,None
+C0973,Santosh Kumar,56,Karnataka,Vijayapura,Vijayapura,None
+C0974,Kiran Rao,27,Karnataka,Tumakuru,Tumakuru,Gang_21
+C0975,Vijay Murthy,35,Karnataka,Raichur,Raichur,None
+C0976,Bharath Bangera,21,Maharashtra,Kodagu,Kodagu,None
+C0977,Kishore Pandit,34,Telangana,Tumakuru,Tumakuru,None
+C0978,Rajesh Bollineni,44,Karnataka,Kalaburagi,Kalaburagi,None
+C0979,Mohan Noronha,38,Karnataka,Belagavi,Belagavi,None
+C0980,Pradeep Reddy,26,Karnataka,Hassan,Hassan,Gang_26
+C0981,Mithun Karkera,58,Karnataka,Bidar,Bidar,None
+C0982,Pradeep Rai,50,Karnataka,Kodagu,Kodagu,None
+C0983,Madan Poojary,36,Kerala,Vijayapura,Vijayapura,Gang_49
+C0984,Hemant Karkera,47,Andhra Pradesh,Hassan,Hassan,None
+C0985,Tarun Karkera,45,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C0986,Tejas Verma,58,Kerala,Koppal,Koppal,None
+C0987,Abhishek Adiga,50,Tamil Nadu,Dharwad,Dharwad,None
+C0988,Naveen Moily,59,Karnataka,Ballari,Ballari,None
+C0989,Yogesh Kotian,59,Karnataka,Mysuru,Mysuru,None
+C0990,Hemant Kamath,46,Karnataka,Koppal,Koppal,Gang_22
+C0991,Shivakumar Murthy,58,Karnataka,Bidar,Bidar,None
+C0992,Harish D'Souza,54,Karnataka,Kodagu,Kodagu,None
+C0993,Mahesh Moily,37,Karnataka,Raichur,Raichur,None
+C0994,Amith Fernandes,39,Karnataka,Bidar,Bidar,None
+C0995,Chethan Verma,45,Karnataka,Kalaburagi,Kalaburagi,None
+C0996,Tejas Karkera,30,Telangana,Vijayapura,Vijayapura,Gang_49
+C0997,Anoop Shettigar,60,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C0998,Kiran Adiga,53,Karnataka,Tumakuru,Tumakuru,None
+C0999,Vinod Salian,41,Karnataka,Dharwad,Dharwad,None
+C1000,Gopal Alva,58,Karnataka,Bidar,Bidar,None
+C1001,Rohit Pinto,45,Karnataka,Belagavi,Belagavi,Gang_46
+C1002,Vijay Salian,38,Karnataka,Kodagu,Kodagu,None
+C1003,Mithun Shanbhag,59,Karnataka,Bidar,Bidar,Gang_41
+C1004,Mukesh Murthy,50,Karnataka,Kodagu,Kodagu,None
+C1005,Nikhil Poojary,32,Maharashtra,Ballari,Ballari,Gang_14
+C1006,Mahesh Verma,26,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1007,Raghav Karkera,36,Karnataka,Kalaburagi,Kalaburagi,Gang_34
+C1008,Manoj Bhat,60,Karnataka,Raichur,Raichur,None
+C1009,Kiran Rai,25,Tamil Nadu,Tumakuru,Tumakuru,None
+C1010,Abhishek Pinto,20,Karnataka,Belagavi,Belagavi,None
+C1011,Darshan Pandit,32,Karnataka,Mysuru,Mysuru,None
+C1012,Manoj Shekar,33,Karnataka,Shivamogga,Shivamogga,None
+C1013,Aravind Suvarna,37,Karnataka,Ballari,Ballari,Gang_22
+C1014,Akash Mendonca,47,Karnataka,Shivamogga,Shivamogga,None
+C1015,Hemant Pandit,36,Karnataka,Hassan,Hassan,None
+C1016,Chirag Shekar,30,Karnataka,Hassan,Hassan,Gang_34
+C1017,Venkatesh Naik,48,Karnataka,Vijayapura,Vijayapura,None
+C1018,Pavan Shetty,51,Karnataka,Shivamogga,Shivamogga,None
+C1019,Arun Kamath,44,Karnataka,Kodagu,Kodagu,Gang_46
+C1020,Darshan Shettigar,57,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1021,Varun Desai,59,Karnataka,Hassan,Hassan,None
+C1022,Nithin Suvarna,53,Telangana,Shivamogga,Shivamogga,Gang_47
+C1023,Ravi Hegde,43,Karnataka,Bidar,Bidar,None
+C1024,Aravind Pai,43,Karnataka,Dharwad,Dharwad,Gang_28
+C1025,Krishna Pai,30,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_28
+C1026,Chethan Mendonca,47,Karnataka,Ballari,Ballari,Gang_10
+C1027,Akhil Shetty,36,Karnataka,Mysuru,Mysuru,None
+C1028,Arun Shettigar,57,Telangana,Koppal,Koppal,Gang_49
+C1029,Gopal Mallya,25,Karnataka,Shivamogga,Shivamogga,None
+C1030,Ashok Suvarna,56,Telangana,Vijayapura,Vijayapura,Gang_9
+C1031,Lokesh Patil,38,Karnataka,Kodagu,Kodagu,None
+C1032,Rajesh Ramesh,47,Karnataka,Belagavi,Belagavi,Gang_5
+C1033,Anil Hegde,50,Maharashtra,Kalaburagi,Kalaburagi,None
+C1034,Hemant Patil,20,Karnataka,Koppal,Koppal,None
+C1035,Ramesh Murthy,23,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_13
+C1036,Deepak Kudva,45,Karnataka,Bidar,Bidar,None
+C1037,Dinesh Kulkarni,53,Karnataka,Hassan,Hassan,None
+C1038,Mithun Bhat,37,Karnataka,Bidar,Bidar,None
+C1039,Chirag Shanbhag,37,Telangana,Hassan,Hassan,None
+C1040,Nagaraj Poojary,34,Karnataka,Koppal,Koppal,Gang_47
+C1041,Nandakumar Bhat,36,Karnataka,Kodagu,Kodagu,Gang_16
+C1042,Prakash Kumar,28,Maharashtra,Bidar,Bidar,None
+C1043,Srinivas Shekar,52,Karnataka,Koppal,Koppal,None
+C1044,Anil Reddy,56,Karnataka,Belagavi,Belagavi,None
+C1045,Aditya Karkera,26,Telangana,Kalaburagi,Kalaburagi,None
+C1046,Karthik Rao,43,Tamil Nadu,Mysuru,Mysuru,None
+C1047,Abhishek Kunder,54,Karnataka,Raichur,Raichur,Gang_40
+C1048,Lohith Devadiga,37,Karnataka,Hassan,Hassan,Gang_31
+C1049,Ranjith Pujari,26,Karnataka,Dharwad,Dharwad,None
+C1050,Pranav Devadiga,49,Karnataka,Bidar,Bidar,None
+C1051,Dinesh Nayak,38,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_24
+C1052,Varun Pujari,33,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1053,Sunil Lobo,43,Karnataka,Tumakuru,Tumakuru,Gang_22
+C1054,Varun Hegde,48,Karnataka,Vijayapura,Vijayapura,Gang_11
+C1055,Shashank Bhat,52,Karnataka,Tumakuru,Tumakuru,None
+C1056,Nikhil Pai,36,Karnataka,Kodagu,Kodagu,Gang_29
+C1057,Madan Kudva,31,Karnataka,Kalaburagi,Kalaburagi,None
+C1058,Rohit Nayak,34,Karnataka,Ballari,Ballari,Gang_8
+C1059,Tejas Kamath,54,Karnataka,Vijayapura,Vijayapura,None
+C1060,Mahesh Nayak,52,Karnataka,Mysuru,Mysuru,None
+C1061,Mithun Kudva,60,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1062,Chethan Joshi,54,Karnataka,Shivamogga,Shivamogga,None
+C1063,Akash Bhat,29,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1064,Shankar Kunder,24,Karnataka,Kalaburagi,Kalaburagi,None
+C1065,Srinivas Pai,34,Karnataka,Kalaburagi,Kalaburagi,None
+C1066,Harsha Mallya,51,Karnataka,Ballari,Ballari,None
+C1067,Sharath Shetty,45,Andhra Pradesh,Kalaburagi,Kalaburagi,None
+C1068,Manoj Kotian,49,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_20
+C1069,Suresh Pinto,23,Karnataka,Kalaburagi,Kalaburagi,Gang_40
+C1070,Tejas Hegde,37,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_23
+C1071,Ashok Pinto,20,Karnataka,Belagavi,Belagavi,None
+C1072,Karthik Desai,51,Karnataka,Raichur,Raichur,None
+C1073,Deepak Joshi,29,Karnataka,Tumakuru,Tumakuru,None
+C1074,Sunil Devadiga,43,Karnataka,Vijayapura,Vijayapura,None
+C1075,Tejas D'Souza,48,Karnataka,Bidar,Bidar,None
+C1076,Pavan Shekar,50,Karnataka,Raichur,Raichur,None
+C1077,Madan Bairy,29,Karnataka,Hassan,Hassan,None
+C1078,Prakash Shetty,60,Karnataka,Bidar,Bidar,None
+C1079,Vijay Pinto,22,Karnataka,Belagavi,Belagavi,None
+C1080,Nikhil Murthy,27,Karnataka,Tumakuru,Tumakuru,Gang_29
+C1081,Aravind Pinto,22,Karnataka,Hassan,Hassan,None
+C1082,Nithin Sharma,30,Karnataka,Hassan,Hassan,None
+C1083,Umesh Salian,37,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1084,Ramesh Joshi,41,Karnataka,Belagavi,Belagavi,Gang_10
+C1085,Harish Patil,48,Kerala,Vijayapura,Vijayapura,None
+C1086,Chethan Kudva,41,Karnataka,Raichur,Raichur,Gang_41
+C1087,Srinivas Mendonca,51,Karnataka,Shivamogga,Shivamogga,None
+C1088,Manjunath Nayak,58,Telangana,Kalaburagi,Kalaburagi,None
+C1089,Darshan Mallya,52,Karnataka,Kodagu,Kodagu,Gang_10
+C1090,Sachin Poojary,20,Kerala,Ballari,Ballari,None
+C1091,Anoop Kulkarni,33,Karnataka,Ballari,Ballari,None
+C1092,Sharath Moily,34,Karnataka,Kodagu,Kodagu,None
+C1093,Srinivas Devadiga,31,Telangana,Mysuru,Mysuru,Gang_3
+C1094,Aditya Devadiga,42,Karnataka,Kalaburagi,Kalaburagi,Gang_10
+C1095,Pavan Pai,46,Karnataka,Kodagu,Kodagu,None
+C1096,Gopal Shekar,49,Karnataka,Shivamogga,Shivamogga,Gang_16
+C1097,Ramesh Shekar,23,Karnataka,Belagavi,Belagavi,None
+C1098,Lokesh Bangera,37,Telangana,Bengaluru Rural,Bengaluru Rural,None
+C1099,Rohit Murthy,43,Karnataka,Kalaburagi,Kalaburagi,None
+C1100,Yash Nayak,53,Karnataka,Kodagu,Kodagu,None
+C1101,Aditya Alva,59,Karnataka,Hassan,Hassan,None
+C1102,Jagannath Bairy,42,Karnataka,Vijayapura,Vijayapura,None
+C1103,Devraj Mendonca,60,Karnataka,Koppal,Koppal,Gang_10
+C1104,Srinivas Salian,48,Karnataka,Hassan,Hassan,None
+C1105,Akash Kulkarni,48,Karnataka,Dharwad,Dharwad,None
+C1106,Manjunath Mallya,27,Karnataka,Kodagu,Kodagu,Gang_15
+C1107,Amith Shanbhag,37,Kerala,Bengaluru Rural,Bengaluru Rural,None
+C1108,Yogesh Bairy,57,Andhra Pradesh,Dharwad,Dharwad,None
+C1109,Pavan Noronha,40,Karnataka,Ballari,Ballari,None
+C1110,Sharath Bollineni,56,Karnataka,Shivamogga,Shivamogga,None
+C1111,Gautham Murthy,35,Karnataka,Koppal,Koppal,None
+C1112,Ravi Acharya,53,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1113,Krishna Adiga,56,Karnataka,Dharwad,Dharwad,None
+C1114,Kishore Bairy,51,Andhra Pradesh,Ballari,Ballari,None
+C1115,Chirag Verma,57,Karnataka,Raichur,Raichur,None
+C1116,Manoj Kamath,24,Karnataka,Kodagu,Kodagu,None
+C1117,Pradeep Bairy,50,Telangana,Vijayapura,Vijayapura,None
+C1118,Nagaraj Shet,43,Karnataka,Mysuru,Mysuru,None
+C1119,Santosh Kotian,45,Karnataka,Hassan,Hassan,None
+C1120,Gopal Nayak,60,Karnataka,Dharwad,Dharwad,Gang_26
+C1121,Tarun Pinto,27,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1122,Chethan Hegde,29,Karnataka,Koppal,Koppal,None
+C1123,Ajay Kunder,34,Karnataka,Tumakuru,Tumakuru,None
+C1124,Sunil Kunder,52,Karnataka,Belagavi,Belagavi,Gang_43
+C1125,Suresh Hegde,23,Karnataka,Ballari,Ballari,Gang_29
+C1126,Bharath Kotian,27,Karnataka,Bidar,Bidar,None
+C1127,Jagannath Bhat,36,Karnataka,Kodagu,Kodagu,None
+C1128,Bhaskar Poojary,40,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_18
+C1129,Mohan Salian,24,Karnataka,Hassan,Hassan,None
+C1130,Yogesh Bhat,29,Karnataka,Koppal,Koppal,None
+C1131,Ranjith Nayak,44,Karnataka,Ballari,Ballari,Gang_15
+C1132,Nikhil Reddy,34,Karnataka,Tumakuru,Tumakuru,None
+C1133,Naveen Shetty,47,Maharashtra,Bengaluru Rural,Bengaluru Rural,Gang_13
+C1134,Kiran Mallya,49,Karnataka,Tumakuru,Tumakuru,None
+C1135,Vijay Fernandes,20,Karnataka,Hassan,Hassan,Gang_24
+C1136,Nikhil Kulkarni,30,Karnataka,Shivamogga,Shivamogga,None
+C1137,Arun Nayak,57,Karnataka,Vijayapura,Vijayapura,None
+C1138,Harsha Rao,30,Karnataka,Belagavi,Belagavi,None
+C1139,Rohit Karkera,54,Karnataka,Belagavi,Belagavi,Gang_33
+C1140,Harsha Gowda,54,Tamil Nadu,Raichur,Raichur,None
+C1141,Suresh Rai,37,Tamil Nadu,Bidar,Bidar,Gang_36
+C1142,Chirag Sharma,50,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1143,Lokesh Hegde,52,Karnataka,Hassan,Hassan,Gang_14
+C1144,Sunil Shetty,30,Karnataka,Bidar,Bidar,None
+C1145,Yogesh Lobo,37,Karnataka,Bidar,Bidar,Gang_15
+C1146,Rohit Noronha,56,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_3
+C1147,Sharath Bangera,48,Karnataka,Hassan,Hassan,None
+C1148,Ranjith Bollineni,51,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1149,Hemant Shettigar,27,Karnataka,Bidar,Bidar,None
+C1150,Aditya Gowda,60,Andhra Pradesh,Vijayapura,Vijayapura,Gang_19
+C1151,Vijay Kudva,38,Karnataka,Mysuru,Mysuru,None
+C1152,Vikas Adiga,34,Karnataka,Bidar,Bidar,Gang_36
+C1153,Akash Bangera,32,Karnataka,Ballari,Ballari,None
+C1154,Shashank Moily,43,Karnataka,Kodagu,Kodagu,Gang_6
+C1155,Vijay Moily,46,Karnataka,Kodagu,Kodagu,None
+C1156,Girish Rai,56,Kerala,Kalaburagi,Kalaburagi,None
+C1157,Srinivas Nayak,20,Karnataka,Dharwad,Dharwad,None
+C1158,Mukesh Moily,39,Karnataka,Hassan,Hassan,None
+C1159,Devraj Bollineni,53,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1160,Bharath Nayak,47,Karnataka,Dharwad,Dharwad,None
+C1161,Chirag Rao,34,Karnataka,Vijayapura,Vijayapura,Gang_3
+C1162,Arun Devadiga,29,Telangana,Kalaburagi,Kalaburagi,Gang_24
+C1163,Chandan Nayak,46,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1164,Pavan Karkera,36,Karnataka,Shivamogga,Shivamogga,Gang_48
+C1165,Aravind Bairy,35,Karnataka,Mysuru,Mysuru,None
+C1166,Mohan Hegde,34,Karnataka,Tumakuru,Tumakuru,None
+C1167,Umesh Pinto,28,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1168,Tejas Pujari,20,Karnataka,Koppal,Koppal,None
+C1169,Rohit Suvarna,33,Karnataka,Koppal,Koppal,None
+C1170,Chirag Kamath,31,Karnataka,Tumakuru,Tumakuru,None
+C1171,Rajesh Bairy,28,Tamil Nadu,Koppal,Koppal,None
+C1172,Pavan Adiga,31,Karnataka,Bidar,Bidar,None
+C1173,Gautham Mendonca,24,Karnataka,Kodagu,Kodagu,Gang_12
+C1174,Umesh Reddy,43,Karnataka,Dharwad,Dharwad,None
+C1175,Sunil Mendonca,43,Karnataka,Koppal,Koppal,None
+C1176,Akash Pandit,24,Karnataka,Koppal,Koppal,None
+C1177,Devraj Acharya,37,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1178,Hemant Joshi,30,Karnataka,Belagavi,Belagavi,None
+C1179,Gautham Sharma,52,Karnataka,Shivamogga,Shivamogga,None
+C1180,Ravi Bollineni,45,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1181,Nandakumar Moily,25,Karnataka,Shivamogga,Shivamogga,None
+C1182,Sandeep D'Souza,39,Karnataka,Kalaburagi,Kalaburagi,None
+C1183,Ranjith Kulkarni,31,Karnataka,Bidar,Bidar,None
+C1184,Ganesh Bollineni,49,Karnataka,Hassan,Hassan,None
+C1185,Pranav Acharya,32,Karnataka,Dharwad,Dharwad,None
+C1186,Vikas Ramesh,32,Karnataka,Ballari,Ballari,None
+C1187,Raghav Kulkarni,29,Karnataka,Tumakuru,Tumakuru,Gang_50
+C1188,Srinivas Lobo,39,Karnataka,Koppal,Koppal,None
+C1189,Varun Shekar,29,Karnataka,Belagavi,Belagavi,Gang_37
+C1190,Tejas Rao,55,Karnataka,Tumakuru,Tumakuru,None
+C1191,Suresh Kulkarni,46,Karnataka,Kodagu,Kodagu,None
+C1192,Chethan Devadiga,30,Karnataka,Hassan,Hassan,None
+C1193,Ravi Poojary,38,Karnataka,Hassan,Hassan,Gang_10
+C1194,Sunil Nayak,35,Karnataka,Raichur,Raichur,None
+C1195,Mukesh Karkera,52,Karnataka,Belagavi,Belagavi,None
+C1196,Shivakumar Reddy,53,Karnataka,Raichur,Raichur,None
+C1197,Vinod Kunder,29,Karnataka,Kalaburagi,Kalaburagi,None
+C1198,Shashank Shet,51,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_37
+C1199,Naveen Shanbhag,43,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1200,Ashok Pujari,40,Karnataka,Raichur,Raichur,None
+C1201,Sunil Reddy,33,Telangana,Bengaluru Urban,Bengaluru Urban,Gang_47
+C1202,Varun Bhat,45,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1203,Shivakumar Salian,52,Karnataka,Tumakuru,Tumakuru,Gang_48
+C1204,Bhaskar Kamath,35,Karnataka,Koppal,Koppal,None
+C1205,Santosh Bairy,54,Karnataka,Mysuru,Mysuru,Gang_37
+C1206,Dinesh Pai,55,Karnataka,Vijayapura,Vijayapura,Gang_10
+C1207,Nandakumar Desai,23,Karnataka,Bidar,Bidar,None
+C1208,Pavan Gowda,25,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1209,Aravind Fernandes,58,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1210,Aditya Moily,60,Karnataka,Tumakuru,Tumakuru,None
+C1211,Prakash Fernandes,51,Karnataka,Shivamogga,Shivamogga,Gang_6
+C1212,Lokesh Shettigar,44,Karnataka,Raichur,Raichur,None
+C1213,Aravind Shanbhag,24,Karnataka,Hassan,Hassan,None
+C1214,Harsha Pandit,24,Karnataka,Mysuru,Mysuru,None
+C1215,Arun Adiga,56,Andhra Pradesh,Raichur,Raichur,None
+C1216,Vinod Shanbhag,60,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_25
+C1217,Chethan Pandit,57,Karnataka,Mysuru,Mysuru,None
+C1218,Manjunath Noronha,52,Karnataka,Belagavi,Belagavi,None
+C1219,Harsha Naik,37,Karnataka,Hassan,Hassan,None
+C1220,Girish Mendonca,40,Maharashtra,Mysuru,Mysuru,None
+C1221,Pavan Suvarna,48,Karnataka,Kalaburagi,Kalaburagi,None
+C1222,Jagannath Adiga,39,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_9
+C1223,Jagadish Kamath,37,Karnataka,Ballari,Ballari,Gang_4
+C1224,Santosh Alva,46,Karnataka,Raichur,Raichur,None
+C1225,Shankar Karkera,57,Karnataka,Ballari,Ballari,None
+C1226,Lokesh Shetty,52,Karnataka,Belagavi,Belagavi,None
+C1227,Shivakumar Naik,40,Karnataka,Tumakuru,Tumakuru,Gang_12
+C1228,Shankar Suvarna,24,Maharashtra,Bidar,Bidar,Gang_7
+C1229,Kiran Poojary,37,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1230,Sharath Shet,21,Karnataka,Vijayapura,Vijayapura,None
+C1231,Arun Shet,31,Karnataka,Dharwad,Dharwad,None
+C1232,Harsha Lobo,42,Karnataka,Kodagu,Kodagu,Gang_34
+C1233,Anoop Bairy,34,Karnataka,Tumakuru,Tumakuru,None
+C1234,Vikas Reddy,56,Karnataka,Belagavi,Belagavi,None
+C1235,Chandan Pinto,34,Karnataka,Bidar,Bidar,None
+C1236,Dinesh Reddy,40,Karnataka,Ballari,Ballari,None
+C1237,Nithin Bollineni,52,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1238,Ganesh Rai,21,Karnataka,Hassan,Hassan,Gang_25
+C1239,Manoj Udupa,46,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1240,Sunil Shekar,58,Telangana,Bengaluru Urban,Bengaluru Urban,None
+C1241,Arun Murthy,30,Karnataka,Belagavi,Belagavi,None
+C1242,Sandeep Shettigar,26,Telangana,Vijayapura,Vijayapura,None
+C1243,Ajay Shetty,39,Karnataka,Shivamogga,Shivamogga,Gang_2
+C1244,Kishore Shettigar,20,Karnataka,Raichur,Raichur,None
+C1245,Jagadish Nayak,28,Telangana,Kalaburagi,Kalaburagi,None
+C1246,Ramesh Gowda,51,Maharashtra,Kalaburagi,Kalaburagi,None
+C1247,Nagaraj Bangera,57,Karnataka,Hassan,Hassan,None
+C1248,Ganesh Udupa,32,Karnataka,Mysuru,Mysuru,Gang_35
+C1249,Nikhil Acharya,36,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_48
+C1250,Deepak Shekar,34,Karnataka,Kodagu,Kodagu,Gang_14
+C1251,Anil Bangera,48,Telangana,Kodagu,Kodagu,Gang_38
+C1252,Akash D'Souza,26,Karnataka,Vijayapura,Vijayapura,None
+C1253,Shashank Lobo,27,Karnataka,Koppal,Koppal,Gang_49
+C1254,Sandeep Pandit,22,Karnataka,Bidar,Bidar,None
+C1255,Jagannath Acharya,47,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1256,Ashok Hegde,52,Karnataka,Hassan,Hassan,None
+C1257,Bhaskar D'Souza,29,Karnataka,Tumakuru,Tumakuru,None
+C1258,Kishore Karkera,58,Karnataka,Dharwad,Dharwad,None
+C1259,Anoop Alva,39,Karnataka,Koppal,Koppal,None
+C1260,Deepak Pujari,28,Karnataka,Mysuru,Mysuru,Gang_31
+C1261,Vijay Alva,35,Karnataka,Vijayapura,Vijayapura,Gang_35
+C1262,Mithun Ramesh,51,Karnataka,Koppal,Koppal,Gang_8
+C1263,Pavan Murthy,60,Karnataka,Raichur,Raichur,None
+C1264,Nithin Shanbhag,60,Karnataka,Koppal,Koppal,None
+C1265,Darshan Devadiga,21,Maharashtra,Shivamogga,Shivamogga,None
+C1266,Umesh Shetty,28,Karnataka,Kalaburagi,Kalaburagi,None
+C1267,Yash Bangera,22,Karnataka,Vijayapura,Vijayapura,Gang_50
+C1268,Varun Kumar,55,Karnataka,Raichur,Raichur,Gang_26
+C1269,Varun Pinto,41,Karnataka,Dharwad,Dharwad,Gang_8
+C1270,Harish Kudva,58,Telangana,Tumakuru,Tumakuru,Gang_38
+C1271,Vikas Mallya,60,Karnataka,Kalaburagi,Kalaburagi,None
+C1272,Manjunath Shet,38,Karnataka,Bidar,Bidar,Gang_26
+C1273,Vinod Desai,39,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_10
+C1274,Naveen Bollineni,21,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1275,Pranav Reddy,52,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_31
+C1276,Arun Naik,54,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1277,Shankar Rai,51,Karnataka,Shivamogga,Shivamogga,Gang_3
+C1278,Pranav Moily,42,Karnataka,Kodagu,Kodagu,None
+C1279,Suresh Joshi,25,Karnataka,Vijayapura,Vijayapura,None
+C1280,Tarun Naik,34,Karnataka,Tumakuru,Tumakuru,None
+C1281,Vikas Joshi,41,Telangana,Ballari,Ballari,None
+C1282,Chethan Bangera,60,Telangana,Bengaluru Urban,Bengaluru Urban,None
+C1283,Sachin Acharya,25,Karnataka,Tumakuru,Tumakuru,None
+C1284,Pavan Acharya,50,Karnataka,Mysuru,Mysuru,None
+C1285,Arun Lobo,41,Karnataka,Kodagu,Kodagu,None
+C1286,Nithin Shet,30,Karnataka,Ballari,Ballari,None
+C1287,Ramesh Reddy,42,Karnataka,Kodagu,Kodagu,None
+C1288,Chirag Patil,30,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1289,Ravi Mallya,45,Karnataka,Hassan,Hassan,None
+C1290,Abhishek Bairy,59,Karnataka,Kalaburagi,Kalaburagi,None
+C1291,Mahesh Murthy,47,Karnataka,Mysuru,Mysuru,None
+C1292,Mukesh Kotian,51,Karnataka,Dharwad,Dharwad,None
+C1293,Harsha Shetty,43,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_7
+C1294,Naveen Pinto,32,Karnataka,Dharwad,Dharwad,None
+C1295,Sharath Bairy,57,Tamil Nadu,Vijayapura,Vijayapura,Gang_30
+C1296,Karthik Fernandes,41,Karnataka,Bidar,Bidar,None
+C1297,Anil Patil,52,Tamil Nadu,Ballari,Ballari,None
+C1298,Pradeep Shetty,50,Karnataka,Kodagu,Kodagu,None
+C1299,Akash Suvarna,27,Karnataka,Kodagu,Kodagu,Gang_49
+C1300,Prakash Rao,35,Karnataka,Bidar,Bidar,None
+C1301,Mahesh Pujari,29,Karnataka,Belagavi,Belagavi,None
+C1302,Lokesh Kotian,20,Karnataka,Ballari,Ballari,None
+C1303,Prakash Sharma,21,Karnataka,Kodagu,Kodagu,None
+C1304,Krishna Reddy,36,Karnataka,Kodagu,Kodagu,None
+C1305,Srinivas Mallya,48,Karnataka,Dharwad,Dharwad,None
+C1306,Shivakumar Pai,44,Karnataka,Ballari,Ballari,Gang_40
+C1307,Ramesh Kulkarni,26,Karnataka,Kalaburagi,Kalaburagi,Gang_1
+C1308,Aditya Hegde,53,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1309,Akash Mallya,37,Karnataka,Raichur,Raichur,Gang_11
+C1310,Venkatesh Bollineni,40,Karnataka,Koppal,Koppal,None
+C1311,Ranjith Devadiga,52,Karnataka,Hassan,Hassan,None
+C1312,Chirag Adiga,26,Karnataka,Hassan,Hassan,Gang_32
+C1313,Anoop Shanbhag,41,Karnataka,Ballari,Ballari,None
+C1314,Rohit Kudva,45,Andhra Pradesh,Kalaburagi,Kalaburagi,None
+C1315,Mukesh Ramesh,46,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1316,Kiran Verma,59,Kerala,Bengaluru Rural,Bengaluru Rural,None
+C1317,Lokesh Pujari,49,Karnataka,Bidar,Bidar,None
+C1318,Mahesh Karkera,26,Karnataka,Dharwad,Dharwad,None
+C1319,Deepak Rao,41,Karnataka,Mysuru,Mysuru,None
+C1320,Gopal Reddy,29,Karnataka,Kodagu,Kodagu,Gang_39
+C1321,Chandan Desai,30,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_31
+C1322,Santosh Mallya,30,Karnataka,Mysuru,Mysuru,Gang_24
+C1323,Ashok Rao,44,Karnataka,Ballari,Ballari,None
+C1324,Chethan Acharya,51,Karnataka,Koppal,Koppal,None
+C1325,Vinod Rai,48,Karnataka,Koppal,Koppal,None
+C1326,Santosh Pinto,32,Karnataka,Koppal,Koppal,Gang_14
+C1327,Santosh Bangera,40,Karnataka,Mysuru,Mysuru,None
+C1328,Shivakumar Verma,41,Karnataka,Belagavi,Belagavi,None
+C1329,Nikhil Alva,51,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1330,Shankar Pandit,30,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1331,Anand Naik,34,Karnataka,Koppal,Koppal,None
+C1332,Amith Mallya,25,Karnataka,Koppal,Koppal,None
+C1333,Vikas Kamath,51,Karnataka,Ballari,Ballari,None
+C1334,Girish Adiga,31,Karnataka,Kalaburagi,Kalaburagi,None
+C1335,Nithin Mallya,32,Karnataka,Kalaburagi,Kalaburagi,None
+C1336,Umesh Naik,33,Tamil Nadu,Bengaluru Urban,Bengaluru Urban,Gang_31
+C1337,Suresh Pujari,56,Telangana,Shivamogga,Shivamogga,None
+C1338,Gopal Bangera,39,Karnataka,Bidar,Bidar,None
+C1339,Vinod Shet,21,Karnataka,Bidar,Bidar,None
+C1340,Suresh Verma,45,Karnataka,Shivamogga,Shivamogga,Gang_17
+C1341,Aditya Bairy,33,Maharashtra,Tumakuru,Tumakuru,None
+C1342,Ganesh Adiga,47,Karnataka,Belagavi,Belagavi,None
+C1343,Naveen Alva,39,Karnataka,Dharwad,Dharwad,None
+C1344,Deepak Reddy,42,Karnataka,Shivamogga,Shivamogga,None
+C1345,Tarun Mendonca,50,Karnataka,Mysuru,Mysuru,None
+C1346,Yash Fernandes,48,Telangana,Bidar,Bidar,None
+C1347,Nikhil Fernandes,28,Tamil Nadu,Kalaburagi,Kalaburagi,None
+C1348,Aravind Mallya,55,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1349,Nagaraj Verma,21,Tamil Nadu,Bidar,Bidar,Gang_48
+C1350,Nandakumar Alva,50,Karnataka,Hassan,Hassan,Gang_15
+C1351,Karthik Shet,56,Karnataka,Bidar,Bidar,None
+C1352,Chirag Bairy,56,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1353,Nikhil Bhat,44,Karnataka,Mysuru,Mysuru,Gang_21
+C1354,Pradeep Devadiga,39,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1355,Manoj Joshi,46,Karnataka,Belagavi,Belagavi,Gang_25
+C1356,Bhaskar Noronha,52,Karnataka,Hassan,Hassan,None
+C1357,Akash Desai,21,Karnataka,Kodagu,Kodagu,None
+C1358,Akhil Adiga,29,Karnataka,Hassan,Hassan,None
+C1359,Mahesh Devadiga,41,Telangana,Ballari,Ballari,None
+C1360,Vinod Adiga,30,Karnataka,Dharwad,Dharwad,None
+C1361,Ajay Suvarna,37,Karnataka,Hassan,Hassan,None
+C1362,Bhaskar Mallya,37,Karnataka,Kalaburagi,Kalaburagi,None
+C1363,Bhaskar Kulkarni,41,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_1
+C1364,Vikas Kulkarni,31,Karnataka,Raichur,Raichur,None
+C1365,Manjunath Salian,60,Karnataka,Shivamogga,Shivamogga,Gang_9
+C1366,Shivakumar Rao,43,Karnataka,Ballari,Ballari,None
+C1367,Prakash Reddy,48,Karnataka,Dharwad,Dharwad,None
+C1368,Srinivas Joshi,51,Karnataka,Mysuru,Mysuru,Gang_32
+C1369,Rakesh Bairy,46,Karnataka,Dharwad,Dharwad,Gang_19
+C1370,Chirag Ramesh,40,Karnataka,Tumakuru,Tumakuru,None
+C1371,Ramesh Mallya,60,Maharashtra,Tumakuru,Tumakuru,None
+C1372,Jagadish Hegde,30,Tamil Nadu,Kodagu,Kodagu,Gang_2
+C1373,Akhil Reddy,31,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_43
+C1374,Nikhil Shettigar,55,Karnataka,Shivamogga,Shivamogga,Gang_32
+C1375,Vikas Pai,32,Karnataka,Shivamogga,Shivamogga,None
+C1376,Nikhil Patil,22,Karnataka,Tumakuru,Tumakuru,Gang_41
+C1377,Abhishek Kotian,25,Karnataka,Vijayapura,Vijayapura,None
+C1378,Anoop Hegde,40,Karnataka,Shivamogga,Shivamogga,None
+C1379,Abhishek Bollineni,47,Tamil Nadu,Koppal,Koppal,None
+C1380,Madan Adiga,31,Andhra Pradesh,Raichur,Raichur,None
+C1381,Ashok Ramesh,44,Tamil Nadu,Koppal,Koppal,Gang_44
+C1382,Krishna Murthy,54,Karnataka,Vijayapura,Vijayapura,None
+C1383,Aravind Ramesh,53,Karnataka,Kodagu,Kodagu,None
+C1384,Rohit Devadiga,58,Karnataka,Raichur,Raichur,None
+C1385,Anoop Bangera,47,Karnataka,Tumakuru,Tumakuru,None
+C1386,Aravind Patil,50,Karnataka,Ballari,Ballari,None
+C1387,Aditya Shanbhag,35,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1388,Prakash Shekar,49,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_47
+C1389,Karthik Pandit,35,Karnataka,Belagavi,Belagavi,None
+C1390,Pranav Shetty,56,Karnataka,Raichur,Raichur,None
+C1391,Kiran Patil,40,Tamil Nadu,Kalaburagi,Kalaburagi,None
+C1392,Prakash Udupa,27,Maharashtra,Hassan,Hassan,None
+C1393,Anand Moily,59,Karnataka,Bidar,Bidar,Gang_19
+C1394,Santosh Lobo,24,Karnataka,Shivamogga,Shivamogga,None
+C1395,Jagadish Poojary,28,Karnataka,Kodagu,Kodagu,None
+C1396,Vinod Reddy,45,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1397,Ramesh Kotian,50,Karnataka,Tumakuru,Tumakuru,None
+C1398,Lohith Desai,51,Kerala,Koppal,Koppal,None
+C1399,Naveen Kunder,29,Telangana,Koppal,Koppal,None
+C1400,Hemant Murthy,43,Karnataka,Koppal,Koppal,Gang_39
+C1401,Vikas Salian,36,Karnataka,Raichur,Raichur,None
+C1402,Yash Mallya,31,Karnataka,Kalaburagi,Kalaburagi,None
+C1403,Nandakumar Kunder,47,Karnataka,Koppal,Koppal,None
+C1404,Darshan Shet,27,Kerala,Bidar,Bidar,None
+C1405,Pradeep Shet,28,Karnataka,Dharwad,Dharwad,Gang_46
+C1406,Dinesh Kotian,49,Karnataka,Hassan,Hassan,None
+C1407,Aditya Desai,35,Karnataka,Tumakuru,Tumakuru,Gang_29
+C1408,Vikas Pujari,42,Karnataka,Hassan,Hassan,None
+C1409,Kishore Adiga,56,Karnataka,Kodagu,Kodagu,None
+C1410,Sunil Desai,56,Karnataka,Kalaburagi,Kalaburagi,Gang_30
+C1411,Sunil Kumar,32,Karnataka,Raichur,Raichur,Gang_12
+C1412,Mohan D'Souza,40,Karnataka,Vijayapura,Vijayapura,None
+C1413,Aditya Kunder,28,Karnataka,Mysuru,Mysuru,None
+C1414,Tarun Kunder,42,Karnataka,Bidar,Bidar,None
+C1415,Anil Bollineni,53,Karnataka,Koppal,Koppal,None
+C1416,Abhishek Gowda,25,Tamil Nadu,Koppal,Koppal,None
+C1417,Shankar Kumar,28,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1418,Raghav Joshi,56,Karnataka,Tumakuru,Tumakuru,None
+C1419,Rajesh Kotian,50,Karnataka,Ballari,Ballari,Gang_22
+C1420,Mukesh Pandit,54,Kerala,Kodagu,Kodagu,Gang_46
+C1421,Varun Adiga,54,Karnataka,Tumakuru,Tumakuru,Gang_17
+C1422,Vikas Pinto,53,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1423,Ramesh Acharya,44,Karnataka,Belagavi,Belagavi,None
+C1424,Naveen Acharya,26,Karnataka,Hassan,Hassan,None
+C1425,Mahesh Pinto,30,Karnataka,Bidar,Bidar,None
+C1426,Sandeep Suvarna,20,Tamil Nadu,Kalaburagi,Kalaburagi,None
+C1427,Ranjith Joshi,57,Karnataka,Kalaburagi,Kalaburagi,None
+C1428,Devraj Shettigar,38,Karnataka,Hassan,Hassan,Gang_14
+C1429,Shivakumar Shet,51,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1430,Srinivas Shetty,55,Karnataka,Mysuru,Mysuru,Gang_7
+C1431,Tejas Mallya,54,Karnataka,Bidar,Bidar,None
+C1432,Dinesh Moily,20,Karnataka,Ballari,Ballari,None
+C1433,Akhil Poojary,56,Karnataka,Bidar,Bidar,None
+C1434,Yogesh Shekar,60,Karnataka,Ballari,Ballari,None
+C1435,Kiran Gowda,55,Karnataka,Bidar,Bidar,None
+C1436,Pradeep Mallya,24,Karnataka,Hassan,Hassan,Gang_41
+C1437,Yash Shetty,46,Karnataka,Belagavi,Belagavi,None
+C1438,Shankar Desai,26,Karnataka,Tumakuru,Tumakuru,Gang_33
+C1439,Karthik Suvarna,48,Karnataka,Hassan,Hassan,None
+C1440,Nandakumar Pai,35,Karnataka,Belagavi,Belagavi,None
+C1441,Varun Shet,48,Karnataka,Kodagu,Kodagu,None
+C1442,Darshan Pai,27,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_1
+C1443,Yash Lobo,23,Karnataka,Raichur,Raichur,None
+C1444,Rajesh Rai,51,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_20
+C1445,Lohith Murthy,21,Karnataka,Kodagu,Kodagu,None
+C1446,Rajesh Pujari,51,Maharashtra,Shivamogga,Shivamogga,None
+C1447,Girish Noronha,50,Kerala,Hassan,Hassan,None
+C1448,Vinod Rao,48,Karnataka,Tumakuru,Tumakuru,None
+C1449,Ashok Murthy,43,Karnataka,Bidar,Bidar,None
+C1450,Ajay Kamath,33,Karnataka,Kodagu,Kodagu,None
+C1451,Aravind Pujari,46,Karnataka,Mysuru,Mysuru,Gang_23
+C1452,Krishna Devadiga,54,Karnataka,Ballari,Ballari,None
+C1453,Mithun Kunder,58,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1454,Sandeep Patil,56,Tamil Nadu,Mysuru,Mysuru,Gang_33
+C1455,Aravind Kamath,51,Karnataka,Vijayapura,Vijayapura,Gang_14
+C1456,Raghav Suvarna,30,Karnataka,Ballari,Ballari,None
+C1457,Sharath Kunder,33,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1458,Umesh Bollineni,23,Karnataka,Mysuru,Mysuru,Gang_12
+C1459,Chirag Kunder,40,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_7
+C1460,Bharath Shettigar,51,Karnataka,Mysuru,Mysuru,Gang_14
+C1461,Yogesh Noronha,31,Karnataka,Ballari,Ballari,None
+C1462,Girish Reddy,23,Karnataka,Bidar,Bidar,None
+C1463,Vinod Hegde,56,Karnataka,Hassan,Hassan,None
+C1464,Ajay Joshi,22,Karnataka,Kalaburagi,Kalaburagi,Gang_36
+C1465,Kishore Kotian,32,Karnataka,Dharwad,Dharwad,Gang_50
+C1466,Shivakumar Kumar,58,Karnataka,Bidar,Bidar,None
+C1467,Sharath D'Souza,57,Karnataka,Ballari,Ballari,None
+C1468,Ravi Pinto,31,Karnataka,Mysuru,Mysuru,Gang_32
+C1469,Tarun Bhat,24,Karnataka,Kodagu,Kodagu,None
+C1470,Shashank Karkera,24,Karnataka,Mysuru,Mysuru,None
+C1471,Ravi Sharma,21,Karnataka,Ballari,Ballari,None
+C1472,Chandan Kulkarni,24,Karnataka,Kalaburagi,Kalaburagi,None
+C1473,Krishna Joshi,42,Karnataka,Raichur,Raichur,None
+C1474,Yogesh Kulkarni,41,Karnataka,Vijayapura,Vijayapura,None
+C1475,Yogesh Poojary,23,Karnataka,Vijayapura,Vijayapura,None
+C1476,Prakash Pandit,52,Karnataka,Ballari,Ballari,None
+C1477,Hemant Gowda,24,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1478,Lokesh D'Souza,55,Karnataka,Belagavi,Belagavi,None
+C1479,Darshan Desai,52,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_43
+C1480,Darshan Suvarna,44,Karnataka,Hassan,Hassan,None
+C1481,Varun Patil,41,Tamil Nadu,Hassan,Hassan,None
+C1482,Raghav Rao,44,Karnataka,Dharwad,Dharwad,None
+C1483,Nagaraj Kamath,51,Karnataka,Mysuru,Mysuru,None
+C1484,Ranjith Shanbhag,26,Tamil Nadu,Raichur,Raichur,None
+C1485,Nandakumar Acharya,31,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1486,Amith Rao,30,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1487,Pranav Adiga,53,Karnataka,Kodagu,Kodagu,None
+C1488,Arun Joshi,51,Karnataka,Kodagu,Kodagu,Gang_44
+C1489,Gautham Shekar,31,Karnataka,Kodagu,Kodagu,Gang_20
+C1490,Chethan Pinto,36,Karnataka,Hassan,Hassan,None
+C1491,Akhil Sharma,26,Karnataka,Raichur,Raichur,None
+C1492,Prakash Kamath,40,Karnataka,Belagavi,Belagavi,None
+C1493,Umesh Joshi,29,Karnataka,Vijayapura,Vijayapura,None
+C1494,Arun Ramesh,39,Karnataka,Bidar,Bidar,None
+C1495,Sachin Salian,44,Andhra Pradesh,Belagavi,Belagavi,Gang_39
+C1496,Lohith Udupa,23,Karnataka,Shivamogga,Shivamogga,None
+C1497,Bhaskar Karkera,47,Karnataka,Kodagu,Kodagu,Gang_23
+C1498,Naveen Ramesh,24,Telangana,Raichur,Raichur,None
+C1499,Anoop Nayak,43,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_24
+C1500,Rakesh Poojary,60,Karnataka,Hassan,Hassan,Gang_44
+C1501,Santosh Shet,33,Karnataka,Shivamogga,Shivamogga,None
+C1502,Mohan Pinto,23,Maharashtra,Hassan,Hassan,Gang_27
+C1503,Akash Alva,39,Telangana,Vijayapura,Vijayapura,None
+C1504,Pradeep Adiga,53,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1505,Santosh Shettigar,55,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1506,Mahesh Shettigar,44,Karnataka,Tumakuru,Tumakuru,None
+C1507,Anil Pinto,44,Karnataka,Dharwad,Dharwad,None
+C1508,Rohit Rao,34,Karnataka,Tumakuru,Tumakuru,Gang_17
+C1509,Bharath Adiga,53,Karnataka,Mysuru,Mysuru,Gang_9
+C1510,Mahesh Kunder,28,Karnataka,Kalaburagi,Kalaburagi,None
+C1511,Vikas Kunder,21,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_12
+C1512,Jagadish Sharma,60,Karnataka,Tumakuru,Tumakuru,None
+C1513,Shashank Fernandes,42,Karnataka,Koppal,Koppal,None
+C1514,Chethan Lobo,56,Andhra Pradesh,Vijayapura,Vijayapura,None
+C1515,Gopal Salian,23,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1516,Venkatesh Bangera,54,Andhra Pradesh,Raichur,Raichur,Gang_33
+C1517,Shivakumar Bangera,29,Karnataka,Hassan,Hassan,None
+C1518,Ajay Patil,24,Andhra Pradesh,Shivamogga,Shivamogga,Gang_28
+C1519,Ganesh Kumar,21,Karnataka,Bidar,Bidar,None
+C1520,Tarun Joshi,49,Karnataka,Koppal,Koppal,None
+C1521,Vikas Bairy,24,Karnataka,Bidar,Bidar,None
+C1522,Manoj Moily,46,Karnataka,Belagavi,Belagavi,None
+C1523,Sharath Kamath,27,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1524,Madan Suvarna,24,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1525,Gopal Kumar,54,Karnataka,Kalaburagi,Kalaburagi,Gang_28
+C1526,Anand Acharya,34,Karnataka,Vijayapura,Vijayapura,None
+C1527,Harsha Ramesh,54,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_20
+C1528,Lohith Lobo,28,Karnataka,Tumakuru,Tumakuru,None
+C1529,Vikas Kudva,25,Karnataka,Belagavi,Belagavi,Gang_3
+C1530,Mohan Naik,31,Karnataka,Koppal,Koppal,None
+C1531,Ranjith Suvarna,46,Karnataka,Ballari,Ballari,Gang_9
+C1532,Vinod Verma,29,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_5
+C1533,Nandakumar Naik,38,Karnataka,Kalaburagi,Kalaburagi,Gang_34
+C1534,Lokesh Mendonca,22,Karnataka,Kalaburagi,Kalaburagi,Gang_47
+C1535,Amith Reddy,22,Karnataka,Ballari,Ballari,None
+C1536,Dinesh Shetty,55,Karnataka,Bidar,Bidar,None
+C1537,Nandakumar Rao,42,Karnataka,Dharwad,Dharwad,None
+C1538,Chirag Rai,27,Karnataka,Mysuru,Mysuru,Gang_10
+C1539,Suresh Adiga,20,Maharashtra,Koppal,Koppal,None
+C1540,Dinesh Bhat,56,Karnataka,Dharwad,Dharwad,None
+C1541,Jagadish Salian,30,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_39
+C1542,Ranjith Lobo,46,Karnataka,Dharwad,Dharwad,Gang_5
+C1543,Abhishek Suvarna,58,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1544,Devraj Kumar,25,Karnataka,Kodagu,Kodagu,None
+C1545,Pranav Naik,58,Karnataka,Kodagu,Kodagu,Gang_13
+C1546,Ajay Fernandes,45,Karnataka,Ballari,Ballari,Gang_26
+C1547,Nikhil Bairy,42,Karnataka,Raichur,Raichur,None
+C1548,Deepak Moily,36,Karnataka,Kalaburagi,Kalaburagi,Gang_21
+C1549,Yogesh Patil,39,Karnataka,Vijayapura,Vijayapura,None
+C1550,Vijay Lobo,30,Karnataka,Dharwad,Dharwad,None
+C1551,Umesh Shekar,45,Karnataka,Kalaburagi,Kalaburagi,None
+C1552,Lokesh Poojary,43,Karnataka,Ballari,Ballari,Gang_17
+C1553,Mukesh Rai,41,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1554,Anil Kulkarni,23,Karnataka,Hassan,Hassan,None
+C1555,Lohith Patil,48,Karnataka,Ballari,Ballari,None
+C1556,Mithun Kulkarni,56,Karnataka,Belagavi,Belagavi,None
+C1557,Shivakumar Kulkarni,21,Karnataka,Vijayapura,Vijayapura,Gang_26
+C1558,Bharath Fernandes,29,Maharashtra,Shivamogga,Shivamogga,None
+C1559,Harsha Fernandes,20,Karnataka,Koppal,Koppal,Gang_18
+C1560,Chandan Verma,53,Karnataka,Kodagu,Kodagu,None
+C1561,Sachin Bhat,49,Karnataka,Dharwad,Dharwad,Gang_34
+C1562,Bhaskar Kumar,35,Karnataka,Koppal,Koppal,Gang_26
+C1563,Pradeep Bhat,25,Karnataka,Shivamogga,Shivamogga,None
+C1564,Shashank Devadiga,28,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_20
+C1565,Kishore Naik,46,Karnataka,Dharwad,Dharwad,None
+C1566,Raghav Gowda,36,Karnataka,Dharwad,Dharwad,Gang_13
+C1567,Tejas Adiga,23,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1568,Shivakumar Fernandes,29,Karnataka,Hassan,Hassan,None
+C1569,Anoop Lobo,40,Kerala,Hassan,Hassan,None
+C1570,Nandakumar Bangera,32,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1571,Gopal Murthy,46,Karnataka,Kodagu,Kodagu,None
+C1572,Tejas Acharya,23,Karnataka,Belagavi,Belagavi,Gang_22
+C1573,Prakash Kotian,26,Karnataka,Shivamogga,Shivamogga,None
+C1574,Krishna Pandit,54,Karnataka,Shivamogga,Shivamogga,Gang_4
+C1575,Tejas Murthy,58,Karnataka,Vijayapura,Vijayapura,None
+C1576,Akash Reddy,58,Karnataka,Ballari,Ballari,Gang_50
+C1577,Ashok Shetty,38,Karnataka,Belagavi,Belagavi,None
+C1578,Yogesh Hegde,54,Andhra Pradesh,Bengaluru Urban,Bengaluru Urban,None
+C1579,Shankar Joshi,43,Karnataka,Kalaburagi,Kalaburagi,None
+C1580,Kiran Ramesh,26,Maharashtra,Hassan,Hassan,None
+C1581,Suresh Udupa,32,Karnataka,Koppal,Koppal,None
+C1582,Yogesh Sharma,53,Karnataka,Kalaburagi,Kalaburagi,Gang_3
+C1583,Devraj Salian,29,Karnataka,Koppal,Koppal,Gang_23
+C1584,Nagaraj Suvarna,56,Karnataka,Shivamogga,Shivamogga,None
+C1585,Karthik Kamath,57,Karnataka,Koppal,Koppal,None
+C1586,Karthik Sharma,22,Karnataka,Dharwad,Dharwad,None
+C1587,Tejas Shetty,53,Telangana,Hassan,Hassan,None
+C1588,Amith Salian,30,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1589,Aravind Shetty,22,Karnataka,Vijayapura,Vijayapura,Gang_18
+C1590,Manjunath Bhat,50,Karnataka,Kalaburagi,Kalaburagi,None
+C1591,Anand Shanbhag,29,Karnataka,Raichur,Raichur,Gang_31
+C1592,Vikas Nayak,32,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1593,Santosh Sharma,27,Karnataka,Bidar,Bidar,None
+C1594,Chethan Kumar,58,Karnataka,Belagavi,Belagavi,None
+C1595,Sandeep Mallya,41,Karnataka,Tumakuru,Tumakuru,Gang_36
+C1596,Anil Pujari,26,Karnataka,Hassan,Hassan,None
+C1597,Venkatesh Udupa,29,Maharashtra,Kalaburagi,Kalaburagi,None
+C1598,Abhishek Kamath,38,Telangana,Shivamogga,Shivamogga,Gang_4
+C1599,Jagadish Desai,50,Karnataka,Tumakuru,Tumakuru,None
+C1600,Ashok Acharya,51,Karnataka,Dharwad,Dharwad,Gang_32
+C1601,Nagaraj Kumar,23,Karnataka,Ballari,Ballari,None
+C1602,Rakesh Pinto,51,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1603,Akhil Devadiga,37,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1604,Harish Bhat,42,Karnataka,Tumakuru,Tumakuru,None
+C1605,Mukesh Kumar,48,Karnataka,Hassan,Hassan,Gang_23
+C1606,Shashank Rai,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1607,Ganesh Acharya,50,Kerala,Dharwad,Dharwad,None
+C1608,Aditya Kumar,40,Karnataka,Bidar,Bidar,Gang_40
+C1609,Arun Shanbhag,26,Karnataka,Shivamogga,Shivamogga,None
+C1610,Anil Kumar,60,Karnataka,Vijayapura,Vijayapura,None
+C1611,Kishore Mallya,36,Karnataka,Shivamogga,Shivamogga,Gang_9
+C1612,Bharath Pandit,49,Karnataka,Dharwad,Dharwad,None
+C1613,Sunil Shanbhag,57,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1614,Darshan Lobo,46,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_1
+C1615,Ashok Noronha,55,Andhra Pradesh,Mysuru,Mysuru,None
+C1616,Krishna Rai,48,Karnataka,Vijayapura,Vijayapura,Gang_12
+C1617,Ramesh Shetty,34,Karnataka,Ballari,Ballari,Gang_32
+C1618,Vijay Gowda,25,Karnataka,Mysuru,Mysuru,Gang_7
+C1619,Nithin Verma,40,Karnataka,Kalaburagi,Kalaburagi,None
+C1620,Nandakumar Fernandes,55,Telangana,Raichur,Raichur,None
+C1621,Sharath Suvarna,54,Karnataka,Hassan,Hassan,None
+C1622,Dinesh Shanbhag,23,Telangana,Ballari,Ballari,None
+C1623,Ajay Shekar,27,Karnataka,Dharwad,Dharwad,None
+C1624,Vijay Ramesh,44,Karnataka,Shivamogga,Shivamogga,None
+C1625,Girish Devadiga,21,Kerala,Mysuru,Mysuru,None
+C1626,Yogesh Nayak,50,Karnataka,Raichur,Raichur,None
+C1627,Vijay Shettigar,54,Karnataka,Koppal,Koppal,None
+C1628,Mukesh Shettigar,38,Karnataka,Koppal,Koppal,Gang_21
+C1629,Ravi Suvarna,39,Karnataka,Kalaburagi,Kalaburagi,None
+C1630,Anoop Kotian,46,Karnataka,Tumakuru,Tumakuru,None
+C1631,Nithin Lobo,25,Karnataka,Kodagu,Kodagu,None
+C1632,Prakash Alva,57,Karnataka,Kalaburagi,Kalaburagi,None
+C1633,Suresh Shetty,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1634,Shashank Acharya,27,Maharashtra,Mysuru,Mysuru,None
+C1635,Shankar Naik,59,Karnataka,Kodagu,Kodagu,None
+C1636,Rajesh Shekar,42,Karnataka,Bidar,Bidar,Gang_13
+C1637,Tejas Joshi,42,Karnataka,Hassan,Hassan,None
+C1638,Anoop Acharya,26,Karnataka,Shivamogga,Shivamogga,Gang_29
+C1639,Hemant Shekar,22,Telangana,Belagavi,Belagavi,None
+C1640,Nandakumar Bairy,32,Karnataka,Mysuru,Mysuru,None
+C1641,Ranjith Shetty,39,Karnataka,Koppal,Koppal,Gang_46
+C1642,Mithun Kumar,47,Karnataka,Tumakuru,Tumakuru,None
+C1643,Shashank Bairy,42,Karnataka,Koppal,Koppal,None
+C1644,Madan Udupa,31,Karnataka,Tumakuru,Tumakuru,Gang_14
+C1645,Arun Pinto,34,Karnataka,Dharwad,Dharwad,None
+C1646,Girish Bollineni,21,Karnataka,Ballari,Ballari,None
+C1647,Rajesh Patil,33,Karnataka,Koppal,Koppal,None
+C1648,Girish Bangera,47,Karnataka,Raichur,Raichur,Gang_19
+C1649,Kishore Acharya,25,Karnataka,Bidar,Bidar,None
+C1650,Gopal Rao,32,Karnataka,Kalaburagi,Kalaburagi,None
+C1651,Rajesh Hegde,42,Karnataka,Raichur,Raichur,None
+C1652,Rohit Kamath,49,Karnataka,Kodagu,Kodagu,None
+C1653,Varun Alva,46,Karnataka,Bidar,Bidar,None
+C1654,Mukesh Lobo,32,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_50
+C1655,Krishna Shekar,60,Karnataka,Kodagu,Kodagu,None
+C1656,Prakash Shettigar,46,Tamil Nadu,Bidar,Bidar,None
+C1657,Abhishek Naik,53,Karnataka,Tumakuru,Tumakuru,Gang_15
+C1658,Tarun Gowda,38,Karnataka,Raichur,Raichur,None
+C1659,Sharath Alva,28,Karnataka,Kodagu,Kodagu,Gang_33
+C1660,Manjunath Moily,46,Karnataka,Kodagu,Kodagu,None
+C1661,Sandeep Karkera,47,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1662,Girish Kamath,50,Karnataka,Bidar,Bidar,None
+C1663,Girish Alva,34,Karnataka,Vijayapura,Vijayapura,None
+C1664,Sunil Kulkarni,20,Karnataka,Belagavi,Belagavi,None
+C1665,Naveen Fernandes,56,Karnataka,Shivamogga,Shivamogga,Gang_26
+C1666,Kiran Lobo,51,Karnataka,Raichur,Raichur,Gang_22
+C1667,Vikas Shettigar,22,Kerala,Belagavi,Belagavi,Gang_33
+C1668,Dinesh Ramesh,60,Karnataka,Koppal,Koppal,None
+C1669,Darshan Shanbhag,29,Karnataka,Kodagu,Kodagu,Gang_26
+C1670,Ashok Mallya,42,Karnataka,Shivamogga,Shivamogga,None
+C1671,Mohan Kotian,34,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1672,Mohan Devadiga,46,Telangana,Mysuru,Mysuru,None
+C1673,Aravind Nayak,40,Karnataka,Kalaburagi,Kalaburagi,None
+C1674,Manjunath Acharya,40,Karnataka,Mysuru,Mysuru,None
+C1675,Chirag D'Souza,22,Karnataka,Raichur,Raichur,Gang_11
+C1676,Kishore Rao,50,Telangana,Kodagu,Kodagu,Gang_2
+C1677,Anoop Sharma,23,Karnataka,Kalaburagi,Kalaburagi,Gang_25
+C1678,Yogesh Gowda,35,Kerala,Belagavi,Belagavi,None
+C1679,Rajesh Rao,41,Telangana,Kodagu,Kodagu,None
+C1680,Akash Devadiga,45,Karnataka,Koppal,Koppal,Gang_7
+C1681,Mithun Shekar,36,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1682,Nithin Bairy,47,Karnataka,Bidar,Bidar,Gang_36
+C1683,Mahesh Bangera,56,Karnataka,Kodagu,Kodagu,Gang_2
+C1684,Anoop Kamath,38,Tamil Nadu,Bidar,Bidar,None
+C1685,Umesh Verma,39,Telangana,Dharwad,Dharwad,Gang_38
+C1686,Tejas Mendonca,43,Karnataka,Raichur,Raichur,Gang_34
+C1687,Srinivas Murthy,22,Maharashtra,Ballari,Ballari,None
+C1688,Chandan Bangera,46,Kerala,Dharwad,Dharwad,Gang_42
+C1689,Tarun Verma,38,Karnataka,Hassan,Hassan,None
+C1690,Shivakumar Udupa,54,Andhra Pradesh,Shivamogga,Shivamogga,None
+C1691,Mahesh Mendonca,23,Tamil Nadu,Hassan,Hassan,Gang_45
+C1692,Yogesh Acharya,45,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1693,Devraj Nayak,39,Karnataka,Kalaburagi,Kalaburagi,None
+C1694,Kishore Suvarna,39,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1695,Yogesh Kudva,40,Karnataka,Kodagu,Kodagu,None
+C1696,Amith Pinto,45,Karnataka,Dharwad,Dharwad,None
+C1697,Suresh Naik,37,Karnataka,Kodagu,Kodagu,Gang_41
+C1698,Harsha Pujari,53,Karnataka,Bidar,Bidar,Gang_7
+C1699,Anoop Pai,47,Karnataka,Bidar,Bidar,Gang_7
+C1700,Pavan Kunder,34,Karnataka,Hassan,Hassan,None
+C1701,Srinivas Karkera,51,Karnataka,Kalaburagi,Kalaburagi,Gang_44
+C1702,Ramesh Bairy,27,Andhra Pradesh,Koppal,Koppal,None
+C1703,Ganesh Shet,38,Kerala,Kalaburagi,Kalaburagi,None
+C1704,Nikhil Sharma,37,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_31
+C1705,Pradeep Verma,24,Karnataka,Bidar,Bidar,None
+C1706,Rajesh Murthy,51,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1707,Raghav Hegde,49,Karnataka,Belagavi,Belagavi,None
+C1708,Hemant Kunder,57,Karnataka,Dharwad,Dharwad,Gang_10
+C1709,Darshan Verma,25,Karnataka,Kodagu,Kodagu,None
+C1710,Mukesh Udupa,35,Tamil Nadu,Vijayapura,Vijayapura,None
+C1711,Jagannath Pandit,25,Karnataka,Bidar,Bidar,None
+C1712,Shivakumar Pujari,48,Karnataka,Raichur,Raichur,None
+C1713,Chirag Fernandes,51,Karnataka,Raichur,Raichur,Gang_3
+C1714,Rajesh Shettigar,43,Karnataka,Raichur,Raichur,None
+C1715,Madan Reddy,38,Karnataka,Belagavi,Belagavi,Gang_45
+C1716,Nithin Salian,31,Karnataka,Vijayapura,Vijayapura,None
+C1717,Sachin Desai,27,Karnataka,Belagavi,Belagavi,None
+C1718,Srinivas Desai,49,Karnataka,Raichur,Raichur,None
+C1719,Mithun Devadiga,50,Karnataka,Mysuru,Mysuru,Gang_12
+C1720,Yogesh Verma,56,Karnataka,Tumakuru,Tumakuru,Gang_14
+C1721,Yash Kotian,22,Karnataka,Ballari,Ballari,None
+C1722,Ajay Devadiga,47,Karnataka,Koppal,Koppal,None
+C1723,Bharath Kudva,41,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1724,Aravind Moily,52,Karnataka,Shivamogga,Shivamogga,None
+C1725,Darshan Bangera,29,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1726,Tarun Sharma,22,Karnataka,Tumakuru,Tumakuru,None
+C1727,Deepak Shetty,58,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1728,Lohith Joshi,57,Karnataka,Hassan,Hassan,None
+C1729,Anoop Bhat,52,Telangana,Kodagu,Kodagu,None
+C1730,Ashok Lobo,54,Karnataka,Tumakuru,Tumakuru,None
+C1731,Chethan Kotian,23,Kerala,Koppal,Koppal,None
+C1732,Girish Pai,54,Karnataka,Ballari,Ballari,None
+C1733,Sharath Kulkarni,46,Karnataka,Tumakuru,Tumakuru,None
+C1734,Mohan Shettigar,34,Karnataka,Belagavi,Belagavi,None
+C1735,Yash Poojary,27,Andhra Pradesh,Kodagu,Kodagu,None
+C1736,Tarun Fernandes,60,Maharashtra,Mysuru,Mysuru,Gang_50
+C1737,Mithun Patil,48,Karnataka,Kodagu,Kodagu,Gang_35
+C1738,Darshan Alva,34,Karnataka,Bidar,Bidar,Gang_22
+C1739,Lohith Naik,20,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1740,Suresh Bhat,26,Tamil Nadu,Kalaburagi,Kalaburagi,None
+C1741,Nikhil Ramesh,48,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_46
+C1742,Akash Moily,48,Karnataka,Vijayapura,Vijayapura,None
+C1743,Anil Alva,41,Telangana,Ballari,Ballari,None
+C1744,Lokesh Moily,49,Karnataka,Kodagu,Kodagu,None
+C1745,Anoop Kumar,40,Karnataka,Tumakuru,Tumakuru,None
+C1746,Srinivas Pinto,32,Karnataka,Koppal,Koppal,None
+C1747,Gopal Hegde,27,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1748,Vijay Joshi,34,Karnataka,Tumakuru,Tumakuru,Gang_32
+C1749,Abhishek Joshi,47,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1750,Devraj Adiga,47,Karnataka,Tumakuru,Tumakuru,None
+C1751,Abhishek Ramesh,31,Karnataka,Hassan,Hassan,None
+C1752,Vikas Poojary,33,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1753,Chirag Joshi,58,Tamil Nadu,Tumakuru,Tumakuru,None
+C1754,Anoop Salian,54,Karnataka,Koppal,Koppal,Gang_45
+C1755,Raghav Lobo,21,Karnataka,Ballari,Ballari,None
+C1756,Chandan Acharya,31,Karnataka,Raichur,Raichur,None
+C1757,Varun Mendonca,32,Karnataka,Kodagu,Kodagu,None
+C1758,Bhaskar Shet,42,Karnataka,Koppal,Koppal,None
+C1759,Manoj Suvarna,43,Karnataka,Kodagu,Kodagu,None
+C1760,Harish Adiga,58,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1761,Anoop Patil,58,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_37
+C1762,Kiran Sharma,23,Telangana,Koppal,Koppal,None
+C1763,Mahesh Salian,29,Karnataka,Hassan,Hassan,Gang_6
+C1764,Shankar Patil,31,Karnataka,Ballari,Ballari,None
+C1765,Vikas Karkera,42,Maharashtra,Kodagu,Kodagu,None
+C1766,Nagaraj Adiga,20,Karnataka,Shivamogga,Shivamogga,None
+C1767,Prakash Mendonca,34,Karnataka,Mysuru,Mysuru,None
+C1768,Ganesh Patil,44,Karnataka,Belagavi,Belagavi,None
+C1769,Ramesh Kudva,55,Telangana,Bengaluru Rural,Bengaluru Rural,Gang_28
+C1770,Manoj Kudva,47,Karnataka,Shivamogga,Shivamogga,None
+C1771,Vinod Bairy,35,Karnataka,Koppal,Koppal,None
+C1772,Ranjith Acharya,29,Karnataka,Raichur,Raichur,Gang_31
+C1773,Shivakumar Kotian,59,Karnataka,Tumakuru,Tumakuru,None
+C1774,Yogesh Karkera,34,Kerala,Hassan,Hassan,Gang_30
+C1775,Ganesh Gowda,44,Telangana,Bidar,Bidar,Gang_35
+C1776,Pradeep Kunder,55,Karnataka,Kodagu,Kodagu,None
+C1777,Aditya Joshi,31,Karnataka,Dharwad,Dharwad,None
+C1778,Venkatesh Suvarna,23,Karnataka,Kalaburagi,Kalaburagi,None
+C1779,Rakesh Shetty,44,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1780,Kishore Kunder,29,Karnataka,Kodagu,Kodagu,None
+C1781,Pranav Pai,36,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_3
+C1782,Chirag Lobo,49,Karnataka,Kalaburagi,Kalaburagi,Gang_19
+C1783,Gautham Bollineni,38,Tamil Nadu,Hassan,Hassan,None
+C1784,Shankar Devadiga,35,Karnataka,Ballari,Ballari,None
+C1785,Lohith Karkera,22,Karnataka,Kalaburagi,Kalaburagi,Gang_36
+C1786,Akash Adiga,21,Karnataka,Ballari,Ballari,None
+C1787,Nikhil Mallya,30,Karnataka,Raichur,Raichur,None
+C1788,Gautham Suvarna,31,Karnataka,Belagavi,Belagavi,None
+C1789,Vijay Adiga,48,Karnataka,Koppal,Koppal,None
+C1790,Girish Kumar,22,Karnataka,Mysuru,Mysuru,None
+C1791,Mithun Salian,57,Andhra Pradesh,Ballari,Ballari,None
+C1792,Pranav Kunder,57,Karnataka,Belagavi,Belagavi,None
+C1793,Kiran Suvarna,43,Karnataka,Belagavi,Belagavi,Gang_36
+C1794,Lokesh Shet,36,Karnataka,Dharwad,Dharwad,None
+C1795,Varun Lobo,29,Karnataka,Bidar,Bidar,None
+C1796,Nikhil Karkera,59,Karnataka,Bidar,Bidar,Gang_36
+C1797,Ajay Reddy,47,Karnataka,Bidar,Bidar,None
+C1798,Nagaraj Reddy,50,Karnataka,Kalaburagi,Kalaburagi,None
+C1799,Mukesh Kulkarni,55,Telangana,Raichur,Raichur,Gang_45
+C1800,Sunil Kamath,33,Tamil Nadu,Bengaluru Rural,Bengaluru Rural,None
+C1801,Devraj Shanbhag,41,Karnataka,Koppal,Koppal,None
+C1802,Darshan Moily,36,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_32
+C1803,Gautham Lobo,22,Andhra Pradesh,Dharwad,Dharwad,None
+C1804,Deepak Mendonca,55,Karnataka,Koppal,Koppal,None
+C1805,Jagadish Kumar,20,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_11
+C1806,Mukesh Kamath,50,Karnataka,Shivamogga,Shivamogga,Gang_43
+C1807,Venkatesh Verma,33,Telangana,Hassan,Hassan,None
+C1808,Lokesh Bollineni,35,Karnataka,Kalaburagi,Kalaburagi,None
+C1809,Pavan Shanbhag,53,Karnataka,Mysuru,Mysuru,None
+C1810,Nithin Adiga,27,Karnataka,Dharwad,Dharwad,None
+C1811,Anoop Moily,36,Karnataka,Mysuru,Mysuru,None
+C1812,Mukesh Pujari,25,Karnataka,Raichur,Raichur,None
+C1813,Pranav Shettigar,45,Karnataka,Belagavi,Belagavi,None
+C1814,Yogesh Shet,43,Karnataka,Bidar,Bidar,None
+C1815,Mahesh Kotian,30,Karnataka,Tumakuru,Tumakuru,None
+C1816,Srinivas Acharya,51,Karnataka,Raichur,Raichur,Gang_19
+C1817,Harish Hegde,58,Karnataka,Ballari,Ballari,None
+C1818,Anoop Ramesh,36,Karnataka,Raichur,Raichur,None
+C1819,Bharath Rao,38,Karnataka,Ballari,Ballari,None
+C1820,Lokesh Verma,28,Karnataka,Mysuru,Mysuru,None
+C1821,Rohit Alva,20,Karnataka,Koppal,Koppal,Gang_29
+C1822,Sachin Fernandes,30,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1823,Yash Naik,54,Telangana,Belagavi,Belagavi,None
+C1824,Umesh Bhat,30,Karnataka,Ballari,Ballari,None
+C1825,Karthik Poojary,29,Karnataka,Tumakuru,Tumakuru,Gang_17
+C1826,Ajay Pinto,20,Karnataka,Bidar,Bidar,None
+C1827,Rajesh Salian,38,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1828,Venkatesh Noronha,44,Karnataka,Koppal,Koppal,Gang_41
+C1829,Amith Gowda,25,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1830,Chandan Bollineni,25,Karnataka,Koppal,Koppal,Gang_1
+C1831,Chandan Shetty,37,Karnataka,Dharwad,Dharwad,Gang_22
+C1832,Srinivas Reddy,43,Karnataka,Raichur,Raichur,None
+C1833,Vikas Fernandes,39,Karnataka,Kalaburagi,Kalaburagi,Gang_35
+C1834,Sunil Rai,26,Tamil Nadu,Mysuru,Mysuru,None
+C1835,Ashok Kumar,51,Karnataka,Koppal,Koppal,Gang_28
+C1836,Nandakumar Udupa,27,Karnataka,Ballari,Ballari,None
+C1837,Madan Joshi,54,Karnataka,Vijayapura,Vijayapura,Gang_7
+C1838,Anil Lobo,25,Maharashtra,Bengaluru Urban,Bengaluru Urban,None
+C1839,Mukesh Joshi,25,Karnataka,Bidar,Bidar,None
+C1840,Naveen Udupa,28,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_40
+C1841,Kishore Patil,50,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_28
+C1842,Mithun Rao,33,Karnataka,Tumakuru,Tumakuru,None
+C1843,Nandakumar Noronha,51,Karnataka,Bidar,Bidar,None
+C1844,Manoj Alva,45,Tamil Nadu,Dharwad,Dharwad,Gang_49
+C1845,Gopal Acharya,28,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1846,Nagaraj Moily,40,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1847,Santosh Poojary,27,Karnataka,Raichur,Raichur,Gang_30
+C1848,Nandakumar Pujari,58,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_48
+C1849,Chethan Shet,35,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1850,Santosh Mendonca,56,Telangana,Bengaluru Rural,Bengaluru Rural,None
+C1851,Harsha Noronha,46,Karnataka,Belagavi,Belagavi,None
+C1852,Santosh Patil,33,Karnataka,Koppal,Koppal,Gang_40
+C1853,Venkatesh Poojary,44,Andhra Pradesh,Ballari,Ballari,None
+C1854,Deepak Bairy,53,Karnataka,Hassan,Hassan,None
+C1855,Jagannath Kamath,51,Karnataka,Kodagu,Kodagu,None
+C1856,Manjunath Suvarna,24,Karnataka,Kodagu,Kodagu,None
+C1857,Shivakumar Adiga,46,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1858,Chandan Kotian,22,Karnataka,Tumakuru,Tumakuru,Gang_32
+C1859,Sandeep Acharya,36,Karnataka,Shivamogga,Shivamogga,None
+C1860,Ganesh Desai,49,Karnataka,Belagavi,Belagavi,None
+C1861,Chethan Shekar,37,Andhra Pradesh,Ballari,Ballari,Gang_3
+C1862,Arun Kunder,28,Karnataka,Kodagu,Kodagu,None
+C1863,Lohith Alva,48,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_8
+C1864,Lohith Mallya,21,Karnataka,Vijayapura,Vijayapura,None
+C1865,Harsha Joshi,42,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1866,Arun Pai,49,Karnataka,Belagavi,Belagavi,Gang_19
+C1867,Anil Verma,49,Karnataka,Vijayapura,Vijayapura,None
+C1868,Sachin Shetty,56,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1869,Aditya Fernandes,57,Karnataka,Kodagu,Kodagu,None
+C1870,Bhaskar Kotian,32,Karnataka,Vijayapura,Vijayapura,Gang_6
+C1871,Shivakumar Acharya,32,Karnataka,Belagavi,Belagavi,None
+C1872,Venkatesh Kumar,22,Karnataka,Kodagu,Kodagu,None
+C1873,Prakash Verma,29,Andhra Pradesh,Tumakuru,Tumakuru,Gang_4
+C1874,Sharath Adiga,22,Karnataka,Dharwad,Dharwad,Gang_16
+C1875,Chandan Shekar,22,Karnataka,Tumakuru,Tumakuru,None
+C1876,Vikas Murthy,24,Kerala,Tumakuru,Tumakuru,None
+C1877,Venkatesh Shanbhag,37,Karnataka,Koppal,Koppal,None
+C1878,Pranav Alva,26,Karnataka,Dharwad,Dharwad,None
+C1879,Aravind Kudva,39,Karnataka,Bidar,Bidar,None
+C1880,Kiran Acharya,57,Karnataka,Dharwad,Dharwad,None
+C1881,Ranjith Mendonca,52,Karnataka,Kalaburagi,Kalaburagi,None
+C1882,Harish Desai,45,Karnataka,Tumakuru,Tumakuru,None
+C1883,Ganesh Salian,36,Tamil Nadu,Koppal,Koppal,None
+C1884,Bharath Acharya,22,Karnataka,Kodagu,Kodagu,None
+C1885,Aravind Bollineni,56,Karnataka,Koppal,Koppal,None
+C1886,Mithun Shet,20,Karnataka,Kalaburagi,Kalaburagi,None
+C1887,Kishore Reddy,38,Karnataka,Ballari,Ballari,Gang_8
+C1888,Yash Kunder,58,Karnataka,Belagavi,Belagavi,None
+C1889,Dinesh Pujari,51,Karnataka,Bidar,Bidar,Gang_23
+C1890,Hemant Verma,31,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_45
+C1891,Vinod Joshi,33,Karnataka,Kodagu,Kodagu,Gang_18
+C1892,Nithin Reddy,36,Telangana,Ballari,Ballari,None
+C1893,Shivakumar Sharma,20,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1894,Shankar Sharma,30,Karnataka,Hassan,Hassan,None
+C1895,Harish Alva,48,Karnataka,Bidar,Bidar,None
+C1896,Nagaraj Nayak,38,Karnataka,Hassan,Hassan,Gang_10
+C1897,Shashank Patil,37,Karnataka,Kodagu,Kodagu,None
+C1898,Raghav Alva,55,Tamil Nadu,Raichur,Raichur,Gang_39
+C1899,Pradeep Fernandes,35,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1900,Vikas Mendonca,38,Karnataka,Hassan,Hassan,None
+C1901,Anoop Gowda,43,Karnataka,Bidar,Bidar,None
+C1902,Nagaraj Joshi,44,Karnataka,Bidar,Bidar,None
+C1903,Ravi Bangera,31,Karnataka,Shivamogga,Shivamogga,None
+C1904,Nandakumar Pandit,56,Karnataka,Hassan,Hassan,None
+C1905,Vikas Shanbhag,28,Karnataka,Kalaburagi,Kalaburagi,None
+C1906,Anil Acharya,52,Telangana,Vijayapura,Vijayapura,None
+C1907,Krishna Patil,58,Karnataka,Raichur,Raichur,None
+C1908,Yogesh Shanbhag,34,Karnataka,Mysuru,Mysuru,None
+C1909,Manjunath Ramesh,37,Karnataka,Dharwad,Dharwad,None
+C1910,Naveen Mallya,37,Karnataka,Tumakuru,Tumakuru,None
+C1911,Amith Lobo,26,Karnataka,Dharwad,Dharwad,Gang_9
+C1912,Girish Naik,41,Karnataka,Tumakuru,Tumakuru,None
+C1913,Tarun Moily,39,Kerala,Hassan,Hassan,None
+C1914,Santosh Shekar,28,Karnataka,Hassan,Hassan,None
+C1915,Rajesh Naik,25,Karnataka,Ballari,Ballari,None
+C1916,Raghav Kudva,32,Karnataka,Raichur,Raichur,None
+C1917,Prakash Moily,38,Karnataka,Hassan,Hassan,Gang_8
+C1918,Gautham Desai,30,Karnataka,Bidar,Bidar,Gang_37
+C1919,Venkatesh Moily,43,Karnataka,Shivamogga,Shivamogga,Gang_40
+C1920,Shankar Poojary,28,Kerala,Belagavi,Belagavi,None
+C1921,Tarun Murthy,31,Karnataka,Raichur,Raichur,None
+C1922,Girish Shanbhag,54,Karnataka,Dharwad,Dharwad,Gang_44
+C1923,Sachin Devadiga,52,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C1924,Akash Kotian,42,Karnataka,Mysuru,Mysuru,None
+C1925,Chethan Udupa,29,Karnataka,Raichur,Raichur,None
+C1926,Venkatesh Shettigar,46,Maharashtra,Kalaburagi,Kalaburagi,None
+C1927,Ranjith Udupa,22,Karnataka,Dharwad,Dharwad,None
+C1928,Anand Poojary,24,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1929,Jagadish Shekar,55,Karnataka,Bidar,Bidar,None
+C1930,Madan Shetty,35,Karnataka,Mysuru,Mysuru,Gang_13
+C1931,Vijay Naik,34,Maharashtra,Bengaluru Urban,Bengaluru Urban,None
+C1932,Gopal Karkera,23,Karnataka,Bidar,Bidar,None
+C1933,Tejas Sharma,36,Karnataka,Hassan,Hassan,Gang_28
+C1934,Venkatesh Pinto,34,Karnataka,Dharwad,Dharwad,Gang_5
+C1935,Chirag Naik,33,Karnataka,Tumakuru,Tumakuru,None
+C1936,Raghav Verma,25,Karnataka,Hassan,Hassan,None
+C1937,Shankar Acharya,32,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1938,Madan Shanbhag,53,Kerala,Koppal,Koppal,Gang_46
+C1939,Manjunath Kamath,34,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_45
+C1940,Tarun Devadiga,25,Karnataka,Vijayapura,Vijayapura,None
+C1941,Yogesh Bangera,49,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_23
+C1942,Pavan Bangera,31,Karnataka,Dharwad,Dharwad,None
+C1943,Venkatesh Pujari,50,Karnataka,Kodagu,Kodagu,None
+C1944,Chirag Desai,60,Karnataka,Kodagu,Kodagu,Gang_27
+C1945,Suresh Karkera,23,Karnataka,Dharwad,Dharwad,Gang_29
+C1946,Sandeep Rao,22,Karnataka,Vijayapura,Vijayapura,None
+C1947,Girish Bairy,53,Karnataka,Belagavi,Belagavi,Gang_7
+C1948,Ravi Desai,47,Karnataka,Raichur,Raichur,None
+C1949,Chirag Reddy,47,Kerala,Kodagu,Kodagu,Gang_20
+C1950,Srinivas Naik,39,Maharashtra,Kalaburagi,Kalaburagi,None
+C1951,Harsha Shanbhag,33,Karnataka,Dharwad,Dharwad,None
+C1952,Madan Noronha,29,Karnataka,Dharwad,Dharwad,None
+C1953,Sunil Sharma,30,Karnataka,Raichur,Raichur,None
+C1954,Jagannath Noronha,29,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1955,Amith Pujari,44,Karnataka,Vijayapura,Vijayapura,None
+C1956,Anoop Kunder,53,Karnataka,Kodagu,Kodagu,Gang_41
+C1957,Prakash Desai,29,Tamil Nadu,Hassan,Hassan,Gang_20
+C1958,Bhaskar Reddy,51,Karnataka,Vijayapura,Vijayapura,Gang_28
+C1959,Madan Bollineni,31,Karnataka,Dharwad,Dharwad,None
+C1960,Santosh Verma,30,Karnataka,Dharwad,Dharwad,Gang_14
+C1961,Deepak Shet,53,Karnataka,Hassan,Hassan,None
+C1962,Bharath Karkera,47,Maharashtra,Bengaluru Urban,Bengaluru Urban,None
+C1963,Nikhil Pandit,45,Karnataka,Mysuru,Mysuru,None
+C1964,Chethan Kunder,55,Karnataka,Bidar,Bidar,Gang_38
+C1965,Yash Devadiga,34,Karnataka,Kodagu,Kodagu,None
+C1966,Gautham Kumar,29,Karnataka,Vijayapura,Vijayapura,None
+C1967,Bhaskar Shekar,26,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C1968,Kiran Kotian,41,Karnataka,Kalaburagi,Kalaburagi,None
+C1969,Rakesh Kulkarni,54,Karnataka,Kodagu,Kodagu,Gang_41
+C1970,Yash Shettigar,26,Karnataka,Tumakuru,Tumakuru,None
+C1971,Akhil Rai,23,Karnataka,Shivamogga,Shivamogga,None
+C1972,Bharath Gowda,31,Karnataka,Belagavi,Belagavi,None
+C1973,Sandeep Hegde,58,Karnataka,Kodagu,Kodagu,None
+C1974,Rakesh Shettigar,59,Karnataka,Shivamogga,Shivamogga,Gang_2
+C1975,Sachin Rao,49,Karnataka,Hassan,Hassan,None
+C1976,Ashok Kunder,21,Maharashtra,Bengaluru Rural,Bengaluru Rural,None
+C1977,Jagannath Rao,32,Karnataka,Kalaburagi,Kalaburagi,None
+C1978,Prakash Suvarna,25,Karnataka,Vijayapura,Vijayapura,None
+C1979,Srinivas Moily,59,Karnataka,Mysuru,Mysuru,None
+C1980,Anoop Fernandes,33,Karnataka,Shivamogga,Shivamogga,None
+C1981,Harsha Acharya,47,Maharashtra,Dharwad,Dharwad,None
+C1982,Tarun Kudva,36,Karnataka,Kodagu,Kodagu,None
+C1983,Rajesh Kudva,59,Karnataka,Kalaburagi,Kalaburagi,None
+C1984,Ganesh Rao,50,Karnataka,Koppal,Koppal,None
+C1985,Mithun Verma,37,Karnataka,Kalaburagi,Kalaburagi,None
+C1986,Shankar Murthy,36,Karnataka,Raichur,Raichur,None
+C1987,Harsha Alva,32,Tamil Nadu,Belagavi,Belagavi,None
+C1988,Yash Murthy,38,Karnataka,Ballari,Ballari,None
+C1989,Sandeep Pujari,24,Karnataka,Koppal,Koppal,None
+C1990,Anil Moily,29,Karnataka,Raichur,Raichur,None
+C1991,Nithin Murthy,39,Karnataka,Bidar,Bidar,None
+C1992,Vikas Kumar,25,Karnataka,Ballari,Ballari,None
+C1993,Pranav Verma,33,Karnataka,Tumakuru,Tumakuru,Gang_21
+C1994,Naveen Salian,28,Karnataka,Ballari,Ballari,Gang_21
+C1995,Nikhil Bangera,39,Karnataka,Kalaburagi,Kalaburagi,Gang_9
+C1996,Chirag Devadiga,60,Karnataka,Mysuru,Mysuru,None
+C1997,Sandeep Shanbhag,22,Karnataka,Raichur,Raichur,None
+C1998,Rajesh Adiga,48,Tamil Nadu,Kodagu,Kodagu,None
+C1999,Varun Shettigar,38,Karnataka,Vijayapura,Vijayapura,None
+C2000,Anoop Kudva,40,Karnataka,Mysuru,Mysuru,None
+C2001,Harsha Verma,53,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_11
+C2002,Prakash Pujari,55,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2003,Tarun Udupa,35,Karnataka,Hassan,Hassan,None
+C2004,Mithun Alva,46,Karnataka,Koppal,Koppal,None
+C2005,Nikhil Lobo,34,Karnataka,Koppal,Koppal,Gang_26
+C2006,Vijay Verma,35,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_5
+C2007,Ranjith Fernandes,21,Karnataka,Dharwad,Dharwad,None
+C2008,Vikas Shetty,48,Karnataka,Mysuru,Mysuru,Gang_26
+C2009,Varun Mallya,24,Karnataka,Raichur,Raichur,None
+C2010,Manoj Acharya,24,Karnataka,Mysuru,Mysuru,Gang_10
+C2011,Kishore Pinto,48,Maharashtra,Hassan,Hassan,Gang_41
+C2012,Varun Kamath,29,Tamil Nadu,Kalaburagi,Kalaburagi,None
+C2013,Aditya Shetty,22,Karnataka,Shivamogga,Shivamogga,Gang_45
+C2014,Vikas Rai,33,Karnataka,Belagavi,Belagavi,None
+C2015,Aditya Acharya,46,Karnataka,Kodagu,Kodagu,Gang_24
+C2016,Manoj Noronha,41,Andhra Pradesh,Raichur,Raichur,Gang_1
+C2017,Anand Pai,51,Karnataka,Bidar,Bidar,None
+C2018,Sharath Kudva,54,Karnataka,Koppal,Koppal,None
+C2019,Sachin Noronha,38,Karnataka,Koppal,Koppal,None
+C2020,Abhishek Pai,26,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2021,Manoj Shetty,57,Karnataka,Dharwad,Dharwad,Gang_2
+C2022,Bharath Kumar,27,Karnataka,Bidar,Bidar,Gang_20
+C2023,Rajesh Lobo,43,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2024,Aravind Mendonca,23,Karnataka,Tumakuru,Tumakuru,Gang_47
+C2025,Ramesh Kumar,49,Karnataka,Dharwad,Dharwad,Gang_18
+C2026,Chandan Moily,28,Karnataka,Ballari,Ballari,None
+C2027,Prakash Pai,57,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_39
+C2028,Anil Pai,29,Karnataka,Bidar,Bidar,None
+C2029,Sharath Fernandes,57,Karnataka,Dharwad,Dharwad,Gang_29
+C2030,Santosh Moily,51,Karnataka,Mysuru,Mysuru,Gang_30
+C2031,Harish Fernandes,38,Karnataka,Shivamogga,Shivamogga,None
+C2032,Mithun Acharya,60,Karnataka,Ballari,Ballari,Gang_19
+C2033,Rohit Naik,39,Karnataka,Belagavi,Belagavi,None
+C2034,Mukesh Poojary,58,Karnataka,Raichur,Raichur,None
+C2035,Ashok Pai,60,Andhra Pradesh,Bidar,Bidar,None
+C2036,Bharath Pai,35,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_47
+C2037,Arun Pandit,42,Tamil Nadu,Hassan,Hassan,None
+C2038,Harsha Patil,60,Karnataka,Koppal,Koppal,Gang_14
+C2039,Nandakumar Kulkarni,42,Karnataka,Ballari,Ballari,None
+C2040,Rakesh Sharma,50,Tamil Nadu,Bengaluru Urban,Bengaluru Urban,Gang_3
+C2041,Naveen Shet,42,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2042,Anil Poojary,58,Karnataka,Belagavi,Belagavi,None
+C2043,Pranav Bairy,38,Karnataka,Koppal,Koppal,None
+C2044,Bhaskar Alva,56,Karnataka,Ballari,Ballari,None
+C2045,Yash Acharya,20,Tamil Nadu,Belagavi,Belagavi,None
+C2046,Umesh Adiga,33,Karnataka,Hassan,Hassan,None
+C2047,Raghav Murthy,55,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2048,Gopal Adiga,24,Karnataka,Hassan,Hassan,None
+C2049,Ramesh Shanbhag,32,Karnataka,Koppal,Koppal,Gang_21
+C2050,Chandan Shet,35,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2051,Santosh Pai,32,Karnataka,Belagavi,Belagavi,Gang_28
+C2052,Lohith Kunder,49,Andhra Pradesh,Belagavi,Belagavi,Gang_2
+C2053,Anoop Pandit,55,Karnataka,Kalaburagi,Kalaburagi,None
+C2054,Nagaraj Lobo,33,Karnataka,Vijayapura,Vijayapura,None
+C2055,Shankar Pujari,26,Karnataka,Vijayapura,Vijayapura,Gang_50
+C2056,Madan Bangera,58,Karnataka,Tumakuru,Tumakuru,Gang_46
+C2057,Prakash Nayak,40,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2058,Sandeep Kumar,23,Karnataka,Belagavi,Belagavi,None
+C2059,Ashok Sharma,39,Telangana,Dharwad,Dharwad,None
+C2060,Rakesh Moily,37,Karnataka,Tumakuru,Tumakuru,None
+C2061,Harish Shanbhag,48,Karnataka,Dharwad,Dharwad,None
+C2062,Jagannath Bangera,35,Karnataka,Hassan,Hassan,None
+C2063,Santosh Rao,34,Andhra Pradesh,Bidar,Bidar,Gang_43
+C2064,Sunil Pinto,43,Karnataka,Bidar,Bidar,None
+C2065,Chethan Fernandes,51,Karnataka,Ballari,Ballari,None
+C2066,Chirag Kotian,52,Karnataka,Belagavi,Belagavi,None
+C2067,Manjunath Shettigar,33,Karnataka,Vijayapura,Vijayapura,Gang_41
+C2068,Vinod Kumar,47,Karnataka,Vijayapura,Vijayapura,None
+C2069,Deepak Kumar,34,Karnataka,Koppal,Koppal,Gang_9
+C2070,Jagannath Moily,30,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2071,Akhil Udupa,22,Karnataka,Kalaburagi,Kalaburagi,None
+C2072,Mohan Joshi,48,Karnataka,Bidar,Bidar,None
+C2073,Harish Bairy,21,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2074,Bhaskar Nayak,26,Karnataka,Dharwad,Dharwad,None
+C2075,Dinesh Kamath,58,Karnataka,Vijayapura,Vijayapura,None
+C2076,Kiran Pandit,21,Karnataka,Bidar,Bidar,None
+C2077,Raghav Fernandes,50,Karnataka,Tumakuru,Tumakuru,None
+C2078,Mahesh Joshi,37,Karnataka,Dharwad,Dharwad,Gang_49
+C2079,Shivakumar Rai,44,Andhra Pradesh,Ballari,Ballari,None
+C2080,Bharath Desai,35,Karnataka,Mysuru,Mysuru,None
+C2081,Mukesh Naik,31,Karnataka,Hassan,Hassan,None
+C2082,Anoop Rao,58,Karnataka,Tumakuru,Tumakuru,None
+C2083,Shashank Hegde,34,Karnataka,Belagavi,Belagavi,None
+C2084,Bharath Bollineni,43,Karnataka,Ballari,Ballari,None
+C2085,Hemant Rao,45,Karnataka,Mysuru,Mysuru,None
+C2086,Gautham Fernandes,57,Karnataka,Bidar,Bidar,None
+C2087,Sachin Pujari,27,Andhra Pradesh,Bengaluru Rural,Bengaluru Rural,None
+C2088,Tejas Reddy,20,Telangana,Koppal,Koppal,Gang_38
+C2089,Ravi Bhat,27,Karnataka,Dharwad,Dharwad,Gang_11
+C2090,Srinivas Bhat,38,Karnataka,Koppal,Koppal,Gang_28
+C2091,Vijay Pandit,43,Karnataka,Bidar,Bidar,Gang_27
+C2092,Lokesh Pandit,38,Karnataka,Kodagu,Kodagu,None
+C2093,Chandan Shettigar,49,Karnataka,Shivamogga,Shivamogga,Gang_39
+C2094,Dinesh Poojary,35,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2095,Anil Noronha,38,Karnataka,Ballari,Ballari,None
+C2096,Ajay Verma,51,Karnataka,Belagavi,Belagavi,None
+C2097,Gautham Pandit,20,Kerala,Koppal,Koppal,None
+C2098,Ashok Kudva,48,Karnataka,Shivamogga,Shivamogga,Gang_15
+C2099,Srinivas Verma,31,Tamil Nadu,Bengaluru Rural,Bengaluru Rural,Gang_42
+C2100,Anil Nayak,44,Karnataka,Tumakuru,Tumakuru,None
+C2101,Manoj Devadiga,21,Karnataka,Shivamogga,Shivamogga,None
+C2102,Shankar D'Souza,49,Karnataka,Belagavi,Belagavi,None
+C2103,Nagaraj Pujari,26,Telangana,Hassan,Hassan,None
+C2104,Vikas Udupa,27,Karnataka,Tumakuru,Tumakuru,Gang_44
+C2105,Manoj Bangera,42,Karnataka,Raichur,Raichur,Gang_43
+C2106,Pranav Bollineni,49,Tamil Nadu,Bengaluru Urban,Bengaluru Urban,Gang_24
+C2107,Tejas Pinto,54,Telangana,Kodagu,Kodagu,None
+C2108,Yash Pandit,22,Karnataka,Belagavi,Belagavi,None
+C2109,Tarun Pujari,54,Telangana,Dharwad,Dharwad,None
+C2110,Aravind Kotian,52,Karnataka,Kodagu,Kodagu,None
+C2111,Pradeep Noronha,53,Karnataka,Tumakuru,Tumakuru,None
+C2112,Anand Desai,26,Karnataka,Belagavi,Belagavi,None
+C2113,Sandeep Kotian,29,Karnataka,Raichur,Raichur,None
+C2114,Rohit Kulkarni,47,Karnataka,Kodagu,Kodagu,None
+C2115,Mukesh Alva,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2116,Prakash Acharya,36,Karnataka,Shivamogga,Shivamogga,Gang_32
+C2117,Deepak Kunder,53,Karnataka,Dharwad,Dharwad,None
+C2118,Krishna Desai,20,Karnataka,Raichur,Raichur,None
+C2119,Shashank Pinto,30,Karnataka,Belagavi,Belagavi,None
+C2120,Aravind Alva,47,Karnataka,Kalaburagi,Kalaburagi,None
+C2121,Yogesh Udupa,57,Andhra Pradesh,Bengaluru Rural,Bengaluru Rural,None
+C2122,Chandan Reddy,26,Andhra Pradesh,Kalaburagi,Kalaburagi,None
+C2123,Naveen Pandit,41,Kerala,Koppal,Koppal,Gang_25
+C2124,Devraj Karkera,29,Karnataka,Koppal,Koppal,None
+C2125,Manoj Ramesh,49,Karnataka,Tumakuru,Tumakuru,None
+C2126,Deepak Udupa,36,Karnataka,Shivamogga,Shivamogga,None
+C2127,Rajesh Kamath,55,Karnataka,Hassan,Hassan,None
+C2128,Vikas Hegde,39,Karnataka,Kodagu,Kodagu,None
+C2129,Mohan Verma,48,Telangana,Bengaluru Rural,Bengaluru Rural,None
+C2130,Amith Hegde,45,Karnataka,Dharwad,Dharwad,None
+C2131,Venkatesh Pandit,39,Karnataka,Belagavi,Belagavi,Gang_6
+C2132,Manoj Patil,41,Karnataka,Dharwad,Dharwad,None
+C2133,Tarun Alva,40,Karnataka,Mysuru,Mysuru,None
+C2134,Ganesh Kunder,33,Karnataka,Hassan,Hassan,None
+C2135,Mithun Rai,23,Maharashtra,Hassan,Hassan,Gang_37
+C2136,Vijay Reddy,24,Kerala,Bengaluru Rural,Bengaluru Rural,None
+C2137,Santosh Noronha,49,Karnataka,Hassan,Hassan,None
+C2138,Harish Shetty,21,Karnataka,Raichur,Raichur,None
+C2139,Madan Hegde,51,Karnataka,Raichur,Raichur,Gang_1
+C2140,Nithin Noronha,40,Karnataka,Kalaburagi,Kalaburagi,None
+C2141,Nikhil Pinto,53,Karnataka,Kalaburagi,Kalaburagi,None
+C2142,Sandeep Moily,39,Karnataka,Mysuru,Mysuru,None
+C2143,Amith Bangera,38,Karnataka,Bidar,Bidar,None
+C2144,Ajay Kumar,41,Karnataka,Hassan,Hassan,Gang_47
+C2145,Madan Devadiga,34,Kerala,Dharwad,Dharwad,None
+C2146,Venkatesh Kunder,38,Karnataka,Koppal,Koppal,None
+C2147,Dinesh Salian,50,Telangana,Tumakuru,Tumakuru,None
+C2148,Nikhil Rai,54,Karnataka,Mysuru,Mysuru,None
+C2149,Vikas Lobo,38,Karnataka,Ballari,Ballari,None
+C2150,Akhil Suvarna,43,Karnataka,Raichur,Raichur,Gang_50
+C2151,Jagadish D'Souza,20,Telangana,Vijayapura,Vijayapura,None
+C2152,Abhishek Alva,50,Karnataka,Dharwad,Dharwad,None
+C2153,Sharath Poojary,47,Karnataka,Mysuru,Mysuru,Gang_11
+C2154,Sunil Bollineni,46,Karnataka,Dharwad,Dharwad,None
+C2155,Arun Kulkarni,43,Karnataka,Hassan,Hassan,None
+C2156,Yogesh Ramesh,20,Karnataka,Bidar,Bidar,Gang_47
+C2157,Aditya Noronha,35,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2158,Hemant Shetty,23,Karnataka,Kalaburagi,Kalaburagi,Gang_17
+C2159,Vijay Sharma,43,Karnataka,Ballari,Ballari,Gang_14
+C2160,Akhil Pinto,24,Andhra Pradesh,Raichur,Raichur,Gang_21
+C2161,Mohan Pai,36,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2162,Manoj Murthy,40,Karnataka,Kodagu,Kodagu,None
+C2163,Shivakumar Alva,60,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2164,Suresh Gowda,26,Karnataka,Tumakuru,Tumakuru,None
+C2165,Pranav Desai,58,Karnataka,Tumakuru,Tumakuru,None
+C2166,Arun Acharya,33,Karnataka,Ballari,Ballari,Gang_45
+C2167,Hemant Kudva,28,Karnataka,Shivamogga,Shivamogga,None
+C2168,Mithun Naik,48,Kerala,Koppal,Koppal,None
+C2169,Deepak Acharya,42,Karnataka,Kodagu,Kodagu,None
+C2170,Ashok Bollineni,46,Telangana,Mysuru,Mysuru,None
+C2171,Sachin Reddy,24,Karnataka,Koppal,Koppal,None
+C2172,Varun Kunder,29,Karnataka,Koppal,Koppal,None
+C2173,Gopal Pujari,43,Karnataka,Shivamogga,Shivamogga,None
+C2174,Anand Kotian,37,Kerala,Kodagu,Kodagu,None
+C2175,Prakash Poojary,39,Karnataka,Mysuru,Mysuru,None
+C2176,Devraj Murthy,30,Karnataka,Raichur,Raichur,None
+C2177,Sharath Murthy,56,Karnataka,Dharwad,Dharwad,None
+C2178,Mithun Kotian,58,Kerala,Belagavi,Belagavi,Gang_35
+C2179,Krishna Noronha,44,Karnataka,Raichur,Raichur,None
+C2180,Anil Kunder,38,Andhra Pradesh,Bengaluru Urban,Bengaluru Urban,Gang_46
+C2181,Nandakumar Lobo,40,Karnataka,Mysuru,Mysuru,Gang_29
+C2182,Tarun Shetty,27,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_40
+C2183,Santosh Acharya,25,Karnataka,Mysuru,Mysuru,None
+C2184,Bharath Rai,43,Karnataka,Kodagu,Kodagu,None
+C2185,Deepak Devadiga,31,Karnataka,Vijayapura,Vijayapura,Gang_8
+C2186,Aditya D'Souza,26,Karnataka,Ballari,Ballari,None
+C2187,Karthik Kudva,55,Karnataka,Tumakuru,Tumakuru,None
+C2188,Krishna Bhat,46,Karnataka,Belagavi,Belagavi,None
+C2189,Umesh Nayak,23,Karnataka,Raichur,Raichur,None
+C2190,Amith Bollineni,34,Karnataka,Bidar,Bidar,None
+C2191,Girish Suvarna,39,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_40
+C2192,Chandan Fernandes,48,Karnataka,Vijayapura,Vijayapura,None
+C2193,Krishna Kunder,51,Karnataka,Ballari,Ballari,Gang_15
+C2194,Vikas Acharya,20,Karnataka,Belagavi,Belagavi,None
+C2195,Nandakumar Patil,59,Maharashtra,Bidar,Bidar,None
+C2196,Sharath Nayak,58,Andhra Pradesh,Kalaburagi,Kalaburagi,Gang_8
+C2197,Venkatesh Nayak,58,Maharashtra,Dharwad,Dharwad,None
+C2198,Vijay Devadiga,44,Karnataka,Mysuru,Mysuru,None
+C2199,Amith Suvarna,37,Karnataka,Tumakuru,Tumakuru,Gang_4
+C2200,Vikas D'Souza,31,Karnataka,Hassan,Hassan,None
+C2201,Mithun Lobo,45,Karnataka,Vijayapura,Vijayapura,Gang_29
+C2202,Kishore D'Souza,43,Karnataka,Kalaburagi,Kalaburagi,None
+C2203,Chandan Rao,40,Karnataka,Raichur,Raichur,None
+C2204,Darshan Noronha,24,Karnataka,Tumakuru,Tumakuru,Gang_17
+C2205,Amith Adiga,27,Karnataka,Ballari,Ballari,None
+C2206,Varun Udupa,33,Karnataka,Raichur,Raichur,None
+C2207,Chethan Murthy,51,Andhra Pradesh,Kalaburagi,Kalaburagi,None
+C2208,Shankar Fernandes,48,Karnataka,Koppal,Koppal,None
+C2209,Dinesh Udupa,53,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2210,Nithin Shetty,56,Karnataka,Dharwad,Dharwad,Gang_15
+C2211,Aravind Reddy,37,Karnataka,Raichur,Raichur,Gang_24
+C2212,Vinod Sharma,52,Karnataka,Ballari,Ballari,Gang_10
+C2213,Lohith Shanbhag,56,Karnataka,Kalaburagi,Kalaburagi,None
+C2214,Yash Hegde,34,Karnataka,Ballari,Ballari,Gang_37
+C2215,Pavan Verma,22,Karnataka,Mysuru,Mysuru,Gang_30
+C2216,Anand Joshi,37,Karnataka,Koppal,Koppal,None
+C2217,Pranav Kotian,35,Karnataka,Kodagu,Kodagu,Gang_1
+C2218,Prakash Kulkarni,50,Karnataka,Tumakuru,Tumakuru,None
+C2219,Jagannath Shekar,31,Karnataka,Koppal,Koppal,Gang_17
+C2220,Vinod Ramesh,55,Karnataka,Belagavi,Belagavi,Gang_29
+C2221,Shivakumar Desai,29,Karnataka,Vijayapura,Vijayapura,Gang_17
+C2222,Sunil Naik,45,Karnataka,Kodagu,Kodagu,Gang_27
+C2223,Rohit Desai,55,Karnataka,Raichur,Raichur,None
+C2224,Ramesh Bollineni,37,Karnataka,Kalaburagi,Kalaburagi,None
+C2225,Venkatesh Shet,33,Karnataka,Koppal,Koppal,Gang_39
+C2226,Hemant Mallya,47,Telangana,Ballari,Ballari,None
+C2227,Manjunath Udupa,38,Andhra Pradesh,Kodagu,Kodagu,None
+C2228,Chethan Naik,59,Karnataka,Shivamogga,Shivamogga,None
+C2229,Suresh Patil,49,Karnataka,Kalaburagi,Kalaburagi,None
+C2230,Akhil Shettigar,24,Karnataka,Koppal,Koppal,None
+C2231,Bhaskar Murthy,56,Telangana,Bengaluru Rural,Bengaluru Rural,None
+C2232,Yash Shekar,28,Karnataka,Hassan,Hassan,None
+C2233,Ravi Pandit,50,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2234,Ashok Fernandes,43,Karnataka,Tumakuru,Tumakuru,None
+C2235,Nagaraj Alva,45,Karnataka,Ballari,Ballari,None
+C2236,Rohit Acharya,52,Karnataka,Tumakuru,Tumakuru,None
+C2237,Vinod Kulkarni,58,Karnataka,Shivamogga,Shivamogga,None
+C2238,Deepak Poojary,45,Karnataka,Kalaburagi,Kalaburagi,Gang_31
+C2239,Karthik Kulkarni,36,Karnataka,Mysuru,Mysuru,None
+C2240,Rajesh Shet,39,Karnataka,Shivamogga,Shivamogga,None
+C2241,Aditya Pinto,36,Karnataka,Tumakuru,Tumakuru,None
+C2242,Chirag Acharya,25,Karnataka,Hassan,Hassan,None
+C2243,Ajay Bairy,26,Karnataka,Bidar,Bidar,Gang_19
+C2244,Madan Ramesh,24,Karnataka,Koppal,Koppal,None
+C2245,Lohith Acharya,37,Telangana,Raichur,Raichur,Gang_22
+C2246,Nagaraj Bairy,42,Karnataka,Hassan,Hassan,Gang_26
+C2247,Vinod Kudva,46,Karnataka,Kodagu,Kodagu,None
+C2248,Anoop Verma,31,Karnataka,Belagavi,Belagavi,None
+C2249,Ashok Shanbhag,27,Karnataka,Dharwad,Dharwad,Gang_9
+C2250,Karthik Alva,53,Karnataka,Belagavi,Belagavi,None
+C2251,Pradeep Hegde,59,Karnataka,Mysuru,Mysuru,Gang_50
+C2252,Arun Hegde,48,Karnataka,Koppal,Koppal,None
+C2253,Bhaskar Devadiga,41,Karnataka,Tumakuru,Tumakuru,None
+C2254,Anand Pujari,20,Karnataka,Belagavi,Belagavi,Gang_23
+C2255,Jagadish Ramesh,26,Karnataka,Hassan,Hassan,None
+C2256,Mukesh Suvarna,35,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2257,Akash Salian,53,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_39
+C2258,Chethan Reddy,28,Karnataka,Bidar,Bidar,None
+C2259,Varun Joshi,27,Kerala,Dharwad,Dharwad,None
+C2260,Jagadish Alva,54,Karnataka,Hassan,Hassan,None
+C2261,Arun Suvarna,36,Karnataka,Belagavi,Belagavi,None
+C2262,Nikhil Joshi,41,Karnataka,Kodagu,Kodagu,None
+C2263,Chandan Kamath,47,Tamil Nadu,Koppal,Koppal,None
+C2264,Mahesh Alva,45,Karnataka,Shivamogga,Shivamogga,None
+C2265,Umesh Kulkarni,30,Karnataka,Kalaburagi,Kalaburagi,None
+C2266,Mohan Kamath,20,Andhra Pradesh,Bidar,Bidar,None
+C2267,Tarun Reddy,22,Karnataka,Tumakuru,Tumakuru,None
+C2268,Srinivas Shettigar,42,Karnataka,Mysuru,Mysuru,None
+C2269,Rakesh Shet,43,Karnataka,Vijayapura,Vijayapura,Gang_20
+C2270,Shivakumar Shekar,20,Karnataka,Tumakuru,Tumakuru,None
+C2271,Ganesh Lobo,30,Karnataka,Koppal,Koppal,Gang_43
+C2272,Vijay Karkera,57,Telangana,Koppal,Koppal,None
+C2273,Hemant Shet,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2274,Akhil Desai,30,Karnataka,Kalaburagi,Kalaburagi,None
+C2275,Mukesh Bairy,49,Maharashtra,Dharwad,Dharwad,None
+C2276,Ravi Reddy,42,Karnataka,Ballari,Ballari,None
+C2277,Shashank Shettigar,32,Karnataka,Mysuru,Mysuru,None
+C2278,Mithun Desai,60,Karnataka,Shivamogga,Shivamogga,None
+C2279,Aditya Poojary,32,Karnataka,Belagavi,Belagavi,None
+C2280,Prakash Shet,43,Karnataka,Shivamogga,Shivamogga,Gang_18
+C2281,Girish Bhat,55,Telangana,Bengaluru Urban,Bengaluru Urban,None
+C2282,Ramesh Alva,50,Maharashtra,Shivamogga,Shivamogga,None
+C2283,Dinesh Desai,29,Karnataka,Kodagu,Kodagu,None
+C2284,Pavan Mendonca,32,Karnataka,Mysuru,Mysuru,None
+C2285,Bhaskar Pinto,32,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2286,Hemant Hegde,47,Karnataka,Kodagu,Kodagu,None
+C2287,Aravind Karkera,57,Karnataka,Dharwad,Dharwad,Gang_27
+C2288,Sharath Pai,50,Karnataka,Raichur,Raichur,None
+C2289,Shankar Salian,33,Karnataka,Vijayapura,Vijayapura,Gang_14
+C2290,Vinod Pai,56,Tamil Nadu,Hassan,Hassan,Gang_2
+C2291,Mahesh Kulkarni,43,Karnataka,Vijayapura,Vijayapura,None
+C2292,Mukesh D'Souza,40,Andhra Pradesh,Bengaluru Rural,Bengaluru Rural,None
+C2293,Gautham Udupa,52,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2294,Ramesh Verma,32,Karnataka,Kalaburagi,Kalaburagi,None
+C2295,Anil Kotian,33,Karnataka,Vijayapura,Vijayapura,None
+C2296,Lohith Rao,35,Karnataka,Vijayapura,Vijayapura,None
+C2297,Aravind Kumar,22,Karnataka,Belagavi,Belagavi,None
+C2298,Ajay Bhat,35,Kerala,Bengaluru Rural,Bengaluru Rural,Gang_23
+C2299,Ashok Mendonca,56,Karnataka,Vijayapura,Vijayapura,Gang_3
+C2300,Rajesh Fernandes,34,Karnataka,Kodagu,Kodagu,Gang_27
+C2301,Bharath Lobo,42,Karnataka,Shivamogga,Shivamogga,Gang_37
+C2302,Tejas Shet,20,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2303,Rajesh Acharya,39,Karnataka,Shivamogga,Shivamogga,None
+C2304,Anil Devadiga,33,Karnataka,Kodagu,Kodagu,Gang_27
+C2305,Raghav Noronha,30,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2306,Venkatesh Gowda,25,Karnataka,Vijayapura,Vijayapura,None
+C2307,Sunil Adiga,21,Karnataka,Dharwad,Dharwad,None
+C2308,Rohit Joshi,43,Karnataka,Vijayapura,Vijayapura,Gang_38
+C2309,Ajay Hegde,33,Karnataka,Ballari,Ballari,None
+C2310,Rakesh Shekar,38,Karnataka,Belagavi,Belagavi,Gang_34
+C2311,Harsha Suvarna,47,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_39
+C2312,Nithin Alva,57,Karnataka,Shivamogga,Shivamogga,None
+C2313,Jagannath Naik,48,Kerala,Raichur,Raichur,None
+C2314,Jagadish Rai,27,Telangana,Tumakuru,Tumakuru,Gang_25
+C2315,Kishore Bangera,39,Karnataka,Kalaburagi,Kalaburagi,Gang_8
+C2316,Ajay Pujari,36,Karnataka,Kalaburagi,Kalaburagi,Gang_2
+C2317,Vinod Nayak,32,Tamil Nadu,Vijayapura,Vijayapura,Gang_16
+C2318,Ranjith Salian,32,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2319,Chirag Pinto,22,Karnataka,Kodagu,Kodagu,None
+C2320,Lohith Noronha,42,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_24
+C2321,Suresh Mendonca,50,Karnataka,Raichur,Raichur,None
+C2322,Girish Desai,48,Karnataka,Koppal,Koppal,None
+C2323,Vikas Shekar,44,Karnataka,Shivamogga,Shivamogga,None
+C2324,Harish Shet,20,Karnataka,Mysuru,Mysuru,None
+C2325,Tarun Rai,35,Karnataka,Vijayapura,Vijayapura,Gang_18
+C2326,Vinod Moily,28,Karnataka,Kalaburagi,Kalaburagi,None
+C2327,Deepak Bhat,49,Karnataka,Koppal,Koppal,None
+C2328,Kiran Kudva,54,Karnataka,Bidar,Bidar,None
+C2329,Pavan Lobo,57,Karnataka,Hassan,Hassan,Gang_48
+C2330,Ajay Kulkarni,21,Karnataka,Tumakuru,Tumakuru,Gang_48
+C2331,Dinesh Hegde,43,Karnataka,Shivamogga,Shivamogga,None
+C2332,Yash Gowda,53,Karnataka,Kodagu,Kodagu,None
+C2333,Anil Gowda,27,Karnataka,Hassan,Hassan,None
+C2334,Aditya Patil,33,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2335,Lohith Kulkarni,26,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2336,Harish Kotian,56,Karnataka,Tumakuru,Tumakuru,Gang_43
+C2337,Vinod Shekar,32,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_31
+C2338,Akash Noronha,54,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2339,Ramesh Ramesh,59,Karnataka,Raichur,Raichur,None
+C2340,Prakash Shanbhag,27,Karnataka,Kodagu,Kodagu,Gang_6
+C2341,Nagaraj Murthy,37,Karnataka,Koppal,Koppal,None
+C2342,Santosh Pandit,39,Karnataka,Mysuru,Mysuru,Gang_13
+C2343,Shivakumar Poojary,44,Karnataka,Hassan,Hassan,None
+C2344,Chandan Sharma,38,Karnataka,Tumakuru,Tumakuru,None
+C2345,Suresh Sharma,41,Karnataka,Vijayapura,Vijayapura,None
+C2346,Abhishek Acharya,28,Karnataka,Hassan,Hassan,None
+C2347,Ranjith Ramesh,55,Karnataka,Bidar,Bidar,None
+C2348,Amith Mendonca,59,Karnataka,Tumakuru,Tumakuru,None
+C2349,Rohit Shetty,23,Karnataka,Kodagu,Kodagu,None
+C2350,Mukesh Mallya,45,Karnataka,Koppal,Koppal,None
+C2351,Anil Shanbhag,37,Karnataka,Shivamogga,Shivamogga,Gang_2
+C2352,Kiran Kunder,36,Karnataka,Vijayapura,Vijayapura,None
+C2353,Hemant Moily,54,Karnataka,Kodagu,Kodagu,None
+C2354,Bharath Reddy,36,Karnataka,Hassan,Hassan,Gang_49
+C2355,Bharath Devadiga,39,Kerala,Koppal,Koppal,None
+C2356,Sunil Shettigar,22,Karnataka,Shivamogga,Shivamogga,None
+C2357,Rakesh Kunder,23,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_26
+C2358,Ajay Gowda,24,Andhra Pradesh,Bengaluru Urban,Bengaluru Urban,None
+C2359,Umesh Hegde,41,Telangana,Kalaburagi,Kalaburagi,Gang_24
+C2360,Darshan Udupa,40,Karnataka,Bidar,Bidar,None
+C2361,Amith Acharya,40,Karnataka,Hassan,Hassan,None
+C2362,Manjunath Joshi,32,Karnataka,Tumakuru,Tumakuru,None
+C2363,Chethan Gowda,60,Karnataka,Vijayapura,Vijayapura,None
+C2364,Sachin Bangera,28,Karnataka,Belagavi,Belagavi,None
+C2365,Lohith Pinto,50,Karnataka,Bidar,Bidar,None
+C2366,Arun Noronha,32,Karnataka,Vijayapura,Vijayapura,Gang_27
+C2367,Deepak Hegde,24,Karnataka,Dharwad,Dharwad,Gang_15
+C2368,Pavan Bollineni,43,Karnataka,Tumakuru,Tumakuru,None
+C2369,Karthik Udupa,44,Karnataka,Koppal,Koppal,None
+C2370,Pradeep Naik,46,Karnataka,Raichur,Raichur,Gang_24
+C2371,Sharath Verma,34,Karnataka,Hassan,Hassan,None
+C2372,Rohit Shekar,20,Karnataka,Belagavi,Belagavi,Gang_37
+C2373,Vinod Kamath,58,Karnataka,Belagavi,Belagavi,None
+C2374,Manjunath Kumar,33,Andhra Pradesh,Kalaburagi,Kalaburagi,None
+C2375,Ajay Desai,41,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_7
+C2376,Mithun Moily,37,Maharashtra,Belagavi,Belagavi,None
+C2377,Mithun Fernandes,54,Karnataka,Mysuru,Mysuru,Gang_1
+C2378,Bharath Murthy,34,Andhra Pradesh,Dharwad,Dharwad,None
+C2379,Anand Suvarna,34,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_6
+C2380,Tarun Salian,54,Karnataka,Koppal,Koppal,None
+C2381,Ganesh Shanbhag,50,Kerala,Bidar,Bidar,None
+C2382,Sachin Adiga,49,Karnataka,Bidar,Bidar,None
+C2383,Vikas Bollineni,47,Karnataka,Belagavi,Belagavi,None
+C2384,Tarun Bangera,30,Karnataka,Vijayapura,Vijayapura,None
+C2385,Yogesh Rao,23,Karnataka,Bengaluru Urban,Bengaluru Urban,Gang_3
+C2386,Harsha Moily,41,Karnataka,Mysuru,Mysuru,None
+C2387,Darshan Acharya,23,Karnataka,Tumakuru,Tumakuru,None
+C2388,Pranav Karkera,42,Karnataka,Hassan,Hassan,None
+C2389,Suresh Pandit,49,Karnataka,Shivamogga,Shivamogga,None
+C2390,Pranav Shekar,21,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2391,Chandan Kunder,46,Karnataka,Ballari,Ballari,Gang_5
+C2392,Tejas Bangera,28,Karnataka,Vijayapura,Vijayapura,None
+C2393,Sharath Salian,51,Kerala,Hassan,Hassan,None
+C2394,Mahesh Desai,43,Karnataka,Mysuru,Mysuru,None
+C2395,Anand Kulkarni,25,Telangana,Mysuru,Mysuru,None
+C2396,Srinivas Rao,52,Karnataka,Dharwad,Dharwad,None
+C2397,Aravind Acharya,59,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2398,Nandakumar Shet,53,Karnataka,Tumakuru,Tumakuru,None
+C2399,Srinivas Sharma,39,Karnataka,Raichur,Raichur,None
+C2400,Karthik Joshi,38,Karnataka,Mysuru,Mysuru,None
+C2401,Chethan Karkera,46,Tamil Nadu,Bengaluru Rural,Bengaluru Rural,None
+C2402,Kishore Joshi,42,Karnataka,Shivamogga,Shivamogga,Gang_7
+C2403,Tarun D'Souza,57,Karnataka,Raichur,Raichur,None
+C2404,Anil Kudva,58,Telangana,Tumakuru,Tumakuru,None
+C2405,Harish Noronha,41,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2406,Abhishek Kudva,44,Karnataka,Vijayapura,Vijayapura,None
+C2407,Kishore Kamath,49,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2408,Tarun Lobo,20,Karnataka,Kalaburagi,Kalaburagi,None
+C2409,Nithin Bhat,58,Karnataka,Raichur,Raichur,Gang_14
+C2410,Deepak Fernandes,42,Karnataka,Tumakuru,Tumakuru,None
+C2411,Akash Sharma,43,Karnataka,Ballari,Ballari,Gang_47
+C2412,Bhaskar Naik,26,Karnataka,Kalaburagi,Kalaburagi,None
+C2413,Pradeep Murthy,23,Karnataka,Bidar,Bidar,None
+C2414,Nithin Karkera,22,Karnataka,Tumakuru,Tumakuru,None
+C2415,Kishore Kumar,58,Karnataka,Bidar,Bidar,Gang_15
+C2416,Anoop Shet,36,Karnataka,Bidar,Bidar,None
+C2417,Aditya Lobo,29,Telangana,Dharwad,Dharwad,None
+C2418,Sandeep Kudva,33,Karnataka,Kalaburagi,Kalaburagi,None
+C2419,Rohit Rai,51,Karnataka,Kodagu,Kodagu,Gang_28
+C2420,Nandakumar Verma,27,Karnataka,Bidar,Bidar,None
+C2421,Aravind D'Souza,59,Karnataka,Ballari,Ballari,Gang_27
+C2422,Aditya Adiga,44,Karnataka,Hassan,Hassan,None
+C2423,Anand Kunder,57,Karnataka,Hassan,Hassan,None
+C2424,Kiran Bollineni,45,Karnataka,Hassan,Hassan,None
+C2425,Jagadish Mendonca,34,Karnataka,Mysuru,Mysuru,None
+C2426,Raghav Shanbhag,54,Karnataka,Raichur,Raichur,None
+C2427,Madan Fernandes,47,Karnataka,Vijayapura,Vijayapura,None
+C2428,Manoj Pinto,56,Karnataka,Belagavi,Belagavi,None
+C2429,Ravi Fernandes,31,Karnataka,Hassan,Hassan,None
+C2430,Mahesh Shekar,29,Karnataka,Hassan,Hassan,Gang_28
+C2431,Ramesh Poojary,23,Karnataka,Kodagu,Kodagu,Gang_45
+C2432,Arun Poojary,39,Karnataka,Hassan,Hassan,Gang_3
+C2433,Mohan Reddy,42,Karnataka,Koppal,Koppal,None
+C2434,Umesh Fernandes,44,Maharashtra,Dharwad,Dharwad,None
+C2435,Aravind Devadiga,58,Karnataka,Kodagu,Kodagu,Gang_27
+C2436,Shashank Bangera,38,Karnataka,Koppal,Koppal,None
+C2437,Akhil Rao,50,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_12
+C2438,Shashank Salian,60,Karnataka,Hassan,Hassan,None
+C2439,Nikhil Kotian,47,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_46
+C2440,Mohan Rai,27,Karnataka,Vijayapura,Vijayapura,None
+C2441,Gautham D'Souza,44,Karnataka,Raichur,Raichur,None
+C2442,Lokesh Pinto,38,Karnataka,Hassan,Hassan,None
+C2443,Harish Rao,28,Karnataka,Kalaburagi,Kalaburagi,None
+C2444,Akhil Bairy,34,Karnataka,Mysuru,Mysuru,None
+C2445,Shashank Shekar,28,Karnataka,Tumakuru,Tumakuru,Gang_38
+C2446,Umesh Acharya,29,Andhra Pradesh,Hassan,Hassan,None
+C2447,Umesh Pandit,35,Karnataka,Kalaburagi,Kalaburagi,None
+C2448,Sunil Pujari,46,Karnataka,Vijayapura,Vijayapura,None
+C2449,Kishore Rai,37,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2450,Harsha Shet,34,Karnataka,Shivamogga,Shivamogga,None
+C2451,Hemant Mendonca,39,Karnataka,Shivamogga,Shivamogga,None
+C2452,Raghav Nayak,33,Karnataka,Tumakuru,Tumakuru,None
+C2453,Rakesh Bollineni,53,Karnataka,Ballari,Ballari,Gang_7
+C2454,Venkatesh Pai,31,Karnataka,Tumakuru,Tumakuru,None
+C2455,Rajesh Shetty,43,Andhra Pradesh,Dharwad,Dharwad,Gang_37
+C2456,Jagadish Bairy,51,Telangana,Shivamogga,Shivamogga,Gang_33
+C2457,Ranjith Shettigar,59,Maharashtra,Dharwad,Dharwad,Gang_38
+C2458,Harsha Pinto,38,Karnataka,Belagavi,Belagavi,None
+C2459,Krishna Kamath,35,Karnataka,Tumakuru,Tumakuru,None
+C2460,Raghav Kotian,38,Karnataka,Bidar,Bidar,Gang_40
+C2461,Varun Kotian,56,Karnataka,Bidar,Bidar,None
+C2462,Ranjith Kumar,31,Karnataka,Vijayapura,Vijayapura,None
+C2463,Ganesh Pinto,22,Karnataka,Hassan,Hassan,None
+C2464,Lokesh Shanbhag,55,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2465,Gautham Patil,22,Karnataka,Bengaluru Rural,Bengaluru Rural,None
+C2466,Nikhil Shanbhag,54,Karnataka,Dharwad,Dharwad,None
+C2467,Madan Shettigar,46,Karnataka,Belagavi,Belagavi,None
+C2468,Varun Kulkarni,22,Karnataka,Tumakuru,Tumakuru,None
+C2469,Varun Salian,47,Karnataka,Mysuru,Mysuru,None
+C2470,Aravind Verma,44,Karnataka,Hassan,Hassan,Gang_42
+C2471,Gautham Pujari,57,Karnataka,Koppal,Koppal,None
+C2472,Ravi Devadiga,46,Karnataka,Vijayapura,Vijayapura,None
+C2473,Jagadish Bangera,43,Karnataka,Raichur,Raichur,None
+C2474,Sandeep Desai,38,Karnataka,Dharwad,Dharwad,Gang_39
+C2475,Sachin Naik,26,Karnataka,Shivamogga,Shivamogga,None
+C2476,Amith Kamath,23,Karnataka,Hassan,Hassan,None
+C2477,Venkatesh Bhat,38,Karnataka,Mysuru,Mysuru,None
+C2478,Pranav Noronha,51,Kerala,Tumakuru,Tumakuru,None
+C2479,Raghav Pai,22,Karnataka,Mysuru,Mysuru,Gang_47
+C2480,Devraj Kudva,41,Andhra Pradesh,Tumakuru,Tumakuru,None
+C2481,Pranav Rao,40,Karnataka,Kalaburagi,Kalaburagi,Gang_37
+C2482,Mohan Mendonca,20,Karnataka,Kodagu,Kodagu,None
+C2483,Nandakumar Adiga,36,Karnataka,Ballari,Ballari,None
+C2484,Prakash Kudva,38,Karnataka,Bidar,Bidar,Gang_17
+C2485,Lokesh Kumar,48,Karnataka,Belagavi,Belagavi,None
+C2486,Ravi Shekar,25,Karnataka,Vijayapura,Vijayapura,Gang_38
+C2487,Anil Karkera,58,Karnataka,Ballari,Ballari,None
+C2488,Umesh Rao,34,Karnataka,Belagavi,Belagavi,None
+C2489,Santosh Joshi,43,Karnataka,Mysuru,Mysuru,None
+C2490,Aditya Kamath,50,Karnataka,Raichur,Raichur,None
+C2491,Gopal Fernandes,60,Karnataka,Kalaburagi,Kalaburagi,None
+C2492,Dinesh Kudva,29,Karnataka,Bengaluru Urban,Bengaluru Urban,None
+C2493,Jagadish Pandit,31,Tamil Nadu,Vijayapura,Vijayapura,None
+C2494,Chirag Poojary,35,Karnataka,Kalaburagi,Kalaburagi,None
+C2495,Srinivas Kudva,52,Karnataka,Bengaluru Rural,Bengaluru Rural,Gang_43
+C2496,Aditya Murthy,53,Karnataka,Vijayapura,Vijayapura,None
+C2497,Sandeep Kamath,44,Karnataka,Bidar,Bidar,None
+C2498,Devraj Suvarna,41,Karnataka,Tumakuru,Tumakuru,None
+C2499,Yash Reddy,22,Karnataka,Raichur,Raichur,None
+C2500,Shankar Bhat,25,Karnataka,Belagavi,Belagavi,None
